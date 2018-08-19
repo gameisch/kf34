@@ -1,0 +1,73 @@
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    &__item {
+        width: 25%;
+        background-color: #3b3d40;
+        text-align: center;
+        padding: 4em 0;
+        a{
+            opacity: 1;
+            text-decoration: none;
+            @include trans;
+            &:hover{
+                opacity: .75;
+            }
+        }
+        &:nth-child(2n) {
+            background-color: #515255;
+        }
+        @media (max-width: $grid-ls) {
+            padding: 4em 10px;
+        }
+        @media (max-width: $grid-sl) {
+            width: 50%;
+            &:nth-child(3) {
+                background-color: #515255;
+                order:4;
+            }
+            &:nth-child(4) {
+                background-color: #3b3d40;
+            }
+        }
+        @media (max-width: $grid-sm) {
+            width: 100%;
+            &:nth-child(3) {
+                background-color: #3b3d40;
+                order:0;
+            }
+            &:nth-child(4) {
+                background-color: #515255;
+            }
+        }
+        &Icon {
+            margin-bottom: 15px;
+            &:before {
+                opacity: 0.5;
+                color: #ffffff;
+                font-family: "Material Icons", sans-serif;
+                font-size: em(50);
+            }
+            &.sch:before {
+                content: '\e8b5';
+            }
+            &.settings:before {
+                content: '\e8b8';
+            }
+            &.star:before {
+                content: '\e838';
+            }
+            &.lst:before {
+                content: '';
+            }
+        }
+        &Text {
+            color: #ffffff;
+            font-size: em(18);
+            font-weight: 700;
+            line-height: 1.7;
+            display: inline-block;
+            max-width: 230px;
+        }
+    }
+}

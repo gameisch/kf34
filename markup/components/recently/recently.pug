@@ -1,0 +1,11 @@
+mixin recently(data)
+    section.recently
+        .recently__header Recently Viewed
+        .recently__items
+            - for (var i = 0; i<4;i++)
+                .rentals-item
+                    .rentals-item__image
+                        img(src="%=static=%img/content/vp4698756-1.png")
+                    .rentals-item__content
+                        .rentals-item__content-header Lowery L300XDS
+                    a(href='#').rentals-item__view-more view product

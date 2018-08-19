@@ -1,0 +1,88 @@
+.top-info {
+    background-size: cover;
+    background-position: center center;
+    padding: em(100) 0;
+    text-align: center;
+    color: #ffffff;
+    &__header {
+        font-size: em(42);
+        margin-bottom: 25px;
+        font-weight: 700;
+    }
+    &--small {
+        padding: em(50) 0;
+        .top-info__header {
+            margin-bottom: 0;
+        }
+    }
+    &__text {
+        max-width: 540px;
+        font-size: em(16);
+        line-height: 1.5;
+        margin: 0 auto 25px;
+        padding-left: 1em;
+        padding-right: 1em;
+        strong {
+            display: block;
+            margin-top: 15px;
+        }
+    }
+    &__button {
+        margin: 5px;
+        &.green {
+            @include button();
+        }
+        &.blue {
+            @include button(#3747b8);
+        }
+        @media (max-width: 380px) {
+            width: 250px;
+        }
+    }
+    &__contacts {
+        padding-top: 2em;
+        & > * {
+            vertical-align: middle;
+        }
+        span {
+            display: inline-block;
+            opacity: 0.95;
+            color: #ffffff;
+            font-size: em(12);
+            font-weight: 700;
+            line-height: 1;
+            text-transform: uppercase;
+            margin: 0 5px;
+            @media (max-width: $grid-sl) {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+        a {
+            display: inline-block;
+            text-decoration: none;
+            transition: .25s;
+            &.phone {
+                color: #ffffff;
+                font-size: em(32);
+                font-weight: 700;
+                line-height: 24px;
+                &:hover {
+                    color: darken(#fff, 15%);
+                }
+            }
+            &.email {
+                line-height: 30px;
+                border-radius: 4px;
+                background-color: #ffffff;
+                color: #1f56ff;
+                font-size: em(14);
+                font-weight: 700;
+                padding: .5em 1.1em;
+                &:hover {
+                    background-color: darken(#fff, 15%);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,38 @@
+.logos {
+    &__row {
+        @include wrapper();
+        justify-content: center;
+        align-items: center;
+        .slick-track{
+            display:flex!important;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
+        a, span{
+            width: 100/10+0%;
+            margin:0 15px;
+            display: inline-block;
+            text-align: center;
+            @media (max-width: $grid-ls) {
+                width: 22.33333%;
+                margin: 10px;
+            }
+            @media (max-width: $grid-sl) {
+                width: 22.33333%;
+                margin: 15px;
+            }
+            @media (max-width: $grid-sm) {
+                width: 50%;
+            }
+        }
+        img {
+            filter: grayscale(100%);
+            transition: .25s;
+
+            &:hover {
+                filter: grayscale(0);
+            }
+        }
+    }
+}

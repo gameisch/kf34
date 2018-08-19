@@ -1,0 +1,101 @@
+mixin rentals-items(data)
+    section.rentals-items
+        .rentals-items__side
+            .rentals-filter
+                .rentals-filter__checkbox
+                    input(id="1", type="checkbox" checked)
+                    label(for="1") All
+                .rentals-filter__checkbox
+                    input(id="2", type="checkbox")
+                    label(for="2") Forklifts
+                .rentals-filter__checkbox
+                    input(id="3", type="checkbox")
+                    label(for="3") Ariel Work Platforms
+                .rentals-filter__checkbox
+                    input(id="4", type="checkbox")
+                    label(for="4") Energy
+                .rentals-filter__checkbox
+                    input(id="5", type="checkbox")
+                    label(for="5") Plantforms
+                .rentals-filter__checkbox
+                    input(id="6", type="checkbox")
+                    label(for="6") Industrial Cleaning
+                .rentals-filter__checkbox
+                    label
+                        input(type="checkbox")
+                        | Attachments
+                .rentals-filter__checkbox
+                    label
+                        input(type="checkbox")
+                        | Material Lifts
+                .rentals-filter__checkbox
+                    label
+                        input(type="checkbox")
+                        | Personnel Carriers
+                .rentals-filter__checkbox
+                    label
+                        input(type="checkbox")
+                        | Loght Towers
+            .equip-side-info
+                .equip-side-info__item.schedule
+                    strong Active working hours:
+                    | 7:00 AM – 5:00 PM CST
+                .equip-side-info__item.restore
+                    strong 24 hour service
+                    | available upon request
+                .equip-side-info__item.cel
+                    strong Cutting edge GPS fleet tracking
+                    | technology ensures equipment is delivered on time
+                .equip-side-info__item.dollar
+                    strong Heavily invested
+                    | in maintaining a young rental fleet to ensure minimal downtime
+                .equip-side-info__item.share
+                    strong NLT actively maintains a fleet of 2500+
+                    | pieces of equipment spread across 6 locations nationwide
+        .rentals-items__content
+            .rentals-items__breads
+                .rentals-items__breadsSelf
+                    a(href="#") Home
+                    a(href="#") Rentals
+                .rentals-items__breadsPage Rentals
+
+            .rentals-items__cat
+                .rentals-items__catHeader Cushion Tire Propane Forklifts
+                    .rentals-item
+                        .rentals-item__image
+                            img(src="%=static=%img/content/vp4698756-1.png")
+                        .rentals-item__content
+                            .rentals-item__content-header Lowery L300XDS
+                            .rentals-item__content-item 131" to 144" Lowered Mast Height
+                            .rentals-item__content-item 149" to 180" Max Lift Height
+                            .rentals-item__content-item 96" Forks Available
+                            .rentals-item__content-item Diesel Fuel
+                        a(href='javascript:void(null);', id='r-but', class='re rentals-item__request', data-id='Forklifts',  modal-open='r-rental') rental request fkls
+            .rentals-items__cat
+                .rentals-items__catHeader Reach Trucks / Order Pickers / Walkie Stackers  / Pallet Trucks
+                    .rentals-item
+                        .rentals-item__image
+                            img(src="%=static=%img/content/vp4698756-1.png")
+                        .rentals-item__content
+                            .rentals-item__content-header Lowery L300XDS
+                            .rentals-item__content-item 131" to 144" Lowered Mast Height
+                            .rentals-item__content-item 149" to 180" Max Lift Height
+                            .rentals-item__content-item 96" Forks Available
+                            .rentals-item__content-item Diesel Fuel
+                        a(href='javascript:void(null);', class='re rentals-item__request', data-id='Type of Equipment 2', modal-open='r-rental') rental request
+        .equip-side-info.medias
+            .equip-side-info__item.schedule
+                strong Active working hours:
+                | 7:00 AM – 5:00 PM CST
+            .equip-side-info__item.restore
+                strong 24 hour service
+                | available upon request
+            .equip-side-info__item.cel
+                strong Cutting edge GPS fleet tracking
+                | technology ensures equipment is delivered on time
+            .equip-side-info__item.dollar
+                strong Heavily invested
+                | in maintaining a young rental fleet to ensure minimal downtime
+            .equip-side-info__item.share
+                strong NLT actively maintains a fleet of 2500+
+                | pieces of equipment spread across 6 locations nationwide

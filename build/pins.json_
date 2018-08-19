@@ -1,0 +1,51 @@
+[
+    {
+        "latitude": 82.0711,
+        "longitude": 141.1564,
+        "scale": 0.5,
+        "title": "New York",
+        "color": "#6c00ff"
+    },
+    {
+        "latitude": 64.9071,
+        "longitude": 100.1221,
+        "scale": 0.5,
+        "title": "Ohio",
+        "color": "#6c00ff"
+    },
+    {
+        "latitude": 67.0537,
+        "longitude": -2.8823,
+        "scale": 0.5,
+        "title": "Nebraska",
+        "color": "#6c00ff"
+    },
+    {
+        "latitude": -61.8457,
+        "longitude": -2.8823,
+        "scale": 0.5,
+        "title": "Texas",
+        "color": "#6c00ff"
+    },
+    {
+        "latitude": -19.085,
+        "longitude": -46.4289,
+        "scale": 0.5,
+        "title": "New Mexico",
+        "color": "#6c00ff"
+    },
+    {
+        "latitude": -1.8574,
+        "longitude": -84.1135,
+        "scale": 0.5,
+        "title": "Arizona",
+        "color": "#6c00ff"
+    },
+    {
+        "latitude": 82.0711,
+        "longitude": -87.4632,
+        "scale": 0.5,
+        "title": "Idaho",
+        "color": "#6c00ff"
+    }
+]

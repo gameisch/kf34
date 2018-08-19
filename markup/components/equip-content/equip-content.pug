@@ -1,0 +1,32 @@
+mixin equip-content(data)
+    .equip-content
+        -for(var i=0;i<6;i++)
+            .equip-item
+                .equip-item__image
+                    img(src="%=static=%img/content/vp4698756-1.png")
+                .equip-item__content
+                    .equip-item__content-header Lowery L300XDS
+                    .equip-item__content-item
+                        strong Year:
+                        =" "
+                        | 2013
+                    .equip-item__content-item
+                        strong Brand:
+                        =" "
+                        | Lowery
+                    .equip-item__content-item
+                        strong Model:
+                        =" "
+                        | L300XDS
+                a(href='#').equip-item__view-more view more
+                a(href='#').equip-item__request request a quote
+    .equip-side-info.medias
+        .equip-side-info__item.schedule
+            strong Active working hours:
+            | 7:00 AM – 5:00 PM CST
+        .equip-side-info__item.restore
+            strong 24 hour service
+            | available upon request
+        .equip-side-info__item.cel
+            strong Cutting edge GPS fleet tracking
+            | technology ensures equipment is delivered on time

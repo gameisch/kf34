@@ -1,0 +1,28 @@
+.infoblock-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5em 15px;
+    background-image: url('%=static=%content/owewe.jpg');
+    -webkit-background-size: cover;
+    background-size: cover;
+    @media (max-width: $grid-sl) {
+        padding: 5em 15px;
+    }
+    h1 {
+        max-width: 772px;
+        color: #FFFFFF;
+        font-size: 42/15+0em;
+        font-weight: bold;
+        line-height: 1.15;
+        text-align: center;
+        padding-bottom: 1em;
+        @media (max-width: $grid-sl) {
+            font-size: 24/15+0em;
+        }
+    }
+    a {
+        @include button();
+    }
+}

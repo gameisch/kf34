@@ -1,0 +1,99 @@
+.infoblock-1 {
+    position: relative;
+    padding: 65/15+0em 0 65/15+0em;
+    background-image: url('%=static=%content/ib1-bg.png');
+    -webkit-background-size: cover;
+    background-size: cover;
+    &:before {
+        content: '';
+        position: absolute;
+        width: 50%;
+        top: 0;
+        left: 0;
+        height: 100%;
+        background-color: rgba(#000,.8);
+        z-index: 0;
+        @media (max-width: $grid-ls) {
+            width: 70%;
+        }
+        @media (max-width: $grid-sl) {
+            width: 100%;
+        }
+    }
+    &__content {
+        width: 50%;
+        position: relative;
+        z-index: 1;
+        @media (max-width: $grid-ls) {
+            width: 70%;
+        }
+        @media (max-width: $grid-sl) {
+            width: 100%;
+        }
+        .line {
+            position: relative;
+            &:after {
+                content: '';
+                width: 150%;
+                height: 2px;
+                background-color: #fff;
+                opacity: .1;
+                bottom: -1px;
+                right: 0;
+                position: absolute;
+            }
+        }
+        h1 {
+            color: #FFFFFF;
+            font-size: 42/15+0em;
+            font-weight: 700;
+            line-height: 1.15;
+            margin-bottom: 15px;
+            padding-right: 1em;
+            @media (max-width: $grid-sl) {
+                font-size: 24/15+0em;
+            }
+        }
+        p {
+            color: #FFFFFF;
+            font-size: 16/15+0em;
+            line-height: 1.5;
+            position: relative;
+        }
+    }
+    &__contacts {
+        padding-top: 3em;
+        &Header {
+            opacity: 0.5;
+            color: #FFFFFF;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            padding-bottom: 1em;
+        }
+        &TelMail {
+            display: flex;
+            align-items: center;
+            span {
+                opacity: 0.5;
+                color: #FFFFFF;
+                font-size: 14/15+0em;
+                padding: 0 .5em;
+            }
+            a {
+                text-decoration: none;
+                &.tel {
+                    color: #FFFFFF;
+                    font-size: 32/15+0em;
+                    font-weight: 700;
+                    letter-spacing: 1px;
+                }
+                &.mail {
+                    color: #2E71F2;
+                    font-size: 14/15+0em;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}

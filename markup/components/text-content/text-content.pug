@@ -1,0 +1,13 @@
+mixin text-content(data)
+    -
+        var klass = 'text-content '
+        if (data.isReverse) {
+            klass += ' text-content--reverse'
+        }
+    section(class=klass)
+        .text-content__row
+            .text-content__image
+                img(src=data.image.src)
+                span #{data.image.title}
+            .text-content__content
+                !=data.content

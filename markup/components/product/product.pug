@@ -1,0 +1,162 @@
+mixin product(data)
+    section.product
+        .product-info
+            .product-info__image.gallery-top
+                .gallery-top__slide
+                    .img(style="background-image:url(%=static=%img/content/ib2-img.png)")
+                    //img(src="%=static=%img/content/vp4698756-1l.png")
+                .gallery-top__slide
+                    .img(style="background-image:url(%=static=%img/content/vp4698756-1l.png)")
+                //    //img(src="%=static=%img/content/vp4698756-1l.png")
+                .gallery-top__slide
+                    .img(style="background-image:url(%=static=%img/content/DSC06815.png)")
+                //    //img(src="%=static=%img/content/vp4698756-1l.png")
+                .gallery-top__slide
+                    img(src="%=static=%img/content/vp4698756-1l.png")
+                .gallery-top__slide
+                    img(src="%=static=%img/content/ib2-img.png")
+            .product-info__preview.gallery-thumbs
+                .gallery-thumbs__slide
+                    .img(style="background-image:url(%=static=%img/content/ib2-img.png)")
+                .gallery-thumbs__slide
+                    .img(style="background-image:url(%=static=%img/content/vp4698756-1l.png)")
+                .gallery-thumbs__slide
+                    .img(style="background-image:url(%=static=%img/content/DSC06815.png)")
+                .gallery-thumbs__slide
+                    .img(style="background-image:url(%=static=%img/content/vp4698756-1l.png)")
+            .product-info__content
+                .product-info__header Warranty
+                .product-info__subheader Commited To Quality
+                .product-info__text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+                a(href="#").product-info__link Learn more about our warranty...
+        .product-description
+            .product-description-bread
+                a(href='#') Home
+                a(href='#') Category 1
+                a(href='#') Category 2
+                a(href='#') Product Name
+            h1.product-description__header 2013 Lowery L300XDS
+            .product-info__image--mobile.swiper-container
+                .swiper-wrapper
+                    .swiper-slide
+                        img(src="%=static=%img/content/ib2-img.png")
+                    .swiper-slide
+                        img(src="%=static=%img/content/vp4698756-1l.png")
+                    .swiper-slide
+                        img(src="%=static=%img/content/DSC06815.png")
+                    .swiper-slide
+                        img(src="%=static=%img/content/vp4698756-1l.png")
+                .swiper-button-prev.swiper-button-white
+                .swiper-button-next.swiper-button-white
+            .product-description__sub Description
+            .product-description__text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            .product-description__col
+                .product-description__sub Specs
+                .product-description__colItem
+                    strong Used:
+                    =" "
+                    span 122 hours
+                .product-description__colItem
+                    strong Color:
+                    =" "
+                    span Blue
+                .product-description__colItem
+                    strong Tires:
+                    =" "
+                    span Cushion
+                .product-description__colItem
+                    strong Capacity:
+                    =" "
+                    span 30,000 LB
+                .product-description__colItem
+                    strong CU:
+                    =" "
+                    span 95/120
+                .product-description__colItem
+                    strong Duty:
+                    =" "
+                    span Medium/Heavy
+                .product-description__colItem
+                    strong Model:
+                    =" "
+                    span L300XDS
+                .product-description__colItem
+                    strong Stock #:
+                    =" "
+                    span C300-018
+                .product-description__sub.mt25 Dimentions
+                .product-description__colItem
+                    strong Duty:
+                    =" "
+                    span Medium/Heavy
+            .product-description__col
+                .product-description__sub Engine & Drivetrain
+                .product-description__colItem
+                    strong Duty:
+                    =" "
+                    span Medium/Heavy
+                .product-description__colItem
+                    strong Model:
+                    =" "
+                    span L300XDS
+                .product-description__colItem
+                    strong Stock #:
+                    =" "
+                    span C300-018
+                .product-description__colItem
+                    strong VIN #:
+                    =" "
+                    span LT2346
+                .product-description__sub.mt25 Operational
+                .product-description__colItem
+                    strong Duty:
+                    =" "
+                    span Medium/Heavy
+            .product-form
+                .product-form__field.full.big
+                    .product-form__header Request A Quote
+                    .product-form__phone
+                        ="or just call "
+                        a(href="tel:(312) 444-1234") (312) 444-1234
+                .product-form__field.full.big
+                    span
+                        input(type="radio", name="r0" checked)
+                        label New Customer
+                    span
+                        input(type="radio", name="r0")
+                        label Existing Customer
+                    span
+                        input(type="radio", name="r1" value="0" checked)
+                        label Rent
+                    span
+                        input(type="radio", name="r1" value="1")
+                        label Purchase
+                .product-form__field
+                    input(type="text", placeholder="First Name")
+                .product-form__field
+                    input(type="text", placeholder="Last Name")
+                .product-form__field
+                    input(type="text", placeholder="Company")
+                .product-form__field
+                    input(type="text", placeholder="Email")
+                .product-form__field
+                    input(type="text", placeholder="Contact Phone Number")
+                .product-form__field
+                    input(type="text", placeholder="Contact Phone Number")
+                .product-form__field.if-purchase
+                    input(type="text", placeholder="Start Date" data-language='en').datepicker-here
+                    .product-form__control.date
+                .product-form__field.if-purchase
+                    select(data-placeholder='Length of Rental')
+                        option
+                        option Daily
+                        option Weekly
+                        option Monthly
+                .product-form__field.full
+                    input(type="text", placeholder="Message")
+                .product-form__field.full
+                    input(type="checkbox", id="field1")
+                    label(for="field1", class="ablab")
+                    span.abspan Check if you want to lear about promotions, sales and special events
+
+                    button(type="submit") request a quote

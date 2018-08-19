@@ -1,0 +1,258 @@
+mixin m-r-rental(data)
+    .modal(data-modal='r-rental')
+        .modal-content
+            .modal-content__close
+            .modal-content__header Request a Rental Quote
+            <div class="product-info">
+            <div class="product-info__title">2,000 – 3,000 lbs Reach Truck</div>
+            <div class="product-info__details"><p>190″ to 234″ Max Lift Height <br> 40″ to 42″ Overall Width <br> 76″ Overall Length <br> 83″ to 107″ Overall Height”</p>
+            </div>
+            </div>
+            form.modal-form
+                <div class="modal-form__field" id="radio-quote">
+                <label class="modal-form__label">Quote type<span>*</span><br>
+                </label>
+                <div class="modal-form__value">
+                <span>
+                <input type="radio" id="rent_some1" name="some1" value="Rent" required="">
+                <label for="rent_some1">Rent</label>
+                </span>
+                <span>
+                <input type="radio" id="rent_some2" name="some1" value="Purchase">
+                <label for="rent_some2">Purchase</label>
+                </span>
+                </div>
+                </div>
+                //.modal-form__field
+                //    label.modal-form__label Quote type
+                //        span *
+                //    .modal-form__value
+                //        span
+                //            input(type='radio', id="rent_some1", name='some1', value='Rent', required)
+                //            label(for="rent_some1") Rent
+                //        span
+                //            input(type='radio', id="rent_some2", name='some2', value='Purchase')
+                //            label(for="rent_some2") Purchase
+                .modal-form__field
+                    label.modal-form__label Customer type
+                        span *
+                    .modal-form__value
+                        span
+                            input(id="newcustomer", type='radio', name='some3', value='0', required)
+                            label(for="newcustomer") EXISTING customer
+                        span
+                            input(id="newcustomer", type='radio', name='some4', value='1')
+                            label(for="newcustomer") NEW customer
+                .modal-form__field
+                    label.modal-form__label Name
+                        span *
+                    .modal-form__value
+                        input(type='text', placeholder='First Name', required)
+                        input(type='text', placeholder='Last Name', required)
+                .modal-form__field
+                    label.modal-form__label Company
+                        span *
+                    .modal-form__value
+                        input(type='text')
+                .modal-form__field
+                    label.modal-form__label Company Address
+                    .modal-form__value
+                        input(type='text')
+                .modal-form__field
+                    label.modal-form__label E-mail
+                        span *
+                    .modal-form__value
+                        input(type='email', required)
+                .modal-form__field
+                    label.modal-form__label Contact Number
+                        span *
+                    .modal-form__value
+                        input(type='tel', required)
+                .modal-form__field.req
+                    label.modal-form__label Type of Equipment
+                        span *
+                    .modal-form__value
+                        span
+                            .wpcf7-select
+                                select.exp(data-placeholder='Type of Equipment', required)
+                                    option
+                                    option.typeof(data-id="Forklifts") Forklifts
+                                    option.typeof(data-id="Type of Equipment 2") Type of Equipment 2
+                                    option.typeof(data-id="Type of Equipment 3") Type of Equipment 3
+                                    option.subtypeof(data-id="Subtype1") Subtype1
+                                    option.subtypeof(data-id="Subtype2") Subtype2
+                                    option.subtypeof(data-id="Subtype3") Subtype3
+                                    option.subtypeof(data-id="Subtype4") Subtype4
+                                    option.subtypeof(data-id="Subtype5") Subtype5
+                                    option.subtypeof(data-id="Subtype6") Subtype6
+                .modal-form__field.subhidden(data-open="Subtype1")
+                    label.modal-form__label Subtype1
+                        span *
+                    .modal-form__value
+                        span
+                            .wpcf7-select
+                                select.subtype(data-placeholder='SubSubtype1', required)
+                                    option
+                                    option.subtypeof(data-id="SubSubtype1_1") SubSubtype1_1
+                                    option.subtypeof(data-id="SubSubtype1_2") SubSubtype1_2
+                                    option.subtypeof(data-id="SubSubtype1_3") SubSubtype1_3
+                .modal-form__field.subhidden(data-open="Subtype2")
+                    label.modal-form__label Subtype2
+                        span *
+                    .modal-form__value
+                        span
+                            .wpcf7-select
+                                select.subtype(data-placeholder='SubSubtype2', required)
+                                    option
+                                    option.subtypeof(data-id="SubSubtype2_1") SubSubtype2_1
+                .modal-form__field.subhidden(data-open="Subtype3")
+                    label.modal-form__label Subtype3
+                        span *
+                    .modal-form__value
+                        span
+                            .wpcf7-select
+                                select.subtype(data-placeholder='SubSubtype3', required)
+                                    option
+                                    option.subtypeof(data-id="SubSubtype3_1") SubSubtype3_1
+                .modal-form__field.subsubhidden(data-open="SubSubtype3_1")
+                    label.modal-form__label SubSubtype3_1
+                        span *
+                    .modal-form__value
+                        span
+                            .wpcf7-select
+                                select(data-placeholder='SubSubtype3_1', required)
+                                    option
+                                    option.subtypeof(data-id="Forklifts") Type1
+                                    option.subtypeof(data-id="Forklifts") Type2
+                                    option.subtypeof(data-id="Forklifts") Type3
+                .modal-form__field.subsubhidden(data-open="SubSubtype2_1")
+                    label.modal-form__label SubSubtype2_1
+                        span *
+                    .modal-form__value
+                        span
+                            .wpcf7-select
+                                select(data-placeholder='SubSubtype2_1', required)
+                                    option
+                                    option.subtypeof(data-id="Forklifts") Type1
+                                    option.subtypeof(data-id="Forklifts") Type2
+                                    option.subtypeof(data-id="Forklifts") Type3
+                .modal-form__field.subsubhidden(data-open="SubSubtype1_1")
+                    label.modal-form__label SubSubtype1_1
+                        span *
+                    .modal-form__value
+                        span
+                            .wpcf7-select
+                                select(data-placeholder='SubSubtype1_1', required)
+                                    option
+                                    option.subtypeof(data-id="Forklifts") Type1
+                                    option.subtypeof(data-id="Forklifts") Type2
+                                    option.subtypeof(data-id="Forklifts") Type3
+                .modal-form__field.subsubhidden(data-open="SubSubtype1_2")
+                    label.modal-form__label SubSubtype1_2
+                        span *
+                    .modal-form__value
+                        span
+                            .wpcf7-select
+                                select(data-placeholder='SubSubtype1_2', required)
+                                    option
+                                    option.subtypeof(data-id="Forklifts") Type1
+                                    option.subtypeof(data-id="Forklifts") Type2
+                                    option.subtypeof(data-id="Forklifts") Type3
+                .modal-form__field.subsubhidden(data-open="SubSubtype1_3")
+                    label.modal-form__label SubSubtype1_3
+                        span *
+                    .modal-form__value
+                        span
+                            .wpcf7-select
+                                select(data-placeholder='SubSubtype1_3', required)
+                                    option
+                                    option.subtypeof(data-id="Forklifts") Type1
+                                    option.subtypeof(data-id="Forklifts") Type2
+                                    option.subtypeof(data-id="Forklifts") Type3
+                .modal-form__field.hidden(data-open="Forklifts")
+                    label.modal-form__label Forklifts
+                        span *
+                    .modal-form__value
+                        span
+                            .wpcf7-select
+                                select(data-placeholder='forklifts', required)
+                                    option
+                                    option Type1
+                                    option Type2
+                                    option Type3
+                .modal-form__field.hidden(data-open="Type of Equipment 2")
+                    label.modal-form__label Type of Equipment 2
+                        span *
+                    .modal-form__value
+                        span
+                            .wpcf7-select
+                                select.exp(data-placeholder='Type of Equipment 2', required)
+                                    option
+                                    option Type1
+                                    option Type2
+                                    option Type3
+                .modal-form__field.hidden(data-open="Type of Equipment 3")
+                    label.modal-form__label Type of Equipment 3
+                        span *
+                    .modal-form__value
+                        span
+                            .wpcf7-select
+                                select.exp(data-placeholder='Type of Equipment 3', required)
+                                    option
+                                    option Type2
+                                    option Type3
+                .modal-form__field.field-dis
+                    label.modal-form__label Brief Description of Job
+                    .modal-form__value
+                        textarea
+                .modal-form__field.field-dis
+                    label.modal-form__label Start Date
+                    .modal-form__value
+                        input.datepicker-here(data-language="en", data-position="top left")
+                        .control_date
+                .modal-form__field.field-dis
+                    label.modal-form__label Length of Rental
+                    .modal-form__value
+                        .wpcf7-select
+                            select(data-placeholder='Length of Rental', required)
+                                option
+                                option Length of Rental 1
+                                option Length of Rental 2
+                                option Length of Rental 3
+                .modal-form__field.field-dis
+                    label.modal-form__label Would you like the equipment delivered or will you pick it up?
+                        span *
+                    .modal-form__value
+                        span
+                            input(id="delivery", type='radio', name='some2', value='0', required)
+                            label(for="delivery") Delivery
+                        span
+                            input(id='pickup', type='radio', name='some2', value='1')
+                            label(for='pickup') Pickup
+                .modal-form__field.field-dis
+                    label.modal-form__label What address will the equipment be going to?
+                        span *
+                    .modal-form__value
+                        input(type='text', placeholder='Street Address', required)
+                .modal-form__field.field-dis
+                    .modal-form__value
+                        input(type='text', placeholder='Street Address Line 2')
+                .modal-form__field.field-dis
+                    .modal-form__value
+                        input(type='text', placeholder='City', required)
+                        input(type='text', placeholder='Postal / Zip Code', required)
+                .modal-form__field.field-dis
+                    .modal-form__value
+                        input(type='text', placeholder='State / Province', required)
+                        input(class='hiddenvalue', type='text', hidden)
+                .modal-form__field.field-show
+                    label.modal-form__label Comments
+                    .modal-form__value
+                        textarea
+                .modal-form__field
+                    label.modal-form__label Enter the message as it's shown
+                        span *
+                .iframe
+                .modal-form__field
+                    .modal-form__button
+                        button(type='submit') submit

@@ -1,0 +1,36 @@
+mixin locations(data)
+    section.locations
+        .locations__row
+            .locations__list
+                .locations__title National Lift Truck
+                .locations__listItem(id='Franklin Park, IL', data-marker='Franklin Park, IL')
+                    strong First Location Title
+                    span 3333 Mount
+                    span Prospect Road Franklin Park,
+                    span IL. 60131
+                .locations__listItem(id='East Hazel Crest, IL', data-marker='East Hazel Crest, IL')
+                    strong Second Location Title
+                    span 921 W 171st
+                    span St East Hazel Crest,
+                    span IL 60429
+                .locations__title National Battery of Chicago
+                .locations__listItem(id='National Battery of Chicago', data-marker='National Battery of Chicago')
+                    strong Third Location Title
+                    span 3333 Mount Prospect Road Franklin Park, IL 60131
+                .locations__listItem(id='Little Rock, AR', data-marker='Little Rock, AR')
+                    strong Fourth Location Title
+                    span 601 West Dixon Road Little Rock, Arkansas, 72206
+                .locations__title National Lift of Arkansas
+                .locations__listItem(id='Springdale, AR', data-marker='Springdale, AR')
+                    strong Fivth Location Title
+                    span 228 South 40th St, Suite B Springdale, Arkansas 72762
+                .locations__listItem(id='Memphis, TN', data-marker='Memphis, TN')
+                    strong Sixth Location Title
+                    span 5625 East Raines Road Memphis, Tennessee 38115
+                .locations__title National Lift of Arkansas
+                .locations__listItem(id='Jackson, TN', data-marker='Jackson, TN')
+                    strong Seventh Location Title
+                    span 228 South 40th St, Suite B Jackson, TN 72762
+        .locations__map(id="map")
+        .map(id="map2")
+    script( async, defer, src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyCulVJqMD06uQ9q_uwqUn8Jp2wZW4grONk&callback=initMap")

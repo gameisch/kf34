@@ -1,0 +1,26 @@
+mixin post-mix(data)
+    section.post-mix
+        .post-mix__row
+            .post-mix__cell.post-mix__cell--x2
+                .post-mix__header News & Events
+                .post-mix__articles
+                    - for (var i = 0; i < 6; i++)
+                        article.post-mix-article
+                            img(src="%=static=%img/content/rental-shenanigans.png", alt="post image")
+                            .post-mix-article__date July 14, 2017
+                            a(href='#').post-mix-article__header Serving the Industrial and Construction marketplace for over 50 years
+                            p.post-mix-article__text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+            .post-mix__cell
+                .post-mix__header Recent Posts
+                .post-mix__recent-articles
+                    - for (var i = 0; i < 6; i++)
+                        article.post-mix-article
+                            .post-mix-article__date July 14, 2017
+                            a(href='#').post-mix-article__header Serving the Industrial and Construction marketplace for over 50 years
+
+                .post-mix-sub
+                    .post-mix-sub__header Sign Up For Our Newsletter
+                    .post-mix-sub__text We’ll show you good deals, events and news
+                    form.post-mix-sub__form
+                        input(type='text', placeholder='Enter your email')
+                        button join the crew!

@@ -1,0 +1,111 @@
+.image-slider {
+    background-color: rgba(#DDDDDD, .2);
+    border-top: 1px solid #DDDDDD;
+    border-bottom: 1px solid #DDDDDD;
+    padding: em(80) 0;
+    @media (max-width: $grid-sl) {
+        padding: em(40) 0;
+    }
+    &__row {
+        @include wrapper();
+    }
+    &--persons {
+        .image-slider__image {
+            img {
+                width: auto;
+                margin: 0 auto 25px;
+                border-radius: 50%;
+            }
+            span {
+                font-weight: 700;
+                font-size: em(20);
+                text-align: center;
+            }
+        }
+    }
+    &__header {
+        max-width: 800px;
+        margin: 0 auto 15px;
+        color: #000000;
+        font-size: em(32);
+        font-weight: bold;
+        line-height: 1.2;
+        text-align: center;
+        @media (max-width: $grid-sl) {
+            font-size: em(24);
+        }
+    }
+    &__text {
+        max-width: 565px;
+        margin: 0 auto 50px;
+        color: #000000;
+        font-size: em(15);
+        line-height: 1.8;
+        text-align: center;
+        @media (max-width: $grid-sl) {
+            margin-bottom: 30px;
+        }
+    }
+    &__slider {
+        width: 100%;
+        position: relative;
+        padding: 0 35px;
+        @media (max-width: $grid-sm) {
+            padding: 0 15px;
+        }
+        .swiper-button-prev, .swiper-button-next {
+            background: none;
+            width: auto;
+            height: auto;
+            margin-top: 0;
+            transform: translateY(-50%);
+            &.swiper-button-disabled {
+                opacity: 0;
+            }
+            &:after {
+                font-family: "Material Icons";
+                font-size: em(50);
+                color: $link-blue;
+                @media (max-width: $grid-sm) {
+                    font-size: em(25);
+                }
+            }
+        }
+        .swiper-button-prev {
+            left: 0;
+            @media (max-width: $grid-sm) {
+                left: -10px;
+            }
+            &:after {
+                content: '';
+            }
+        }
+        .swiper-button-next {
+            right: 0;
+            @media (max-width: $grid-sm) {
+                right: -10px;
+            }
+            &:after {
+                content: '';
+            }
+        }
+    }
+    &__image {
+        padding: 0 15px;
+        @media (max-width: $grid-sm) {
+            padding: 0;
+        }
+        img {
+            width: 100%;
+            display: block;
+            margin-bottom: 15px;
+            border-radius: 5px;
+        }
+        span {
+            color: #000000;
+            font-size: em(18);
+            font-weight: bold;
+            display: block;
+        }
+    }
+}

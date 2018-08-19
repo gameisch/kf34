@@ -1,0 +1,37 @@
+.infoblock-3 {
+    background-color: #f8f8f8;
+    @media (max-width: $grid-sl) {
+        background-color: #fff;
+    }
+    .infoblock__wrapper {
+        justify-content: space-between;
+        align-items: center;
+        border: 2px solid #DDDDDD;
+        background-color: #fff;
+        border-radius: 4px;
+        padding: 4em;
+        @media (max-width: $grid-sl) {
+            padding: 0 15px;
+            border: 0;
+        }
+    }
+    &__content {
+        width: 48%;
+        @media (max-width: $grid-sl) {
+            width: 100%;
+            margin-bottom: 25px;
+        }
+    }
+    &__icons {
+        width: 48%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        @media (max-width: $grid-ls) {
+            text-align: center;
+        }
+        @media (max-width: $grid-sl) {
+            width: 100%;
+        }
+    }
+}

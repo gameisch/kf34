@@ -1,0 +1,71 @@
+mixin m-rpm(data)
+    .modal(data-modal='rpm')
+        .modal-content
+            .modal-content__close
+            .modal-content__header Request PM or Annual Inspection
+            form.modal-form
+                .modal-form__field
+                    label.modal-form__label Name
+                        span *
+                    .modal-form__value
+                        input(type='text', placeholder='First Name', required)
+                        input(type='text', placeholder='Last Name', required)
+                .modal-form__field
+                    label.modal-form__label Customer type
+                        span *
+                    .modal-form__value
+                        label
+                            input(type='radio', name='some', value='0', required)
+                            | EXISTING customer
+                        label
+                            input(type='radio', name='some', value='1')
+                            | NEW customer
+                .modal-form__field
+                    label.modal-form__label Company
+                        span *
+                    .modal-form__value
+                        input(type='text')
+                .modal-form__field
+                    label.modal-form__label Address
+                        span *
+                    .modal-form__value
+                        input(type='text', placeholder='Street Address', required)
+                .modal-form__field
+                    .modal-form__value
+                        input(type='text', placeholder='Street Address Line 2')
+                .modal-form__field
+                    .modal-form__value
+                        select(data-placeholder='Country', required)
+                            option
+                            option city 1
+                            option city 2
+                            option city 3
+                .modal-form__field
+                    .modal-form__value
+                        input(type='text', placeholder='City', required)
+                        input(type='text', placeholder='Postal / Zip Code', required)
+                .modal-form__field
+                    .modal-form__value
+                        input(type='text', placeholder='State / Province', required)
+                .modal-form__field
+                    label.modal-form__label E-mail
+                        span *
+                    .modal-form__value
+                        input(type='email', required)
+                .modal-form__field
+                    label.modal-form__label Contact Number
+                        span *
+                    .modal-form__value
+                        input(type='tel', required)
+                .modal-form__field
+                    label.modal-form__label Fleet Size
+                    .modal-form__value
+                        input(type='text')
+                .modal-form__field
+                    label.modal-form__label Enter the message as it's shown
+                        span *
+                    .modal-form__value
+                        | captcha
+                .modal-form__field
+                    .modal-form__button
+                        button(type='submit') submit

@@ -1,0 +1,32 @@
+mixin cat-tabs(data)
+    .cat-tabs
+        .cat-tabs-links
+            span(data-cat="0").active Штакетник
+            span(data-cat="1") Водосточные системы
+            span(data-cat="2") Виниловый сайдинг
+            span(data-cat="3") Фасадные панели
+            span(data-cat="4") Металлосайдинг
+            span(data-cat="10") Профнастил
+        .cat-tabs-wrapper
+            .swiper-container
+                .swiper-wrapper
+                    -for (var i = 0; i < 10; i++)
+                        .swiper-slide
+                            .cat-tabs-content(style="background-image: url(%=static=%img/content/cat-tab-bg.jpg)")
+                                .cat-tabs-content__header--minh
+                                    p Ваши материалы ждут вас
+                                .cat-tabs-content__header
+                                    p Лучшие цены в городе, большие склады #{i}
+                                a(href='#').cat-tabs-content__button заказать сейчас
+                .cat-tabs-dots.swiper-pagination
+        .cat-tabs-links.up-arrow
+            span(data-cat="5") Кровля
+            span(data-cat="6") Доборные элементы
+            span(data-cat="7") Дымники, колпаки, флюгарки
+            span(data-cat="8") Кровельная вентиляция
+            span(data-cat="9") Комплектующие для кровли
+            span(data-cat="11") Софиты
+
+
+
+

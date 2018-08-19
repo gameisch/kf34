@@ -1,0 +1,39 @@
+doctype html
+html(class="no-js", lang="ru")
+
+    include ../components/head/head
+    include ../components/header/header
+    include ../components/footer/footer
+
+    include ../components/infoblock-1/infoblock-1
+    include ../components/infoblock-2/infoblock-2
+    include ../components/infoblock-3/infoblock-3
+    include ../components/infoblock-4/infoblock-4
+    include ../components/infoblock-5/infoblock-5
+    include ../components/infoblock-6/infoblock-6
+    include ../components/infoblock-7/infoblock-7
+    include ../components/infoblock-8/infoblock-8
+
+    head
+        +head(head.defaults)
+    body
+        |%=symbols=%
+
+        +header()
+
+        +infoblock-1()
+        +infoblock-2()
+        +infoblock-3()
+        +infoblock-4()
+        +infoblock-5()
+        +infoblock-6()
+        +infoblock-7()
+        +infoblock-8('p0')
+
+        +footer()
+
+        script(src='%=static=%js/separate-js/svg4everybody.min.js')
+        script svg4everybody();
+
+        //- Main scripts. You can replace it, but I recommend you to leave it here
+        script(src='%=static=%js/main%=hash=%%=min=%.js')

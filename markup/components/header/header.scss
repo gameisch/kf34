@@ -1,0 +1,173 @@
+.header {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 20;
+    padding-top: 25/15+0em;
+    padding-bottom: 25/15+0em;
+    transition: .25s;
+    &--fixed {
+        padding-top: 10/15+0em;
+        padding-bottom: 10/15+0em;
+        box-shadow: 0 5px 10px rgba(#000, .08);
+        background-color: rgba(#fff, .96);
+        .search {
+            opacity: 0;
+            visibility: hidden;
+            //transform: translateY(-50%) scale(1, 0);
+        }
+    }
+    @media (max-width: $grid-sl) {
+        padding-top: 10/15+0em;
+        padding-bottom: 10/15+0em;
+    }
+    &__wrapper {
+        @include wrapper();
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__logo {
+        width: 20%;
+        @media (max-width: $grid-sl) {
+            width: 40%;
+        }
+    }
+    &__nav {
+        width: 55%;
+        padding-left: 1em;
+        @media (max-width: $grid-lm) {
+            width: auto;
+            flex-grow: 1;
+        }
+        @media (max-width: $grid-ls) {
+            flex-grow: 1;
+        }
+        @media (max-width: $grid-sl) {
+            flex-grow: 0;
+            padding-left: 0;
+        }
+        a {
+            text-decoration: none;
+            opacity: 0.5;
+            color: #3B3D40;
+            font-size: 14/15+0em;
+            font-weight: 700;
+            letter-spacing: 1px;
+            transition: .25s;
+            display: inline-block;
+            margin: 0 2em 0 0;
+            @media (max-width: $grid-lm) {
+                margin-right: .6em;
+            }
+            @media (max-width: $grid-sl) {
+                display: block;
+                width: 100%;
+                margin-right: 0;
+                text-align: center;
+                padding: .5em 0;
+                font-size: 1.5em;
+            }
+            &:hover, &.active {
+                opacity: 1;
+            }
+        }
+    }
+    &__workTime {
+        color: #DDDDDD;
+        font-size: 12/15+0em;
+        font-weight: 700;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+    &__phone {
+        color: #0D47A1;
+        font-size:14/15+0em;
+        font-weight: 700;
+        letter-spacing: 2px;
+        text-decoration: none;
+        padding-bottom: 4px;
+        margin-left: 1%;
+        @media (max-width: $grid-sl) {
+            padding: 1em 0;
+            margin-left: 0;
+        }
+    }
+    &__button {
+        @include button();
+        margin-left: 15px;
+        @media (max-width: $grid-sl) {
+            margin: 1em 0;
+        }
+    }
+    &__contacts-m {
+        display: flex;
+        align-items: center;
+        flex-grow: 1;
+        text-align: right;
+        justify-content: flex-end;
+        .header__phone, .header__button {
+            margin: 0 5px;
+        }
+        @media (min-width: $grid-sl+1px) {
+            display: none;
+        }
+        @media (max-width: 512px) {
+            .header__button {
+                display: none;
+            }
+        }
+    }
+    &__menu {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: .25s;
+        position: relative;
+        @media (max-width: $grid-sl) {
+            flex-direction: column;
+            width: 70%;
+            background-color: #fff;
+            right: 0;
+            position: fixed;
+            top: 0;
+            height: 100%;
+            z-index: 25;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 8px 16px rgba(#000, .16);
+            transform: translateX(100%);
+        }
+        @media (max-width: $grid-sm) {
+            width: 100%;
+        }
+        &Close {
+            font-family: 'Material Icons';
+            font-size: 3em;
+            display: none;
+            cursor: pointer;
+            color: #0D47A1;
+            position: absolute;
+            right: 15px;
+            top: 10px;
+            @media (max-width: $grid-sl) {
+                display: block;
+            }
+        }
+        &--open {
+            transform: translateX(0);
+        }
+    }
+    &__trigger {
+        font-family: 'Material Icons';
+        font-size: 3em;
+        display: none;
+        cursor: pointer;
+        color: #0D47A1;
+        @media (max-width: $grid-sl) {
+            display: block;
+        }
+    }
+}

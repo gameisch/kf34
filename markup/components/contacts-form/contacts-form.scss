@@ -1,0 +1,179 @@
+.contacts-form {
+    padding: em(50) 15px;
+    &__row {
+        @include wrapper();
+        max-width: 100%;
+        padding-top: em(70);
+        padding-bottom: em(70);
+        border-radius: 8px;
+        background-color: rgba(#dddddd, .2);
+        justify-content: center;
+        @include max-width($grid-ls) {
+            padding-top: 1em;
+            padding-bottom: 1em;
+        }
+    }
+    &__field {
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        &--vertical-center {
+            align-items: center;
+        }
+        @include max-width($grid-ls) {
+            width: 100%;
+        }
+    }
+    &__label {
+        width: 25%;
+        color: #222325;
+        font-size: em(14);
+        font-weight: 400;
+        padding:0.92857em 0 0.92857em 0;
+        @include max-width($grid-sm) {
+            padding-bottom: .4em;
+            width: 100%;
+        }
+        span {
+            display: block;
+            color: #222325;
+            font-size: em(15);
+            font-weight: 400;
+            line-height: 1.5;
+            margin: 5px 0;
+            &.small {
+                font-size: em(12, 15);
+                &:before {
+                    content: '*';
+                    color: #00bf45;
+                }
+            }
+        }
+        &--50 {
+            width: 50%;
+            @include max-width($grid-sm) {
+                width: 100%;
+            }
+        }
+        &.requaired {
+            &:after {
+                content: '*';
+                color: #f20;
+            }
+        }
+    }
+    &__reset-button {
+        border: 0;
+        background-color: transparent;
+        opacity: 0.5;
+        color: #222325;
+        font-size: em(12);
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        transition: .2s;
+        width: 100%;
+        text-align: center;
+        padding: 1em 0;
+        &:hover {
+            opacity: 1;
+        }
+    }
+    &__send-button {
+        @include button();
+        width: 100%;
+        text-align: center;
+    }
+    .agr{
+        [type="checkbox"] {
+            + label {
+                margin-left: 20px;
+                &::before{
+                    margin-left:-25px;
+                }
+                &::after {
+                    top: 14px;
+                    left:-16px;
+                    @media (max-width: $grid-ls) {
+                        top: 13px;
+                    }
+                }
+            }
+        }
+        label{
+            display:inline-block;
+            &:after{
+                top:14px;
+
+            }
+        }
+    }
+    &__input {
+        width: 75%;
+        @include max-width($grid-sm) {
+            width: 100%;
+        }
+        &--50 {
+            width: 50%;
+            @include max-width($grid-sm) {
+                width: 100%;
+            }
+        }
+        input, textarea {
+            padding:0.92857em 1em 0.92857em 1em;
+            border-radius: 4px;
+            border: 1px solid #dddddd;
+            background-color: #ffffff;
+            line-height: 1;
+            width: 100%;
+        }
+        textarea {
+            height: 250px;
+            max-width: 100%;
+            min-height: 250px;
+            max-height: 250px;
+        }
+        &.x2 {
+            display: flex;
+            justify-content: space-between;
+            span{
+                width: 49%;
+            }
+            input {
+                width: 100%;
+            }
+        }
+        .jq-selectbox__select {
+            border-radius: 4px;
+            border: 1px solid #dddddd;
+            background-color: #ffffff;
+            color: #222325;
+            font-size: em(14);
+            font-weight: 400;
+            .jq-selectbox__select-text.placeholder {
+                font-weight: 900;
+                color: #222325;
+            }
+            .jq-selectbox__trigger-arrow {
+                &:after {
+                    color: #000000;
+                }
+            }
+        }
+        .jq-selectbox__dropdown {
+            padding: 0;
+            li {
+                padding: .5em 1em;
+            }
+        }
+        label {
+            display: flex;
+        }
+    }
+}

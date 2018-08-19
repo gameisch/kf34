@@ -1,0 +1,197 @@
+mixin serp-items(data)
+    include ../pagination/pagination
+    section.serp-items
+        .serp-items__side
+            .serp-filter
+                .serp-filter__item
+                    .serp-filter__header Category
+                    .serp-filter__checks
+                        .serp-filter__checkbox
+                            label
+                                input(type="checkbox" checked)
+                                | All
+                        .serp-filter__checkbox
+                            label
+                                input(type="checkbox")
+                                | Forklifts
+                        .serp-filter__checkbox
+                            label
+                                input(type="checkbox")
+                                | Ariel Work Platforms
+                        .serp-filter__checkbox
+                            label
+                                input(type="checkbox")
+                                | Energy
+                        .serp-filter__checkbox
+                            label
+                                input(type="checkbox")
+                                | Forklifts
+                        .serp-filter__checkbox
+                            input( id="ariel", type="checkbox")
+                            label( for="ariel" ) Ariel Work Platforms Ariel Work Platforms Ariel Work Platforms
+                        .serp-filter__checkbox
+                            input( id="cat_887", type="checkbox", data-attr="cat", disabled="", value="887")
+                            label( for="cat_887" ) Ariel Work Platforms Ariel Work Platforms Ariel Work Platforms
+                        .serp-filter__checkbox
+                            label
+                                input(type="checkbox")
+                                | Energy
+
+                .serp-filter__item
+                    .serp-filter__header Manufacturer
+                    .serp-filter__checks
+                        .serp-filter__checkbox
+                            label
+                                input(type="checkbox" checked)
+                                | All
+                        .serp-filter__checkbox
+                            label
+                                input(type="checkbox")
+                                | Forklifts
+                        .serp-filter__checkbox
+                            label
+                                input(type="checkbox")
+                                | Ariel Work Platforms
+                        .serp-filter__checkbox
+                            label
+                                input(type="checkbox")
+                                | Energy
+                        .serp-filter__checkbox
+                            label
+                                input(type="checkbox")
+                                | Forklifts
+                        .serp-filter__checkbox
+                            label
+                                input(type="checkbox")
+                                | Ariel Work Platforms
+                        .serp-filter__checkbox
+                            label
+                                input(type="checkbox")
+                                | Energy
+                .serp-filter__item
+                    .serp-filter__header Price
+                    input.serp-filter__range(id="price_range", data-from='50', data-to='500000')
+                .serp-filter__item
+                    .serp-filter__header Year
+                    input.serp-filter__range(id="year_range", data-from='2002', data-to='2016')
+                .serp-filter__item
+                    a(href="jacascript:void(null);").serp-filter__reset reset filters
+
+        .serp-items__content
+            .serp-items__breads
+                .serp-items__breadsSelf
+                    a(href="#") Home
+                    a(href="#") Pre-Owned Models
+                .serp-items__breadsView.select-grey
+                    span View:
+                    select
+                        option Grid
+                        option Row
+            .serp-items__cat
+                -for(var i = 0; i < 10; i++)
+                    .serp-item
+                        .serp-item__image
+                            img(src="%=static=%img/content/vp4698756-1.png")
+                        .serp-item__content
+                            .serp-item__content-header Lowery L300XDS
+                            .serp-item__content-item
+                                strong Used:
+                                =" "
+                                span 122 hours
+                            .serp-item__content-item
+                                strong Color:
+                                =" "
+                                span Blue
+                            .serp-item__content-item
+                                strong Tires:
+                                =" "
+                                span Cushion
+                            .serp-item__content-item
+                                strong Capacity:
+                                =" "
+                                span 30,000 LB
+                            .serp-item__content-item
+                                strong CU:
+                                =" "
+                                span 95/120
+                            .serp-item__content-item
+                                strong Duty:
+                                =" "
+                                span Medium/Heavy
+                            .serp-item__content-item
+                                strong Model:
+                                =" "
+                                span L300XDS
+                            .serp-item__content-item
+                                strong Stock #:
+                                =" "
+                                span C300-018
+                            .serp-item__content-item
+                                strong VIN #:
+                                =" "
+                                span LT2346
+                            .serp-item__content-item.yellow
+                                strong Condition:
+                                =" "
+                                span Used
+                        a(href='#').serp-item__view-more view more
+                        a(href='#', modal-open='r-rental').serp-item__request rental request
+            .serp-items-bann
+                .serp-items-bann__header Headline Text
+                .serp-items-bann__text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
+                a(href="#").serp-items-bann__button contact us
+            .serp-items__cat
+                -for(var i = 0; i < 3; i++)
+                    .serp-item
+                        .serp-item__image
+                            img(src="%=static=%img/content/vp4698756-1.png")
+                        .serp-item__content
+                            .serp-item__content-header Lowery L300XDS
+                            .serp-item__content-item
+                                strong Used:
+                                =" "
+                                span 122 hours
+                            .serp-item__content-item
+                                strong Color:
+                                =" "
+                                span Blue
+                            .serp-item__content-item
+                                strong Tires:
+                                =" "
+                                span Cushion
+                            .serp-item__content-item
+                                strong Capacity:
+                                =" "
+                                span 30,000 LB
+                            .serp-item__content-item
+                                strong CU:
+                                =" "
+                                span 95/120
+                            .serp-item__content-item
+                                strong Duty:
+                                =" "
+                                span Medium/Heavy
+                            .serp-item__content-item
+                                strong Model:
+                                =" "
+                                span L300XDS
+                            .serp-item__content-item
+                                strong Stock #:
+                                =" "
+                                span C300-018
+                            .serp-item__content-item
+                                strong VIN #:
+                                =" "
+                                span LT2346
+                            .serp-item__content-item.yellow
+                                strong Condition:
+                                =" "
+                                span Used
+                        a(href='#').serp-item__view-more view more
+                        a(href='#').serp-item__request rental request
+            .serp-bottom
+                .serp-bottom__select.select-grey
+                    select
+                        option 6 per page
+                .serp-bottom__pagination
+                    +pagination(1, 13, 1)

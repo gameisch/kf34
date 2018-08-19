@@ -1,0 +1,59 @@
+doctype html
+html(class="no-js", lang="ru")
+
+    include ../components/head/head
+    include ../components/header/header
+    include ../components/footer/footer
+
+    head
+        +head(head.defaults)
+    body
+        |%=symbols=%
+
+        +header()
+        section.post-mix
+            .post-mix__row
+                .post-mix__cell.post-mix__cell--x2
+                    .custom-section
+                        h1 Headline 1
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+                        blockquote Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+                        p
+                            strong Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+                        h2 Headline 2
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+                        h3 Headline 3
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+                        h4 Headline 4
+                        p.small Lorem1 ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+                        h3 Lists
+                        ul
+                            li Lorem1 ipsum dolor sit amet, consectetur
+                            li Lorem1 ipsum dolor sit amet, consectetur
+                            li Lorem1 ipsum dolor sit amet, consectetur
+                            li Lorem1 ipsum dolor sit amet, consectetur
+                        ol
+                            li Lorem1 ipsum dolor sit amet, consectetur
+                            li Lorem1 ipsum dolor sit amet, consectetur
+                            li Lorem1 ipsum dolor sit amet, consectetur
+                            li Lorem1 ipsum dolor sit amet, consectetur
+                        h3 Checkmarks
+                        ul.checks
+                            li Lorem1 ipsum dolor sit amet, consectetur
+                            li Lorem1 ipsum dolor sit amet, consectetur
+                            li Lorem1 ipsum dolor sit amet, consectetur
+                            li Lorem1 ipsum dolor sit amet, consectetur
+                .post-mix__cell
+                    .post-mix__header Recent Posts
+                    .post-mix__recent-articles
+                        - for (var i = 0; i < 6; i++)
+                            article.post-mix-article
+                                .post-mix-article__date July 14, 2017
+                                a(href='#').post-mix-article__header Serving the Industrial and Construction marketplace for over 50 years
+        +footer()
+
+        script(src='%=static=%js/separate-js/svg4everybody.min.js')
+        script svg4everybody();
+
+        //- Main scripts. You can replace it, but I recommend you to leave it here
+        script(src='%=static=%js/main%=hash=%%=min=%.js')

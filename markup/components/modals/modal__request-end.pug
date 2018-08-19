@@ -1,0 +1,130 @@
+mixin m-rse(data)
+    .modal(data-modal='rse')
+        .modal-content
+            .modal-content__close
+            .modal-content__header End Rental
+            form.modal-form
+                <div class="modal-form__field">
+                <label class="modal-form__label">Effective off rent time<span>*</span><br>
+                </label>
+                <div class="modal-form__value modal-form__value--time">
+                <span class="wpcf7-form-control-wrap hours"><select name="hours" class="wpcf7-form-control wpcf7-select wpcf7-validates-as-required" aria-required="true" aria-invalid="false"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option></select></span><br>
+                <span class="wpcf7-form-control-wrap minutes"><select name="minutes" class="wpcf7-form-control wpcf7-select wpcf7-validates-as-required" aria-required="true" aria-invalid="false"><option value="00">00</option><option value="10">10</option><option value="20">20</option><option value="30">30</option><option value="40">40</option><option value="50">50</option></select></span><br>
+                <span class="wpcf7-form-control-wrap timeday"><select name="timeday" class="wpcf7-form-control wpcf7-select" aria-invalid="false"><option value="PM">PM</option><option value="AM">AM</option></select></span>
+                </div>
+                </div>
+                .modal-form__field
+                    label.modal-form__label Name
+                        span *
+                    .modal-form__value
+                        input(type='text', placeholder='First Name', required)
+                        input(type='text', placeholder='Last Name', required)
+                .modal-form__field
+                    label.modal-form__label Company
+                        span *
+                    .modal-form__value
+                        input(type='text')
+                .modal-form__field
+                    label.modal-form__label Phone Number
+                        span *
+                    .modal-form__value
+                        input(type='tel', required)
+                .modal-form__field
+                    label.modal-form__label Unit # or Invoice # or equipment type
+                        span *
+                    .modal-form__value
+                        textarea(required)
+                .modal-form__field
+                    label.modal-form__label Effective off rent date
+                        span *
+                    .modal-form__value
+                        input.datepicker-here(data-language="en", data-position="top left", required)
+                .modal-form__field
+                    label.modal-form__label Effective off rent time
+                        span *
+                    .modal-form__value.modal-form__value--time
+                        .selects
+                            select(data-placeholder='Hour', required)
+                                option
+                                option Type of Equipment 1
+                                option Type of Equipment 2
+                                option Type of Equipment 3
+                        .selects
+                            select(data-placeholder='Minutes', required)
+                                option
+                                option Type of Equipment 1
+                                option Type of Equipment 2
+                                option Type of Equipment 3
+                        .selects
+                            select
+                                option(selected) PM
+                                option AM
+                .modal-form__field.modal-form__field--table
+                    label.modal-form__label Please rate our Rental Service!
+                    table.modal-form__table
+                        tr
+                            td
+                            td.thead Very Satisfied
+                            td.thead Satisfied
+                            td.thead Somewhat Satisfied
+                            td.thead Not Satisfied
+                        tr
+                            td.thead Rental Equipment Readiness
+                            td
+                                input(id='s1', type='radio', name='0', value='0')
+                                label(for='s1')
+                            td
+                                input(id='s2', type='radio', name='0', value='1')
+                                label(for='s2')
+                            td
+                                input(id='s3', type='radio', name='0', value='2')
+                                label(for='s3')
+                            td
+                                input(id='s4', type='radio', name='0', value='3')
+                                label(for='s4')
+                        tr
+                            td.thead Overall Service Quality
+                            td
+                                input(id='s5', type='radio', name='1', value='0')
+                                label(for='s5')
+                            td
+                                input(id='s6', type='radio', name='1', value='1')
+                                label(for='s6')
+                            td
+                                input(id='s7', type='radio', name='1', value='2')
+                                label(for='s7')
+                            td
+                                input(id='s8', type='radio', name='1', value='3')
+                                label(for='s8')
+                        tr
+                            td.thead Our Responsiveness
+                            td
+                                input(type='radio', name='2', value='0')
+                            td
+                                input(type='radio', name='2', value='1')
+                            td
+                                input(type='radio', name='2', value='2')
+                            td
+                                input(type='radio', name='2', value='3')
+                        tr
+                            td.thead Kindness and Helpfulness
+                            td
+                                input(type='radio', name='3', value='0')
+                            td
+                                input(type='radio', name='3', value='1')
+                            td
+                                input(type='radio', name='3', value='2')
+                            td
+                                input(type='radio', name='3', value='3')
+                .modal-form__field
+                    label.modal-form__label Additional Comments
+                    .modal-form__value
+                        textarea
+                .modal-form__field
+                    label.modal-form__label Enter the message as it's shown
+                        span *
+                    .modal-form__value
+                        | captcha
+                .modal-form__field
+                    .modal-form__button
+                        button(type='submit') submit

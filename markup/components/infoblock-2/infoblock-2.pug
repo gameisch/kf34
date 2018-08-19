@@ -1,0 +1,29 @@
+mixin infoblock-2(data)
+    -
+        var ks = '';
+        if (data) {
+            ks = data;
+        }
+    section.infoblock-2(class=ks)
+        .infoblock__wrapper
+            .infoblock-2__image
+                img(src="%=static=%img/content/ib2-img.png")
+            .infoblock-2__content
+                .content
+                    h1 Sometimes Headline text is longer than you expect and there need to be additional lines.
+                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+                    blockquote Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+                    a(href="#").blue optional button
+                    ul
+                        li Lorem ipsum dolor sit amet
+                        li Lorem ipsum dolor sit amet
+                        li Lorem ipsum dolor sit amet
+                    ul.green
+                        li Lorem ipsum dolor sit amet
+                        li Lorem ipsum dolor sit amet
+                        li Lorem ipsum dolor sit amet
+                    ul.blue
+                        li Lorem ipsum dolor sit amet
+                        li Lorem ipsum dolor sit amet
+                        li Lorem ipsum dolor sit amet

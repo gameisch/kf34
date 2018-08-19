@@ -1,0 +1,36 @@
+doctype html
+html(class="no-js", lang="ru")
+
+    include ../components/head/head
+    include ../components/header/header
+    include ../components/footer/footer
+    include ../components/topinfo/topinfo
+    include ../components/features/features
+    include ../components/infoblock-5/infoblock-5
+    include ../components/infoblock-3-mod/infoblock-3
+    include ../components/infoblock-6m/infoblock-6
+    include ../components/infoblock-4m/infoblock-4
+    include ../components/modals/modals
+    include ../components/text-content/text-content
+
+    head
+        +head(head.defaults)
+    body
+        |%=symbols=%
+
+        +header
+        +topinfo(topinfo.serviceAndRepair)
+        +infoblock-5
+        +text-content(textcontent.data4)
+        +infoblock-3
+        +infoblock-4
+        +infoblock-6
+        +features
+        +modals
+        +footer
+
+        script(src='%=static=%js/separate-js/svg4everybody.min.js')
+        script svg4everybody();
+
+        //- Main scripts. You can replace it, but I recommend you to leave it here
+        script(src='%=static=%js/main%=hash=%%=min=%.js')

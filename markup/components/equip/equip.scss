@@ -1,0 +1,18 @@
+.equip {
+    border-top: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+    background-color: rgba(221, 221, 221, 0.2);
+    &__row {
+        @include wrapper();
+        justify-content: space-between;
+    }
+    &__header {
+        color: #1a1a1c;
+        font-size: em(32);
+        font-weight: 700;
+        line-height: 1.1;
+        text-align: center;
+        width: 100%;
+        padding-bottom: .8em;
+    }
+}

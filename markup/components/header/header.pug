@@ -1,0 +1,23 @@
+mixin header(data)
+    include ../search/search
+    .header
+        .header__wrapper
+            .header__logo
+                a(href="/")
+                    img(src="%=static=%img/content/nlt_logo.svg" alt="Logo")
+            .header__menu
+                .header__menuClose 
+                .header__nav
+                    a(href="index.html") Home
+                    a(href="about.html") About Us
+                    a(href="") Locations
+                    a(href="contacts.html") Contact Us
+                .header__workTime open 24h
+                a(href="tel:8004441234").header__phone (800) 444-1234
+                a(href='#').header__button contact us
+            .header__contacts-m
+                a(href="tel:8004441234").header__phone (800) 444-1234
+                a(href='#').header__button contact us
+            .header__trigger 
+        +search()
+

@@ -1,0 +1,65 @@
+// Mixins.
+
+@mixin trans {
+    -webkit-transition:all .2s;
+    -moz-transition:all .2s;
+    -o-transition:all .2s;
+    transition:all .2s;
+}
+@mixin nl {
+    margin: 0;
+    padding: 0;
+    text-indent: 0;
+    list-style: none;
+    list-style-position: outside;
+}
+
+@mixin cf {
+    &:before,
+    &:after {
+        display: table;
+        content: "";
+    }
+
+    &:after {
+        clear: both;
+    }
+
+    .lt-ie8 & {
+        zoom: 1;
+    }
+}
+
+@mixin blocks-justify {
+    text-align: justify;
+    text-justify: newspaper;
+}
+
+@mixin button($color: #00BA55, $text-color: #FFFFFF) {
+    color: $text-color;
+    font-size: 12/15+0em;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 1;
+    border-radius: 4px;
+    padding: 19/12+0em 1.5em;
+    text-decoration: none;
+    background-color: $color;
+    text-transform: uppercase;
+    transition: .25s;
+    display: inline-block;
+    border: none;
+    &:hover {
+        background-color: darken($color, 5%) !important;
+    }
+}
+
+@function em($pixels, $context: $default-font-size) {
+    @return #{$pixels/$context}em;
+}
+
+@mixin max-width($resolution: $grid-sl) {
+    @media (max-width: $resolution) {
+        @content;
+    }
+}

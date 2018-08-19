@@ -1,0 +1,190 @@
+.ajax-category {
+    width: 100%;
+}
+.medias{
+    display:none;
+    @media (max-width: $grid-ls) {
+        display: inline-block;
+        width: 100%;
+    }
+}
+.rentals-items {
+    @include wrapper();
+    justify-content: space-between;
+    @media (max-width: $grid-ls) {
+        padding: 2.99987em 15px;
+    }
+    &__side {
+        width: 25%;
+        .equip-side-info {
+            background-color: transparent;
+            border: 0;
+            @media (max-width: $grid-ls) {
+                display: none;
+            }
+        }
+        @media (max-width: $grid-ls) {
+            width: 100%;
+            order: 0;
+        }
+    }
+    &__content {
+        width: 73%;
+        display: inline-block;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        height:min-content;
+        min-height: 10vw;
+        @media (max-width: $grid-ls) {
+            width: 100%;
+        }
+    }
+    &__cat {
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        border-bottom: 1px solid rgba(#dddddd, .5);
+        margin-bottom: 45px;
+        &:last-child {
+            margin-bottom: 0;
+            border-bottom: 0;
+        }
+        &Header {
+            color: #1a1a1c;
+            font-size: em(26);
+            font-weight: 700;
+            margin-bottom: 15px;
+            width: 100%;
+        }
+    }
+    &__breads {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 45px;
+        align-items: center;
+        @media (max-width: $grid-ls) {
+            display: inline-block;
+            margin-bottom: 25px;
+        }
+        &Self {
+            a {
+                color: #1048a8;
+                text-decoration: none;
+                display: inline-block;
+                &:hover {
+                    text-decoration: underline;
+                }
+                &:after {
+                    content: '→';
+                    display: inline-block;
+                    margin: 0 10px;
+                }
+                &:last-child {
+                    color: #1a1a1c;
+                    pointer-events: none;
+                    &:after {
+                        display: none;
+                    }
+                }
+            }
+        }
+        &Page {
+            text-align: right;
+            color: #1a1a1c;
+            font-size: em(32);
+            font-weight: 700;
+            line-height: 1;
+            @media (max-width: $grid-ls) {
+                text-align: left;
+                width: 100%;
+                padding-top: 25px;
+            }
+        }
+    }
+}
+
+.rentals-item {
+    width: 31.5%;
+    border-radius: 4px;
+    border: 1px solid #dddddd;
+    background-color: #ffffff;
+    margin-bottom: 25px;
+    overflow: hidden;
+    margin-right: 1.7%;
+
+    @media (max-width: $grid-sl) {
+        width: 48%;
+        margin: 0 1% 25px;
+    }
+    @media (max-width: $grid-sm) {
+        width: 100%;
+        margin: 0 0 25px;
+    }
+    &__image {
+        img {
+            display: block;
+            width: 100%;
+        }
+    }
+    &__content {
+        padding: 1.5em em(25);
+        border-top: 1px solid #dddddd;
+        &-header {
+            font-size: em(18);
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        &-item {
+            margin-bottom: 10px;
+            font-size:em(14);
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    &__view-more {
+        @include button(#f5f6fb, #1048a8);
+        border-radius: 0;
+        display: block;
+        text-align: center;
+    }
+    &__request {
+        @include button();
+        border-radius: 0;
+        display: block;
+        text-align: center;
+    }
+}
+
+
+.rentals-filter {
+    border-radius: 4px;
+    border: 1px solid #dddddd;
+    background-color: #fafafa;
+    margin-bottom: 15px;
+    padding: 2em;
+    @media (max-width: $grid-ls) {
+        display:flex;
+        flex-wrap: wrap;
+        &__checkbox{
+            width: 29.333333%;
+        }
+    }
+    @media (max-width: $grid-sl) {
+        display:flex;
+        flex-wrap: wrap;
+        &__checkbox{
+            width: 41.333333%;
+        }
+    }
+    &__checkbox {
+        margin-bottom: 8px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

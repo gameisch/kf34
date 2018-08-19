@@ -1,0 +1,17 @@
+mixin topinfo(data)
+    -
+        var klass = ''
+        if (data.isSmall) {
+            klass = ' top-info--small'
+        }
+
+    .top-info(style="background-image: url("+ data.image +")", class=klass)
+        .top-info__header #{data.header}
+        -if (data.text)
+            .top-info__text
+                !=data.text
+        -if (data.buttons)
+            !=data.buttons
+        -if (data.contacts)
+            .top-info__contacts
+                !=data.contacts

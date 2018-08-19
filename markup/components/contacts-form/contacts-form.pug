@@ -1,0 +1,98 @@
+mixin contacts-form(data)
+    form.contacts-form
+        .contacts-form__row
+            .contacts-form__field
+                .contacts-form__label Your Interest
+                .contacts-form__input
+                    select(data-placeholder='New Inventory')
+                        option
+                        option option 1
+                        option option 1
+                        option option 1
+            .contacts-form__field
+                .contacts-form__label.requaired First Name
+                .contacts-form__input
+                    input(type='text')
+            .contacts-form__field
+                .contacts-form__label.requaired Last Name
+                .contacts-form__input
+                    input(type='text')
+            .contacts-form__field
+                .contacts-form__label Business Name
+                .contacts-form__input
+                    input(type='text')
+            .contacts-form__field
+                .contacts-form__label Street Address
+                .contacts-form__input
+                    input(type='text')
+            .contacts-form__field
+                .contacts-form__label Street Address 2
+                .contacts-form__input
+                    input(type='text')
+            .contacts-form__field
+                .contacts-form__label City
+                .contacts-form__input
+                    input(type='text')
+            .contacts-form__field
+                .contacts-form__label State/Province
+                .contacts-form__input
+                    select(data-placeholder='Select a State/Province')
+                        option
+                        option option 1
+                        option option 1
+                        option option 1
+            .contacts-form__field
+                .contacts-form__label Zip/Postal
+                .contacts-form__input
+                    input(type='text')
+            .contacts-form__field
+                .contacts-form__label Country
+                .contacts-form__input
+                    select(data-placeholder='Select a Country')
+                        option
+                        option option 1
+                        option option 1
+                        option option 1
+            .contacts-form__field
+                .contacts-form__label.requaired Email Address
+                .contacts-form__input
+                    input(type='text')
+            .contacts-form__field
+                .contacts-form__label.requaired Daytime Phone
+                .contacts-form__input.x2
+                    span.wpcf7-form-control-wrap.daytime
+                        input(type='text', placeholder='312-123-1234')
+                    span.wpcf7-form-control-wrap.daytime
+                        input(type='text', placeholder='Extension')
+            .contacts-form__field
+                .contacts-form__label.requaired Evening Phone
+                .contacts-form__input.x2
+                    span.wpcf7-form-control-wrap.phone
+                        input(type='text', placeholder='312-123-1234')
+            .contacts-form__field
+                .contacts-form__label.requaired Comments / Questions
+                .contacts-form__input
+                    textarea
+            .contacts-form__field
+                .contacts-form__label
+                .contacts-form__input.agr
+                    input(id='s8', type='checkbox', name='1', value='3')
+                    label(for='s8')
+                        | Please check here if you would like to receive Email notifications of promotions, sales, and special events.
+            .contacts-form__field.contacts-form__field--vertical-center
+                .contacts-form__label.contacts-form__label--50
+                    span To help us prevent spam, please check the box
+                    span.small The following fields must be filled in prior to submission
+                .contacts-form__input.contacts-form__input--50
+                    | %%PLACE HERE GOOGLE CAPTCHA%%
+            .contacts-form__field.contacts-form__field--vertical-center
+                .contacts-form__label
+                    button(type='reset').contacts-form__reset-button reset form
+                .contacts-form__input
+                    button.contacts-form__send-button submit form
+
+
+
+
+
+

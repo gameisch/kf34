@@ -1,0 +1,37 @@
+doctype html
+html(class="no-js", lang="ru")
+
+    include ../components/head/head
+    include ../components/header/header
+    include ../components/footer/footer
+    include ../components/topinfo/topinfo
+    include ../components/modals/modals
+    include ../components/features/features
+
+    head
+        +head(head.defaults)
+    body
+        |%=symbols=%
+
+        +header()
+        +topinfo(topinfo.forms)
+        .center
+            .rentalform
+                a( class="linkcustomform rse" href="#" modal-open="rse") end request
+                a(class="linkcustomform re top-re" href="#" modal-open="r-rental") rental
+                a(class="linkcustomform rpm" href="#" modal-open="rpm") pm
+                a(class="linkcustomform rsc" href="#" modal-open="rsc") service call
+                a(class="linkcustomform rsq" href="#" modal-open="rsq") service quote
+                a(class="linkcustomform rp" href="#" modal-open="rp") request parts
+                a(class="linkcustomform st" href="#" modal-open="st") schedule training
+        +features
+        +modals
+        +footer()
+
+        script(src='https://code.jquery.com/jquery-3.3.1.js', integrity='sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=', crossorigin='anonymous')
+
+        script(src='%=static=%js/separate-js/svg4everybody.min.js')
+        script svg4everybody();
+
+        //- Main scripts. You can replace it, but I recommend you to leave it here
+        script(src='%=static=%js/main%=hash=%%=min=%.js')

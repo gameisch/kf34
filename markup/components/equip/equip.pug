@@ -1,0 +1,8 @@
+mixin equip(data)
+    include ../equip-side/equip-side
+    include ../equip-content/equip-content
+    section.equip
+        .equip__row
+            .equip__header Featured Equipment
+            +equip-side()
+            +equip-content()

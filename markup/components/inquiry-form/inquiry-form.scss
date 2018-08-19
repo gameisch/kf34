@@ -1,0 +1,182 @@
+.inquiry {
+    border-bottom: 1px solid #dddddd;
+    background-color: rgba(221, 221, 221, 0.2);
+    @include max-width($grid-lm) {
+        display: none;
+    }
+    &__row {
+        @include wrapper();
+    }
+    &__header {
+        width: 100%;
+        text-align: center;
+        color: #222325;
+        font-size: em(32);
+        font-weight: 700;
+        padding-bottom: 1em;
+    }
+    &__info {
+        text-align: center;
+        width: 100%;
+        margin-bottom: em(60);
+        span, a {
+            text-decoration: none;
+            opacity: 0.5;
+            color: #222325;
+            font-size: em(18);
+            font-weight: 400;
+            transition: .2s;
+            &:after {
+                content: '/';
+                margin: 0 10px;
+            }
+            &:last-child:after {
+                display: none;
+            }
+        }
+        a:hover {
+            opacity: 1;
+        }
+    }
+    &__step-name {
+        width: 100%;
+        color: #222325;
+        font-size: em(15);
+        font-weight: 400;
+        margin-bottom: 15px;
+    }
+}
+
+.inquiry-step {
+    border-radius: 4px;
+    border: 1px solid rgba(16, 94, 183, 0.1);
+    background-color: #ffffff;
+    padding: em(25) em(35);
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: em(40);
+    &:last-child {
+        margin-bottom: 0;
+    }
+    &--blue {
+        background-color: #f0f4f9;
+        .inquiry-step__bottom-submit {
+            @include button();
+        }
+    }
+    &__bottom {
+        width: 100%;
+        padding: em(15) em(5) em(5);
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        @include max-width($grid-sm) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        a, &-reset {
+            color: $link-blue;
+            font-size: em(15);
+            font-weight: 400;
+            text-decoration: none;
+            transition: .2s;
+            margin-right: 20px;
+            background-color: transparent;
+            border: 0;
+            @include max-width($grid-sm) {
+                width: 100%;
+                text-align: center;
+                margin-top: 10px;
+                margin-right: 0;
+                order: 1;
+            }
+            &:hover {
+                text-decoration: underline;
+                color: lighten($link-blue, 10%);
+            }
+        }
+        .inquiry-step__bottom-submit {
+            @include button(#a9a9a9, #fff);
+        }
+    }
+    &__parts {
+        width: 100%;
+    }
+    &__part {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        border-bottom: 1px solid #eee;
+        padding-bottom: .5em;
+        padding-top: .5em;
+        &:last-child {
+            border-bottom: 0;
+            padding-bottom: 0;
+        }
+    }
+    &__cell {
+        width: 33.33333%;
+        padding: em(5);
+        &--10 {
+            width: 10%;
+        }
+        &--20 {
+            width: 20%;
+        }
+        &--30 {
+            width: 30%;
+        }
+        &--40 {
+            width: 40%;
+        }
+        @include max-width($grid-sl) {
+            width: 50%;
+        }
+        @include max-width(550px) {
+            width: 100%;
+        }
+        label {
+            width: 100%;
+            display: block;
+            color: #222325;
+            font-size: em(13);
+            margin-bottom: 4px;
+        }
+        input {
+            display: block;
+            width: 100%;
+            border-radius: 4px;
+            border: 1px solid #dddddd;
+            background-color: #ffffff;
+            font-size: em(14);
+            padding: em(13, 14) 1em;
+        }
+        .jq-selectbox__select {
+            display: block;
+            width: 100%;
+            border-radius: 4px;
+            border: 1px solid #dddddd;
+            background-color: #ffffff;
+            color: #222325;
+            font-size: em(14);
+            font-weight: 400;
+            .jq-selectbox__select-text.placeholder {
+                font-weight: 900;
+                color: #222325;
+            }
+            .jq-selectbox__trigger-arrow {
+                &:after {
+                    color: #000000;
+                }
+            }
+        }
+        .jq-selectbox__dropdown {
+            padding: 0;
+            li {
+                padding: .5em 1em;
+            }
+        }
+    }
+}

@@ -1,0 +1,86 @@
+mixin m-r-parts(data)
+    .modal(data-modal='rp')
+        .modal-content
+            .modal-content__close
+            .modal-content__header Quote Request
+            form.modal-form
+                .modal-form__field
+                    label.modal-form__label Name
+                        span *
+                    .modal-form__value
+                        input(type='text', placeholder='First Name', required)
+                        input(type='text', placeholder='Last Name', required)
+                .modal-form__field
+                    label.modal-form__label Customer type
+                        span *
+                    .modal-form__value
+                        span
+                            input(id="newcustomer", type='radio', name='some2', value='0', required)
+                            label(for="newcustomer") EXISTING customer
+                        span
+                            input(id="newcustomer", type='radio', name='some3', value='1')
+                            label(for="newcustomer") NEW customer
+                .modal-form__field
+                    label.modal-form__label Company
+                        span *
+                    .modal-form__value
+                        input(type='text')
+                .modal-form__field
+                    label.modal-form__label E-mail
+                        span *
+                    .modal-form__value
+                        input(type='email', required)
+                .modal-form__field
+                    label.modal-form__label Contact Number
+                        span *
+                    .modal-form__value
+                        input(type='tel', required)
+                .modal-form__field
+                    label.modal-form__label Equipment Make and Model
+                        span *
+                    .modal-form__value
+                        span
+                            input(type='text')
+                .modal-form__field.hidden(data-open="type")
+                    label.modal-form__label type
+                        span *
+                    .modal-form__value
+                        span
+                            .wpcf7-select
+                                select(data-placeholder='type', required)
+                                    option
+                                    option Type1
+                                    option Type2
+                                    option Type3
+                .modal-form__field.hidden(data-open="Type of Equipment 2")
+                    label.modal-form__label Type of Equipment 2
+                        span *
+                    .modal-form__value
+                        span
+                            .wpcf7-select
+                                select.exp(data-placeholder='Type of Equipment 2', required)
+                                    option
+                                    option Type1
+                                    option Type2
+                                    option Type3
+                .modal-form__field.hidden(data-open="Type of Equipment 3")
+                    label.modal-form__label Type of Equipment 3
+                        span *
+                    .modal-form__value
+                        span
+                            .wpcf7-select
+                                select.exp(data-placeholder='Type of Equipment 3', required)
+                                    option
+                                    option Type2
+                                    option Type3
+                .modal-form__field
+                    label.modal-form__label Part Needed
+                        span *
+                    .modal-form__value
+                        textarea(required)
+                .modal-form__field
+                    label.modal-form__label Enter the message as it's shown
+                        span *
+                .modal-form__field
+                    .modal-form__button
+                        button(type='submit') submit

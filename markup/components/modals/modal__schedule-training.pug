@@ -1,0 +1,160 @@
+mixin m-st(data)
+    .modal(data-modal='st')
+        .modal-content
+            .modal-content__close
+            .modal-content__header Schedule training
+            .css-event-form
+                .wrap
+                    h3.event-form Events Calendar
+                    .em-calendar-wrapper
+                        table.em-calendar.fullcalendar
+                            tbody.thead
+                                tr
+                                    td
+                                        a.em-calnav.full-link.em-calnav-prev(href="/safety-training/?full=1&amp;long_events=1&amp;ajaxCalendar=1&amp;mo=3&amp;yr=2018")
+                                            i.material-icons keyboard_arrow_left
+                                    td.month_name(colspan="5") Apr 2018
+                                    td
+                                        a.em-calnav.full-link.em-calnav-next(href="/safety-training/?full=1&amp;long_events=1&amp;ajaxCalendar=1&amp;mo=3&amp;yr=2018")
+                                            i.material-icons keyboard_arrow_right
+                            tbody
+                                tr.days-names
+                                    td Mon
+                                    td Tue
+                                    td Wed
+                                    td Thu
+                                    td Fri
+                                    td Sat
+                                    td Sun
+                                tr
+                                    td.eventless-pre 26
+                                    td.eventless-pre 27
+                                    td.eventless-pre 28
+                                    td.eventless-pre 29
+                                    td.eventless-pre 30
+                                    td.eventless-pre 31
+                                    td.eventless 1
+                                tr
+                                    td.eventless 2
+                                    td.eventless 3
+                                    td.eventless 4
+                                    td.eventful
+                                        <a href="https://nlt.comradeserver.com/events/test-event-3/" title="Test event">5</a>
+                                        <ul>
+                                        <li><a data-event="18147" class="event-form">12:00 AM Test event</a></li>											</ul>
+                                    td.eventful
+                                        <a href="https://nlt.comradeserver.com/events/2018-04-06/" title="Baby Dreams, Slam Dunk Contest, Test event">6</a>
+                                        <ul>
+                                        <li><a data-event="18133" class="event-form">12:00 AM Baby Dreams</a></li><li><a data-event="18137" class="event-form">12:00 AM Slam Dunk Contest</a></li><li><a data-event="18147" class="event-form">12:00 AM Test event</a></li>											</ul>
+                                    td.eventful 7
+                                    td.eventful 8
+                                tr
+                                    td.eventful
+                                        <a href="https://nlt.comradeserver.com/events/2018-04-09/" title="Test event, Test event">9</a>
+                                        <ul>
+                                        <li><a data-event="18122" class="event-form">12:00 AM Test event</a></li><li><a data-event="18147" class="event-form">12:00 AM Test event</a></li>											</ul>
+                                    td.eventful
+                                        <a href="https://nlt.comradeserver.com/events/2018-04-09/" title="Test event, Test event">9</a>
+                                        <ul>
+                                        <li><a data-event="18122" class="event-form">12:00 AM Test event</a></li><li><a data-event="18147" class="event-form">12:00 AM Test event</a></li>											</ul>
+                                    td.eventful
+                                        <a href="https://nlt.comradeserver.com/events/2018-04-09/" title="Test event, Test event">9</a>
+                                        <ul>
+                                        <li><a data-event="18122" class="event-form">12:00 AM Test event</a></li><li><a data-event="18147" class="event-form">12:00 AM Test event</a></li>											</ul>
+                                    td.eventful
+                                        <a href="https://nlt.comradeserver.com/events/2018-04-12/" title="I <3 Coffee, Midnight, Test event, Test event">12</a>
+                                        <ul>
+                                        <li><a data-event="18141" class="event-form">12:00 AM I &lt;3 Coffee</a></li><li><a data-event="18139" class="event-form">12:00 AM Midnight</a></li><li><a data-event="18122" class="event-form">12:00 AM Test event</a></li><li><a data-event="18147" class="event-form">12:00 AM Test event</a></li>											</ul>
+                                    td.eventful-today
+                                        <a href="https://nlt.comradeserver.com/events/2018-04-13/" title="Test event, Test event">13</a>
+                                        <ul>
+                                        <li><a data-event="18122" class="event-form">12:00 AM Test event</a></li><li><a data-event="18147" class="event-form">12:00 AM Test event</a></li>											</ul>
+                                    td.eventful
+                                        <a href="https://nlt.comradeserver.com/events/2018-04-09/" title="Test event, Test event">9</a>
+                                        <ul>
+                                        <li><a data-event="18122" class="event-form">12:00 AM Test event</a></li><li><a data-event="18147" class="event-form">12:00 AM Test event</a></li>											</ul>
+                                    td.eventful
+                                        <a href="https://nlt.comradeserver.com/events/2018-04-09/" title="Test event, Test event">9</a>
+                                        <ul>
+                                        <li><a data-event="18122" class="event-form">12:00 AM Test event</a></li><li><a data-event="18147" class="event-form">12:00 AM Test event</a></li>											</ul>
+                                tr
+                                    td.eventless
+                                    td.eventless
+                                    td.eventless
+                                    td.eventful
+                                    td.eventful
+                                    td.eventful
+                                    td.eventful
+                                tr
+                                    td.eventless
+                                    td.eventless
+                                    td.eventless
+                                    td.eventful
+                                    td.eventful
+                                    td.eventful
+                                    td.eventful
+                                tr
+                                    td.eventless
+                                    td.eventless
+                                    td.eventless
+                                    td.eventful
+                                    td.eventful
+                                    td.eventful
+                                    td.eventful
+                    h3.event-form-submitter Your Details
+                    .modal-form__field
+                        label.modal-form__label Name
+                            span *
+                        .modal-form__value
+                            input(type='text', placeholder='First Name', required)
+                            input(type='text', placeholder='Last Name', required)
+                    .modal-form__field
+                        label.modal-form__label Phone Number
+                            span *
+                        .modal-form__value
+                            input(type='tel', placeholder='312-123-1234')
+                    .modal-form__field
+                        label.modal-form__label E-mail
+                            span *
+                        .modal-form__value
+                            input(type='email', placeholder='E-mail', required)
+                    .modal-form__field
+                        label.modal-form__label Quantity of Persons
+                            span *
+                        .modal-form__value
+                            input(type='text', placeholder='Amount of prs (1-20)', required)
+                    .modal-form__field
+                        label.modal-form__label Payment Method
+                            span *
+                        .modal-form__value
+                            .selects
+                                select(placeholder='select of payment', required)
+                                    option Visa
+                                    option Mastercard
+                                    option PayPal
+                                    option Cash
+                    .modal-form__field
+                        .modal-form__button
+                            button(type='submit') submit
+            //.wpdevelop
+                //form.booking_form.vertical
+                //    .booking_form_div
+                //        .wpbc_structure_form
+                //            .form-group
+                //                label(for="name1").control-label First Name
+                //                    span *
+                //                .controls
+                //                    input(type="text" name="name1" id="name1").input-xlarge.wpdev-validates-as-required
+                //            .form-group
+                //                label(for="secondname1").control-label Last Name*:
+                //                .controls
+                //                    input(type="text" name="secondname1" id="secondname1").input-xlarge.wpdev-validates-as-required
+                //            .form-group
+                //                label( for="location1").control-label Location:
+                //                .controls.selects
+                //                    select( name="location1" id="location1").input-xlarge
+                //                        option Onsite (your location)
+                //                        option National Lift Truck, Franklin Park, Il
+                //                        option National Lift Truck, Hazel Crest, Il
+                //            .form-group
+                //                button.btn.btn-default(type="button" onclick="mybooking_submit(this.form,1,'en_US');") Send

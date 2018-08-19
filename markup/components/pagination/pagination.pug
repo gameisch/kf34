@@ -1,0 +1,12 @@
+mixin pagination(from, to, active)
+    .pagination
+        a(href='#').pagination__prev ←
+        - for (var i = from; i < from+6; i++)
+            - if (i == active)
+                a(href='#').pagination__item.active #{i}
+            - else
+                - if (i == from+5)
+                    a(href='#').pagination__item ...#{to}
+                - else
+                    a(href='#').pagination__item #{i}
+        a(href='#').pagination__next →

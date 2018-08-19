@@ -1,0 +1,224 @@
+.reviews {
+    background-image: url('%=static=%content/reviews-bg.jpg');
+    background-size: cover;
+    overflow: hidden;
+    &__row {
+        @include wrapper();
+        justify-content: space-between;
+    }
+    &__text {
+        width: 33%;
+        color: #fff;
+        line-height: 1.8;
+        @media (max-width: $grid-sl) {
+            width: 100%;
+            margin-bottom: 25px;
+        }
+        h2 {
+            font-size: em(32);
+            font-weight: 700;
+            margin-bottom: 20px;
+            line-height: 1;
+        }
+        strong {
+            display: block;
+            font-size: em(14);
+            margin-bottom: 30px;
+            line-height: 1;
+        }
+        ul {
+            padding-left: 12px;
+        }
+    }
+    &__slider-container {
+        position: relative;
+        width: 64%;
+        @media (max-width: $grid-sl) {
+            width: 100%;
+        }
+        .swiper-pagination-bullets-dynamic{
+            left:0;
+            right:0;
+            margin:0 auto;
+            //@media (max-width: 1300px) {
+            //    left:10%!important;
+            //}
+            //@media (min-width: 1300px) {
+            //    left:38%!important;
+            //}
+            //@media (max-width: $grid-sl) {
+            //    left:50%!important;
+            //}
+        }
+        .swiper-button-prev{
+            top:-55px;
+            left:0;
+            opacity: .9;
+            background-color: rgba(255,255,255,1);
+            border:1px solid rgba(0,0,0,.1);
+            padding: 30px 30px!important;
+            border-radius: 4px;
+            @include trans;
+            &:hover{
+                opacity: 1;
+                border:1px solid rgba(0,0,0,.2);
+            }
+            @media (max-width: 1372px) {
+                top:-45px;
+                padding: 25px 25px !important;
+            }
+            @media (max-width:$grid-sl){
+                left: -6px;
+                top: 50%;
+                background-color: rgba(255,255,255,0);
+                border:0;
+                outline: none;
+                &:hover{
+                    border:0;
+                }
+            }
+        }
+        .swiper-button-next{
+            top:-55px;
+            right:-125px;
+            opacity: .9;
+            background-color: rgba(255,255,255,1);
+            border:1px solid rgba(0,0,0,.1);
+            padding: 30px 30px!important;
+            border-radius: 4px;
+            @include trans;
+            &:hover{
+                opacity: 1;
+                border:1px solid rgba(0,0,0,.2);
+            }
+            @media (max-width: 1372px) {
+                top:-45px;
+                right:0;
+                padding: 25px 25px !important;
+            }
+            @media (max-width:$grid-sl){
+                right: -6px;
+                top: 50%;
+                background-color: rgba(255,255,255,0);
+                border:0;
+                outline: none;
+                &:hover{
+                    border:0;
+                }
+            }
+
+        }
+    }
+    &__rates {
+        width: 100%;
+        padding-top: 4em;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__rate {
+        width: 33.3333%;
+        border: 1px solid rgba(#ffffff, .35);
+        text-align: center;
+        padding: 2em;
+        position: relative;
+        border-right:0;
+        @media (max-width: $grid-sl) {
+            width: 100%;
+            border-right: 1px solid rgba(#ffffff, .35);
+            &:first-child{
+                border-bottom-left-radius: 0!important;
+                border-top-left-radius: 3px;
+                border-top-right-radius: 3px;
+                border-bottom:0;
+            }
+            &:last-child{
+                border-bottom-right-radius: 3px;
+                border-bottom-left-radius: 3px;
+                border-top-right-radius: 0!important;
+                border-top:0;
+            }
+        }
+        &:first-child{
+            border-bottom-left-radius: 3px;
+            border-top-left-radius: 3px;
+        }
+        &:last-child{
+            border-right:1px solid rgba(#ffffff, .35);
+            border-bottom-right-radius: 3px;
+            border-top-right-radius: 3px;
+        }
+        &-img {
+            height: 70px;
+            position: relative;
+            margin-bottom: 25px;
+        }
+        img {
+            margin-bottom: 25px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+        }
+        &-stars {
+            background-image: url('%=static=%content/rate-grey.png');
+            background-position: center center;
+            width: 111px;
+            height: 19px;
+            position: relative;
+            display: inline-block;
+            span {
+                background-image: url('%=static=%content/rate-yellow.png');
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
+.reviews-item {
+    border-radius: 4px;
+    border: 1px solid #dddddd;
+    background-color: #ffffff;
+    padding: em(30) em(40);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    &__img {
+    }
+    &__spec {
+        flex-grow: 1;
+        padding-left: 2em;
+        color: #3c3d41;
+        width: 50%;
+        @media (max-width: 341px) {
+            padding-left: 0;
+            width: 100%;
+            padding-top: 15px;
+        }
+        strong {
+            display: block;
+            letter-spacing: 2.36px;
+            font-size: em(13);
+            margin-bottom: 4px;
+            text-transform: uppercase;
+        }
+        span {
+            opacity: .7;
+            font-size: em(12);
+        }
+    }
+    &__text {
+        padding-top: 1.5em;
+        line-height: 1.8;
+    }
+
+}
+.reviews-slider {
+    width: 1700px;
+    @media (max-width: $grid-sl) {
+        width: 100%;
+    }
+}

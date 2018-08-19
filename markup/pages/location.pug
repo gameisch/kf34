@@ -1,0 +1,29 @@
+doctype html
+html(class="no-js", lang="ru")
+
+    include ../components/head/head
+    include ../components/header/header
+    include ../components/footer/footer
+    include ../components/topinfo/topinfo
+    include ../components/locations/locations
+    include ../components/features/features
+
+    head
+        +head(head.defaults)
+    body
+        |%=symbols=%
+
+        +header
+        +topinfo(topinfo.location)
+        +locations
+        +features
+        +footer
+
+        script(src='https://code.jquery.com/jquery-3.3.1.js', integrity='sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=', crossorigin='anonymous')
+        script( src="//cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js")
+
+        script(src='%=static=%js/separate-js/svg4everybody.min.js')
+        script svg4everybody();
+
+        //- Main scripts. You can replace it, but I recommend you to leave it here
+        script(src='%=static=%js/main%=hash=%%=min=%.js')

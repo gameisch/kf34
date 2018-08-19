@@ -1,0 +1,17 @@
+mixin image-slider(data)
+    .image-slider(data-autoplay='false', data-loop='false', class=data.klass)
+        .image-slider__row
+            -if (data.header)
+            .image-slider__header #{data.header}
+            -if (data.text)
+            .image-slider__text #{data.text}
+            .image-slider__slider
+                .swiper-container
+                    .swiper-wrapper
+                        - for(var i = 0; i < data.slides.length; i++)
+                            .swiper-slide
+                                .image-slider__image
+                                    img(src=data.slides[i].src)
+                                    span #{data.slides[i].text}
+                .swiper-button-next
+                .swiper-button-prev
