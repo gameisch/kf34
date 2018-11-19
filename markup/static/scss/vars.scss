@@ -1,10 +1,40 @@
 $default-font-size: 15;
 
-$grid-lm: 1140px;
+$grid-lm: 1240px;
+$large: 1240px;
+
+$grid-ts: 991px;
+$medium: 991px;
+
 $grid-ls: 960px;
+
 $grid-sl: 768px;
+$tablets: 768px;
+
 $grid-sm: 480px;
+$phones: 480px;
+
 $grid-s: 320px;
+
+// fonts
+$base-font-size: 16;
+$pts: 'PT Sans', sans-serif;
+
+// color
+$orange: #9696be;
+$dark-blue: #464664;
+$white: #fff;
+$black: #000;
+$night-blue: #282832;
+
+$footer-bg:#1e1e23;
+$theme-primary-color: #c1b696;
+$theme-secondary-color: #282e3f;
+$body-bg-color: #f2f0f0;
+$section-bg-color: #f5f5ff;
+$text-color: #464646;
+$testi-text-color:#64646e;
+$heading-color: $dark-blue;
 
 $blue: #53B6CC;
 $accent-blue: #3747b8;

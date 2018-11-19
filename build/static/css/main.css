@@ -5,7 +5,7 @@
  * 2. Prevent iOS and IE text size adjust after device orientation change,
  *    without disabling user zoom.
  */
-@import url("https://fonts.googleapis.com/css?family=Droid+Sans:400,700");
+@import url("https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic");
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 html {
   box-sizing: border-box;
@@ -6612,9 +6612,9 @@ button.swiper-pagination-bullet {
 }
 
 body {
-  font-family: 'Droid Sans', sans-serif;
-  font-size: 15px;
+  font-family: 'PT Sans', sans-serif;
   font-weight: 400;
+  font-size: 16px;
   overflow-x: hidden;
   padding-top: 104px;
   min-width: 320px;
@@ -6622,7 +6622,7 @@ body {
 
 @media (max-width: 960px) {
   body {
-    font-size: 13px;
+    font-size: 14px;
   }
 }
 
@@ -6706,7 +6706,7 @@ section.p0 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 1140px;
+  width: 1240px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -6714,7 +6714,7 @@ section.p0 {
       flex-wrap: wrap;
 }
 
-@media (max-width: 1140px) {
+@media (max-width: 1240px) {
   .infoblock__wrapper {
     width: 960px;
   }
@@ -12594,249 +12594,6 @@ li.ui-timepicker-selected .ui-timepicker-duration, .ui-timepicker-list li:hover 
   background: #f2f2f2;
 }
 
-.cat-tabs {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.cat-tabs-links {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 1140px;
-  margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  position: relative;
-  z-index: 2;
-}
-
-@media (max-width: 1140px) {
-  .cat-tabs-links {
-    width: 960px;
-  }
-}
-
-@media (max-width: 960px) {
-  .cat-tabs-links {
-    width: 100%;
-  }
-}
-
-@media (max-width: 768px) {
-  .cat-tabs-links {
-    padding: 0;
-  }
-}
-
-.cat-tabs-links.up-arrow span:after {
-  top: -5px;
-  bottom: auto;
-  -webkit-transform: rotate(-45deg) translateY(50%) translateX(-50%);
-          transform: rotate(-45deg) translateY(50%) translateX(-50%);
-}
-
-.cat-tabs-links span {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-grid-column-align: center;
-      justify-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 16.66666%;
-  text-align: center;
-  color: #2d2e31;
-  font-size: 0.93333em;
-  font-weight: 700;
-  min-height: 75px;
-  letter-spacing: 1px;
-  padding: 0.66667em 2em;
-  border-left: 1px solid rgba(16, 94, 183, 0.1);
-  cursor: pointer;
-  -webkit-transition: .25s;
-  transition: .25s;
-  position: relative;
-}
-
-@media (max-width: 768px) {
-  .cat-tabs-links span {
-    display: none;
-    width: 100%;
-    font-size: 1.2em;
-    padding: 1em 15px;
-  }
-}
-
-.cat-tabs-links span:after {
-  content: '';
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  -webkit-transform: rotate(-45deg) translateY(-50%) translateX(50%);
-          transform: rotate(-45deg) translateY(-50%) translateX(50%);
-  background-color: #e7eef7;
-  bottom: -5px;
-  left: 50%;
-  opacity: 0;
-  -webkit-transition: .25s;
-  transition: .25s;
-}
-
-@media (max-width: 768px) {
-  .cat-tabs-links span:after {
-    display: none;
-  }
-}
-
-.cat-tabs-links span:last-child {
-  border-right: 1px solid rgba(16, 94, 183, 0.1);
-}
-
-.cat-tabs-links span:hover, .cat-tabs-links span.active {
-  background-color: #e7eef7;
-}
-
-.cat-tabs-links span:hover:after, .cat-tabs-links span.active:after {
-  opacity: 1;
-  -webkit-transform: rotate(-45deg) translateY(-25%) translateX(-25%);
-          transform: rotate(-45deg) translateY(-25%) translateX(-25%);
-}
-
-.cat-tabs-wrapper {
-  width: 100%;
-}
-
-@media (max-width: 768px) {
-  .cat-tabs-wrapper {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-  }
-}
-
-.cat-tabs-dots {
-  display: none;
-}
-
-@media (max-width: 768px) {
-  .cat-tabs-dots {
-    display: block;
-  }
-}
-
-.cat-tabs-dots .swiper-pagination-bullet {
-  background: transparent;
-  border: 1px solid #fff;
-  opacity: 1;
-  width: 12px;
-  height: 12px;
-  margin: 0 3px;
-}
-
-.cat-tabs-dots .swiper-pagination-bullet.swiper-pagination-bullet-active {
-  background-color: #fff;
-}
-
-.cat-tabs-content {
-  height: 600px;
-  background-size: cover;
-  background-position: center center !important;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 0 15px;
-}
-
-@media (max-width: 1140px) {
-  .cat-tabs-content {
-    height: 500px;
-  }
-}
-
-@media (max-width: 768px) {
-  .cat-tabs-content {
-    height: 400px;
-  }
-}
-
-.cat-tabs-content__header {
-  color: #ffffff;
-  font-size: 2.8em;
-  font-weight: 700;
-  line-height: 1.15;
-  margin-bottom: 15px;
-  max-width: 720px;
-  text-align: center;
-}
-
-@media (max-width: 768px) {
-  .cat-tabs-content__header {
-    font-size: 2.13333em;
-  }
-}
-
-.cat-tabs-content__header p {
-  margin: 0;
-  line-height: 1.15;
-}
-
-.cat-tabs-content__header--minh {
-  color: #ffffff;
-  font-size: 1.66667em;
-  font-weight: 400;
-  line-height: 1.15;
-  margin-bottom: 7px;
-  max-width: 720px;
-  text-align: center;
-}
-
-@media (max-width: 768px) {
-  .cat-tabs-content__header--minh {
-    font-size: 1.13333em;
-  }
-}
-
-.cat-tabs-content__button {
-  color: #FFFFFF;
-  font-size: 0.8em;
-  font-weight: 700;
-  letter-spacing: 2px;
-  line-height: 1;
-  border-radius: 4px;
-  padding: 1.58333em 1.5em;
-  text-decoration: none;
-  background-color: #00BA55;
-  text-transform: uppercase;
-  -webkit-transition: .25s;
-  transition: .25s;
-  display: inline-block;
-  border: none;
-}
-
-.cat-tabs-content__button:hover {
-  background-color: #00a149 !important;
-}
-
 .infoblock-2s {
   border-bottom: 2px solid #DDDDDD;
   background: white;
@@ -12998,6 +12755,249 @@ li.ui-timepicker-selected .ui-timepicker-duration, .ui-timepicker-list li:hover 
   line-height: 1.9;
 }
 
+.cat-tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.cat-tabs-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1240px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+  z-index: 2;
+}
+
+@media (max-width: 1240px) {
+  .cat-tabs-links {
+    width: 960px;
+  }
+}
+
+@media (max-width: 960px) {
+  .cat-tabs-links {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .cat-tabs-links {
+    padding: 0;
+  }
+}
+
+.cat-tabs-links.up-arrow span:after {
+  top: -5px;
+  bottom: auto;
+  -webkit-transform: rotate(-45deg) translateY(50%) translateX(-50%);
+          transform: rotate(-45deg) translateY(50%) translateX(-50%);
+}
+
+.cat-tabs-links span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-column-align: center;
+      justify-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 16.66666%;
+  text-align: center;
+  color: #2d2e31;
+  font-size: 0.93333em;
+  font-weight: 700;
+  min-height: 75px;
+  letter-spacing: 1px;
+  padding: 0.66667em 2em;
+  border-left: 1px solid rgba(16, 94, 183, 0.1);
+  cursor: pointer;
+  -webkit-transition: .25s;
+  transition: .25s;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .cat-tabs-links span {
+    display: none;
+    width: 100%;
+    font-size: 1.2em;
+    padding: 1em 15px;
+  }
+}
+
+.cat-tabs-links span:after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  -webkit-transform: rotate(-45deg) translateY(-50%) translateX(50%);
+          transform: rotate(-45deg) translateY(-50%) translateX(50%);
+  background-color: #e7eef7;
+  bottom: -5px;
+  left: 50%;
+  opacity: 0;
+  -webkit-transition: .25s;
+  transition: .25s;
+}
+
+@media (max-width: 768px) {
+  .cat-tabs-links span:after {
+    display: none;
+  }
+}
+
+.cat-tabs-links span:last-child {
+  border-right: 1px solid rgba(16, 94, 183, 0.1);
+}
+
+.cat-tabs-links span:hover, .cat-tabs-links span.active {
+  background-color: #e7eef7;
+}
+
+.cat-tabs-links span:hover:after, .cat-tabs-links span.active:after {
+  opacity: 1;
+  -webkit-transform: rotate(-45deg) translateY(-25%) translateX(-25%);
+          transform: rotate(-45deg) translateY(-25%) translateX(-25%);
+}
+
+.cat-tabs-wrapper {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .cat-tabs-wrapper {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+
+.cat-tabs-dots {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .cat-tabs-dots {
+    display: block;
+  }
+}
+
+.cat-tabs-dots .swiper-pagination-bullet {
+  background: transparent;
+  border: 1px solid #fff;
+  opacity: 1;
+  width: 12px;
+  height: 12px;
+  margin: 0 3px;
+}
+
+.cat-tabs-dots .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #fff;
+}
+
+.cat-tabs-content {
+  height: 600px;
+  background-size: cover;
+  background-position: center center !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 15px;
+}
+
+@media (max-width: 1240px) {
+  .cat-tabs-content {
+    height: 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cat-tabs-content {
+    height: 400px;
+  }
+}
+
+.cat-tabs-content__header {
+  color: #ffffff;
+  font-size: 2.8em;
+  font-weight: 700;
+  line-height: 1.15;
+  margin-bottom: 15px;
+  max-width: 720px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .cat-tabs-content__header {
+    font-size: 2.13333em;
+  }
+}
+
+.cat-tabs-content__header p {
+  margin: 0;
+  line-height: 1.15;
+}
+
+.cat-tabs-content__header--minh {
+  color: #ffffff;
+  font-size: 1.66667em;
+  font-weight: 400;
+  line-height: 1.15;
+  margin-bottom: 7px;
+  max-width: 720px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .cat-tabs-content__header--minh {
+    font-size: 1.13333em;
+  }
+}
+
+.cat-tabs-content__button {
+  color: #FFFFFF;
+  font-size: 0.75em;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 1;
+  border-radius: 4px;
+  padding: 1.35714em 1.5em;
+  text-decoration: none;
+  background-color: #00BA55;
+  text-transform: uppercase;
+  -webkit-transition: .25s;
+  transition: .25s;
+  display: inline-block;
+  border: none;
+}
+
+.cat-tabs-content__button:hover {
+  background-color: #00a149 !important;
+}
+
 .contacts-form {
   padding: 3.33333em 15px;
 }
@@ -13006,7 +13006,7 @@ li.ui-timepicker-selected .ui-timepicker-duration, .ui-timepicker-list li:hover 
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 1140px;
+  width: 1240px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -13022,7 +13022,7 @@ li.ui-timepicker-selected .ui-timepicker-duration, .ui-timepicker-list li:hover 
           justify-content: center;
 }
 
-@media (max-width: 1140px) {
+@media (max-width: 1240px) {
   .contacts-form__row {
     width: 960px;
   }
@@ -13143,12 +13143,12 @@ li.ui-timepicker-selected .ui-timepicker-duration, .ui-timepicker-list li:hover 
 
 .contacts-form__send-button {
   color: #FFFFFF;
-  font-size: 0.8em;
+  font-size: 0.75em;
   font-weight: 700;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   line-height: 1;
   border-radius: 4px;
-  padding: 1.58333em 1.5em;
+  padding: 1.35714em 1.5em;
   text-decoration: none;
   background-color: #00BA55;
   text-transform: uppercase;
@@ -13280,7 +13280,7 @@ li.ui-timepicker-selected .ui-timepicker-duration, .ui-timepicker-list li:hover 
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 1140px;
+  width: 1240px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -13291,7 +13291,7 @@ li.ui-timepicker-selected .ui-timepicker-duration, .ui-timepicker-list li:hover 
           justify-content: space-between;
 }
 
-@media (max-width: 1140px) {
+@media (max-width: 1240px) {
   .custom-section__row {
     width: 960px;
   }
@@ -13441,7 +13441,7 @@ li.ui-timepicker-selected .ui-timepicker-duration, .ui-timepicker-list li:hover 
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 1140px;
+  width: 1240px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -13452,7 +13452,7 @@ li.ui-timepicker-selected .ui-timepicker-duration, .ui-timepicker-list li:hover 
           justify-content: space-between;
 }
 
-@media (max-width: 1140px) {
+@media (max-width: 1240px) {
   .equip__row {
     width: 960px;
   }
@@ -13484,11 +13484,12 @@ li.ui-timepicker-selected .ui-timepicker-duration, .ui-timepicker-list li:hover 
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
   -ms-flex-item-align: start;
       align-self: flex-start;
+  min-height: 100%;
 }
 
 @media (max-width: 960px) {
@@ -13504,7 +13505,17 @@ li.ui-timepicker-selected .ui-timepicker-duration, .ui-timepicker-list li:hover 
   border: 1px solid #dddddd;
   background-color: #ffffff;
   margin-bottom: 25px;
+  position: relative;
   overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-top: 200px;
 }
 
 @media (max-width: 960px) {
@@ -13525,12 +13536,22 @@ li.ui-timepicker-selected .ui-timepicker-duration, .ui-timepicker-list li:hover 
   }
 }
 
+.equip-item__image {
+  position: absolute;
+  width: 100%;
+  max-height: 200px;
+  overflow: hidden;
+  top: 0;
+}
+
 .equip-item__image img {
   display: block;
   width: 100%;
 }
 
 .equip-item__content {
+  display: inline-block;
+  width: 100%;
   padding: 1.5em 2em;
 }
 
@@ -13550,12 +13571,12 @@ li.ui-timepicker-selected .ui-timepicker-duration, .ui-timepicker-list li:hover 
 
 .equip-item__view-more {
   color: #1048a8;
-  font-size: 0.8em;
+  font-size: 0.75em;
   font-weight: 700;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   line-height: 1;
   border-radius: 4px;
-  padding: 1.58333em 1.5em;
+  padding: 1.35714em 1.5em;
   text-decoration: none;
   background-color: #f5f6fb;
   text-transform: uppercase;
@@ -13563,6 +13584,7 @@ li.ui-timepicker-selected .ui-timepicker-duration, .ui-timepicker-list li:hover 
   transition: .25s;
   display: inline-block;
   border: none;
+  width: 100%;
   border-radius: 0;
   display: block;
   text-align: center;
@@ -13574,12 +13596,12 @@ li.ui-timepicker-selected .ui-timepicker-duration, .ui-timepicker-list li:hover 
 
 .equip-item__request {
   color: #FFFFFF;
-  font-size: 0.8em;
+  font-size: 0.75em;
   font-weight: 700;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   line-height: 1;
   border-radius: 4px;
-  padding: 1.58333em 1.5em;
+  padding: 1.35714em 1.5em;
   text-decoration: none;
   background-color: #00BA55;
   text-transform: uppercase;
@@ -13587,6 +13609,7 @@ li.ui-timepicker-selected .ui-timepicker-duration, .ui-timepicker-list li:hover 
   transition: .25s;
   display: inline-block;
   border: none;
+  width: 100%;
   border-radius: 0;
   display: block;
   text-align: center;
@@ -13700,6 +13723,12 @@ li.ui-timepicker-selected .ui-timepicker-duration, .ui-timepicker-list li:hover 
   }
 }
 
+.equip-side-info a {
+  color: rgba(26, 26, 28, 0.6);
+  line-height: 1.7;
+  position: relative;
+}
+
 .equip-side-info__item {
   color: rgba(26, 26, 28, 0.6);
   line-height: 1.7;
@@ -13756,7 +13785,7 @@ li.ui-timepicker-selected .ui-timepicker-duration, .ui-timepicker-list li:hover 
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 1140px;
+  width: 1240px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -13767,7 +13796,7 @@ li.ui-timepicker-selected .ui-timepicker-duration, .ui-timepicker-list li:hover 
           justify-content: space-between;
 }
 
-@media (max-width: 1140px) {
+@media (max-width: 1240px) {
   .events__row {
     width: 960px;
   }
@@ -13836,12 +13865,12 @@ li.ui-timepicker-selected .ui-timepicker-duration, .ui-timepicker-list li:hover 
 
 .events-article__link {
   color: #FFFFFF;
-  font-size: 0.8em;
+  font-size: 0.75em;
   font-weight: 700;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   line-height: 1;
   border-radius: 4px;
-  padding: 1.58333em 1.5em;
+  padding: 1.35714em 1.5em;
   text-decoration: none;
   background-color: #3747b8;
   text-transform: uppercase;
@@ -13867,7 +13896,7 @@ li.ui-timepicker-selected .ui-timepicker-duration, .ui-timepicker-list li:hover 
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 1140px;
+  width: 1240px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -13878,7 +13907,7 @@ li.ui-timepicker-selected .ui-timepicker-duration, .ui-timepicker-list li:hover 
           justify-content: space-between;
 }
 
-@media (max-width: 1140px) {
+@media (max-width: 1240px) {
   .faq-mix__row {
     width: 960px;
   }
@@ -14130,12 +14159,12 @@ li.ui-timepicker-selected .ui-timepicker-duration, .ui-timepicker-list li:hover 
 
 .faq-mix-article__link {
   color: #FFFFFF;
-  font-size: 0.8em;
+  font-size: 0.75em;
   font-weight: 700;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   line-height: 1;
   border-radius: 4px;
-  padding: 1.58333em 1.5em;
+  padding: 1.35714em 1.5em;
   text-decoration: none;
   background-color: #3747b8;
   text-transform: uppercase;
@@ -14148,6 +14177,108 @@ li.ui-timepicker-selected .ui-timepicker-duration, .ui-timepicker-list li:hover 
 
 .faq-mix-article__link:hover {
   background-color: #313fa4 !important;
+}
+
+.features {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.features__item {
+  width: 25%;
+  background-color: #3b3d40;
+  text-align: center;
+  padding: 4em 0;
+}
+
+.features__item a {
+  opacity: 1;
+  text-decoration: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.features__item a:hover {
+  opacity: .75;
+}
+
+.features__item:nth-child(2n) {
+  background-color: #515255;
+}
+
+@media (max-width: 960px) {
+  .features__item {
+    padding: 4em 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .features__item {
+    width: 50%;
+  }
+  .features__item:nth-child(3) {
+    background-color: #515255;
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
+  .features__item:nth-child(4) {
+    background-color: #3b3d40;
+  }
+}
+
+@media (max-width: 480px) {
+  .features__item {
+    width: 100%;
+  }
+  .features__item:nth-child(3) {
+    background-color: #3b3d40;
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+  }
+  .features__item:nth-child(4) {
+    background-color: #515255;
+  }
+}
+
+.features__itemIcon {
+  margin-bottom: 15px;
+}
+
+.features__itemIcon:before {
+  opacity: 0.5;
+  color: #ffffff;
+  font-family: "Material Icons", sans-serif;
+  font-size: 3.33333em;
+}
+
+.features__itemIcon.sch:before {
+  content: '\e8b5';
+}
+
+.features__itemIcon.settings:before {
+  content: '\e8b8';
+}
+
+.features__itemIcon.star:before {
+  content: '\e838';
+}
+
+.features__itemIcon.lst:before {
+  content: '';
+}
+
+.features__itemText {
+  color: #ffffff;
+  font-size: 1.2em;
+  font-weight: 700;
+  line-height: 1.7;
+  display: inline-block;
+  max-width: 230px;
 }
 
 .footer {
@@ -14183,7 +14314,7 @@ li.ui-timepicker-selected .ui-timepicker-duration, .ui-timepicker-list li:hover 
   margin-bottom: 25px;
 }
 
-@media (max-width: 1140px) {
+@media (max-width: 1240px) {
   .footer__wrapper {
     width: 960px;
   }
@@ -14220,12 +14351,13 @@ li.ui-timepicker-selected .ui-timepicker-duration, .ui-timepicker-list li:hover 
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 1140px;
+  width: 1240px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  width: 1140px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -14234,7 +14366,7 @@ li.ui-timepicker-selected .ui-timepicker-duration, .ui-timepicker-list li:hover 
           align-items: center;
 }
 
-@media (max-width: 1140px) {
+@media (max-width: 1240px) {
   .footer__copy {
     width: 960px;
   }
@@ -14573,7 +14705,7 @@ li.ui-timepicker-selected .ui-timepicker-duration, .ui-timepicker-list li:hover 
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 1140px;
+  width: 1240px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -14587,7 +14719,7 @@ li.ui-timepicker-selected .ui-timepicker-duration, .ui-timepicker-list li:hover 
           align-items: center;
 }
 
-@media (max-width: 1140px) {
+@media (max-width: 1240px) {
   .founders__row {
     width: 960px;
   }
@@ -14666,108 +14798,6 @@ li.ui-timepicker-selected .ui-timepicker-duration, .ui-timepicker-list li:hover 
   font-weight: 700;
 }
 
-.features {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.features__item {
-  width: 25%;
-  background-color: #3b3d40;
-  text-align: center;
-  padding: 4em 0;
-}
-
-.features__item a {
-  opacity: 1;
-  text-decoration: none;
-  -webkit-transition: all .2s;
-  transition: all .2s;
-}
-
-.features__item a:hover {
-  opacity: .75;
-}
-
-.features__item:nth-child(2n) {
-  background-color: #515255;
-}
-
-@media (max-width: 960px) {
-  .features__item {
-    padding: 4em 10px;
-  }
-}
-
-@media (max-width: 768px) {
-  .features__item {
-    width: 50%;
-  }
-  .features__item:nth-child(3) {
-    background-color: #515255;
-    -webkit-box-ordinal-group: 5;
-        -ms-flex-order: 4;
-            order: 4;
-  }
-  .features__item:nth-child(4) {
-    background-color: #3b3d40;
-  }
-}
-
-@media (max-width: 480px) {
-  .features__item {
-    width: 100%;
-  }
-  .features__item:nth-child(3) {
-    background-color: #3b3d40;
-    -webkit-box-ordinal-group: 1;
-        -ms-flex-order: 0;
-            order: 0;
-  }
-  .features__item:nth-child(4) {
-    background-color: #515255;
-  }
-}
-
-.features__itemIcon {
-  margin-bottom: 15px;
-}
-
-.features__itemIcon:before {
-  opacity: 0.5;
-  color: #ffffff;
-  font-family: "Material Icons", sans-serif;
-  font-size: 3.33333em;
-}
-
-.features__itemIcon.sch:before {
-  content: '\e8b5';
-}
-
-.features__itemIcon.settings:before {
-  content: '\e8b8';
-}
-
-.features__itemIcon.star:before {
-  content: '\e838';
-}
-
-.features__itemIcon.lst:before {
-  content: '';
-}
-
-.features__itemText {
-  color: #ffffff;
-  font-size: 1.2em;
-  font-weight: 700;
-  line-height: 1.7;
-  display: inline-block;
-  max-width: 230px;
-}
-
 .header {
   background-color: #fff;
   position: fixed;
@@ -14804,7 +14834,7 @@ li.ui-timepicker-selected .ui-timepicker-duration, .ui-timepicker-list li:hover 
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 1140px;
+  width: 1240px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -14818,7 +14848,7 @@ li.ui-timepicker-selected .ui-timepicker-duration, .ui-timepicker-list li:hover 
           justify-content: space-between;
 }
 
-@media (max-width: 1140px) {
+@media (max-width: 1240px) {
   .header__wrapper {
     width: 960px;
   }
@@ -14832,6 +14862,7 @@ li.ui-timepicker-selected .ui-timepicker-duration, .ui-timepicker-list li:hover 
 
 .header__logo {
   width: 20%;
+  max-width: 200px;
 }
 
 @media (max-width: 768px) {
@@ -14845,7 +14876,7 @@ li.ui-timepicker-selected .ui-timepicker-duration, .ui-timepicker-list li:hover 
   padding-left: 1em;
 }
 
-@media (max-width: 1140px) {
+@media (max-width: 1240px) {
   .header__nav {
     width: auto;
     -webkit-box-flex: 1;
@@ -14884,7 +14915,7 @@ li.ui-timepicker-selected .ui-timepicker-duration, .ui-timepicker-list li:hover 
   margin: 0 2em 0 0;
 }
 
-@media (max-width: 1140px) {
+@media (max-width: 1240px) {
   .header__nav a {
     margin-right: .6em;
   }
@@ -14932,12 +14963,12 @@ li.ui-timepicker-selected .ui-timepicker-duration, .ui-timepicker-list li:hover 
 
 .header__button {
   color: #FFFFFF;
-  font-size: 0.8em;
+  font-size: 0.75em;
   font-weight: 700;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   line-height: 1;
   border-radius: 4px;
-  padding: 1.58333em 1.5em;
+  padding: 1.35714em 1.5em;
   text-decoration: none;
   background-color: #00BA55;
   text-transform: uppercase;
@@ -15090,7 +15121,7 @@ li.ui-timepicker-selected .ui-timepicker-duration, .ui-timepicker-list li:hover 
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 1140px;
+  width: 1240px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -15098,7 +15129,7 @@ li.ui-timepicker-selected .ui-timepicker-duration, .ui-timepicker-list li:hover 
       flex-wrap: wrap;
 }
 
-@media (max-width: 1140px) {
+@media (max-width: 1240px) {
   .image-slider__row {
     width: 960px;
   }
@@ -15685,12 +15716,12 @@ li.ui-timepicker-selected .ui-timepicker-duration, .ui-timepicker-list li:hover 
 
 .infoblock-4 a {
   color: #FFFFFF;
-  font-size: 0.8em;
+  font-size: 0.75em;
   font-weight: 700;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   line-height: 1;
   border-radius: 4px;
-  padding: 1.58333em 1.5em;
+  padding: 1.35714em 1.5em;
   text-decoration: none;
   background-color: #00BA55;
   text-transform: uppercase;
@@ -15960,7 +15991,7 @@ li.ui-timepicker-selected .ui-timepicker-duration, .ui-timepicker-list li:hover 
   background-color: rgba(221, 221, 221, 0.2);
 }
 
-@media (max-width: 1140px) {
+@media (max-width: 1240px) {
   .inquiry {
     display: none;
   }
@@ -15970,7 +16001,7 @@ li.ui-timepicker-selected .ui-timepicker-duration, .ui-timepicker-list li:hover 
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 1140px;
+  width: 1240px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -15978,7 +16009,7 @@ li.ui-timepicker-selected .ui-timepicker-duration, .ui-timepicker-list li:hover 
       flex-wrap: wrap;
 }
 
-@media (max-width: 1140px) {
+@media (max-width: 1240px) {
   .inquiry__row {
     width: 960px;
   }
@@ -16063,12 +16094,12 @@ li.ui-timepicker-selected .ui-timepicker-duration, .ui-timepicker-list li:hover 
 
 .inquiry-step--blue .inquiry-step__bottom-submit {
   color: #FFFFFF;
-  font-size: 0.8em;
+  font-size: 0.75em;
   font-weight: 700;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   line-height: 1;
   border-radius: 4px;
-  padding: 1.58333em 1.5em;
+  padding: 1.35714em 1.5em;
   text-decoration: none;
   background-color: #00BA55;
   text-transform: uppercase;
@@ -16137,12 +16168,12 @@ li.ui-timepicker-selected .ui-timepicker-duration, .ui-timepicker-list li:hover 
 
 .inquiry-step__bottom .inquiry-step__bottom-submit {
   color: #fff;
-  font-size: 0.8em;
+  font-size: 0.75em;
   font-weight: 700;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   line-height: 1;
   border-radius: 4px;
-  padding: 1.58333em 1.5em;
+  padding: 1.35714em 1.5em;
   text-decoration: none;
   background-color: #a9a9a9;
   text-transform: uppercase;
@@ -16277,7 +16308,7 @@ li.ui-timepicker-selected .ui-timepicker-duration, .ui-timepicker-list li:hover 
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 1140px;
+  width: 1240px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -16291,7 +16322,7 @@ li.ui-timepicker-selected .ui-timepicker-duration, .ui-timepicker-list li:hover 
           justify-content: flex-end;
 }
 
-@media (max-width: 1140px) {
+@media (max-width: 1240px) {
   .locations__row {
     width: 960px;
   }
@@ -16436,7 +16467,7 @@ li.ui-timepicker-selected .ui-timepicker-duration, .ui-timepicker-list li:hover 
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 1140px;
+  width: 1240px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -16450,7 +16481,7 @@ li.ui-timepicker-selected .ui-timepicker-duration, .ui-timepicker-list li:hover 
           align-items: center;
 }
 
-@media (max-width: 1140px) {
+@media (max-width: 1240px) {
   .logos__row {
     width: 960px;
   }
@@ -16554,7 +16585,7 @@ li.ui-timepicker-selected .ui-timepicker-duration, .ui-timepicker-list li:hover 
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 1140px;
+  width: 1240px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -16567,7 +16598,7 @@ li.ui-timepicker-selected .ui-timepicker-duration, .ui-timepicker-list li:hover 
   z-index: 2;
 }
 
-@media (max-width: 1140px) {
+@media (max-width: 1240px) {
   .member-description__row {
     width: 960px;
   }
@@ -17646,7 +17677,7 @@ select option:hover {
   border-bottom: 1px solid #eee !important;
 }
 
-@media (max-width: 1140px) {
+@media (max-width: 1240px) {
   .em-calendar .thead tr td, .fullcalendar .thead tr td {
     font-size: 12px !important;
   }
@@ -17706,7 +17737,7 @@ select option:hover {
   font-weight: 600;
 }
 
-@media (max-width: 1140px) {
+@media (max-width: 1240px) {
   .em-calendar tbody td, .fullcalendar tbody td {
     font-size: 12px;
   }
@@ -18105,12 +18136,12 @@ input[type='radio']:not(:focus):valid {
 
 .modal-form__button button {
   color: #FFFFFF;
-  font-size: 0.8em;
+  font-size: 0.75em;
   font-weight: 700;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   line-height: 1;
   border-radius: 4px;
-  padding: 1.58333em 1.5em;
+  padding: 1.35714em 1.5em;
   text-decoration: none;
   background-color: #00BA55;
   text-transform: uppercase;
@@ -18462,12 +18493,12 @@ input[type='radio']:not(:focus):valid {
 
 .objectframe object input[type="submit"] {
   color: #FFFFFF;
-  font-size: 0.8em;
+  font-size: 0.75em;
   font-weight: 700;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   line-height: 1;
   border-radius: 4px;
-  padding: 1.58333em 1.5em;
+  padding: 1.35714em 1.5em;
   text-decoration: none;
   background-color: #00BA55;
   text-transform: uppercase;
@@ -18674,12 +18705,12 @@ input[type='radio']:not(:focus):valid {
 
 .booking_form .form-group button {
   color: #FFFFFF;
-  font-size: 0.8em;
+  font-size: 0.75em;
   font-weight: 700;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   line-height: 1;
   border-radius: 4px;
-  padding: 1.58333em 1.5em;
+  padding: 1.35714em 1.5em;
   text-decoration: none;
   background-color: #00BA55;
   text-transform: uppercase;
@@ -18936,7 +18967,7 @@ input[type='radio']:not(:focus):valid {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 1140px;
+  width: 1240px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -18947,7 +18978,7 @@ input[type='radio']:not(:focus):valid {
           justify-content: space-between;
 }
 
-@media (max-width: 1140px) {
+@media (max-width: 1240px) {
   .news-events__row {
     width: 960px;
   }
@@ -19133,12 +19164,12 @@ input[type='radio']:not(:focus):valid {
 
 .news-events-article__link {
   color: #FFFFFF;
-  font-size: 0.8em;
+  font-size: 0.75em;
   font-weight: 700;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   line-height: 1;
   border-radius: 4px;
-  padding: 1.58333em 1.5em;
+  padding: 1.35714em 1.5em;
   text-decoration: none;
   background-color: #3747b8;
   text-transform: uppercase;
@@ -19226,7 +19257,7 @@ input[type='radio']:not(:focus):valid {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 1140px;
+  width: 1240px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -19237,7 +19268,7 @@ input[type='radio']:not(:focus):valid {
           justify-content: space-between;
 }
 
-@media (max-width: 1140px) {
+@media (max-width: 1240px) {
   .post-mix__row {
     width: 960px;
   }
@@ -19431,12 +19462,12 @@ input[type='radio']:not(:focus):valid {
 
 .post-mix-article__link {
   color: #FFFFFF;
-  font-size: 0.8em;
+  font-size: 0.75em;
   font-weight: 700;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   line-height: 1;
   border-radius: 4px;
-  padding: 1.58333em 1.5em;
+  padding: 1.35714em 1.5em;
   text-decoration: none;
   background-color: #3747b8;
   text-transform: uppercase;
@@ -19473,7 +19504,7 @@ input[type='radio']:not(:focus):valid {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 1140px;
+  width: 1240px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -19486,7 +19517,7 @@ input[type='radio']:not(:focus):valid {
           justify-content: space-between;
 }
 
-@media (max-width: 1140px) {
+@media (max-width: 1240px) {
   .present__row {
     width: 960px;
   }
@@ -19551,7 +19582,7 @@ input[type='radio']:not(:focus):valid {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 1140px;
+  width: 1240px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -19563,7 +19594,7 @@ input[type='radio']:not(:focus):valid {
   padding-top: 3em;
 }
 
-@media (max-width: 1140px) {
+@media (max-width: 1240px) {
   .product {
     width: 960px;
   }
@@ -19585,7 +19616,7 @@ input[type='radio']:not(:focus):valid {
   width: 40%;
 }
 
-@media (max-width: 1140px) {
+@media (max-width: 1240px) {
   .product-info {
     width: 30%;
   }
@@ -19747,7 +19778,7 @@ input[type='radio']:not(:focus):valid {
       align-self: flex-start;
 }
 
-@media (max-width: 1140px) {
+@media (max-width: 1240px) {
   .product-description {
     width: 65%;
   }
@@ -20060,12 +20091,12 @@ input[type='radio']:not(:focus):valid {
 
 .product-form__field button {
   color: #FFFFFF;
-  font-size: 0.8em;
+  font-size: 0.75em;
   font-weight: 700;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   line-height: 1;
   border-radius: 4px;
-  padding: 1.58333em 1.5em;
+  padding: 1.35714em 1.5em;
   text-decoration: none;
   background-color: #00BA55;
   text-transform: uppercase;
@@ -20160,7 +20191,7 @@ input[type='radio']:not(:focus):valid {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 1140px;
+  width: 1240px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -20174,7 +20205,7 @@ input[type='radio']:not(:focus):valid {
           justify-content: center;
 }
 
-@media (max-width: 1140px) {
+@media (max-width: 1240px) {
   .recently__items {
     width: 960px;
   }
@@ -20230,7 +20261,7 @@ input[type='radio']:not(:focus):valid {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 1140px;
+  width: 1240px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -20241,7 +20272,7 @@ input[type='radio']:not(:focus):valid {
           justify-content: space-between;
 }
 
-@media (max-width: 1140px) {
+@media (max-width: 1240px) {
   .rentals-items {
     width: 960px;
   }
@@ -20449,12 +20480,12 @@ input[type='radio']:not(:focus):valid {
 
 .rentals-item__view-more {
   color: #1048a8;
-  font-size: 0.8em;
+  font-size: 0.75em;
   font-weight: 700;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   line-height: 1;
   border-radius: 4px;
-  padding: 1.58333em 1.5em;
+  padding: 1.35714em 1.5em;
   text-decoration: none;
   background-color: #f5f6fb;
   text-transform: uppercase;
@@ -20473,12 +20504,12 @@ input[type='radio']:not(:focus):valid {
 
 .rentals-item__request {
   color: #FFFFFF;
-  font-size: 0.8em;
+  font-size: 0.75em;
   font-weight: 700;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   line-height: 1;
   border-radius: 4px;
-  padding: 1.58333em 1.5em;
+  padding: 1.35714em 1.5em;
   text-decoration: none;
   background-color: #00BA55;
   text-transform: uppercase;
@@ -20547,7 +20578,7 @@ input[type='radio']:not(:focus):valid {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 1140px;
+  width: 1240px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -20558,7 +20589,7 @@ input[type='radio']:not(:focus):valid {
           justify-content: space-between;
 }
 
-@media (max-width: 1140px) {
+@media (max-width: 1240px) {
   .reviews__row {
     width: 960px;
   }
@@ -20990,7 +21021,7 @@ input[type='radio']:not(:focus):valid {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 1140px;
+  width: 1240px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -21001,7 +21032,7 @@ input[type='radio']:not(:focus):valid {
           align-items: center;
 }
 
-@media (max-width: 1140px) {
+@media (max-width: 1240px) {
   .search__wrapper {
     width: 960px;
   }
@@ -21282,7 +21313,7 @@ input[type='radio']:not(:focus):valid {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 1140px;
+  width: 1240px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -21295,7 +21326,7 @@ input[type='radio']:not(:focus):valid {
   padding-bottom: 6em;
 }
 
-@media (max-width: 1140px) {
+@media (max-width: 1240px) {
   .serp-items {
     width: 960px;
   }
@@ -21614,12 +21645,12 @@ input[type='radio']:not(:focus):valid {
 
 .serp-item__view-more {
   color: #1048a8;
-  font-size: 0.8em;
+  font-size: 0.75em;
   font-weight: 700;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   line-height: 1;
   border-radius: 4px;
-  padding: 1.58333em 1.5em;
+  padding: 1.35714em 1.5em;
   text-decoration: none;
   background-color: #f5f6fb;
   text-transform: uppercase;
@@ -21638,12 +21669,12 @@ input[type='radio']:not(:focus):valid {
 
 .serp-item__request {
   color: #FFFFFF;
-  font-size: 0.8em;
+  font-size: 0.75em;
   font-weight: 700;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   line-height: 1;
   border-radius: 4px;
-  padding: 1.58333em 1.5em;
+  padding: 1.35714em 1.5em;
   text-decoration: none;
   background-color: #00BA55;
   text-transform: uppercase;
@@ -21707,12 +21738,12 @@ input[type='radio']:not(:focus):valid {
 
 .serp-items-bann__button {
   color: #FFFFFF;
-  font-size: 0.8em;
+  font-size: 0.75em;
   font-weight: 700;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   line-height: 1;
   border-radius: 4px;
-  padding: 1.58333em 1.5em;
+  padding: 1.35714em 1.5em;
   text-decoration: none;
   background-color: #3747b8;
   text-transform: uppercase;
@@ -21819,12 +21850,12 @@ input[type='radio']:not(:focus):valid {
 
 .serp-filter__reset {
   color: #fff;
-  font-size: 0.8em;
+  font-size: 0.75em;
   font-weight: 700;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   line-height: 1;
   border-radius: 4px;
-  padding: 1.58333em 1.5em;
+  padding: 1.35714em 1.5em;
   text-decoration: none;
   background-color: #a9a9a9;
   text-transform: uppercase;
@@ -21868,7 +21899,7 @@ input[type='radio']:not(:focus):valid {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 1140px;
+  width: 1240px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -21882,7 +21913,7 @@ input[type='radio']:not(:focus):valid {
           align-items: center;
 }
 
-@media (max-width: 1140px) {
+@media (max-width: 1240px) {
   .text-content__row {
     width: 960px;
   }
@@ -22005,12 +22036,12 @@ input[type='radio']:not(:focus):valid {
 
 .top-info__button.green {
   color: #FFFFFF;
-  font-size: 0.8em;
+  font-size: 0.75em;
   font-weight: 700;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   line-height: 1;
   border-radius: 4px;
-  padding: 1.58333em 1.5em;
+  padding: 1.35714em 1.5em;
   text-decoration: none;
   background-color: #00BA55;
   text-transform: uppercase;
@@ -22026,12 +22057,12 @@ input[type='radio']:not(:focus):valid {
 
 .top-info__button.blue {
   color: #FFFFFF;
-  font-size: 0.8em;
+  font-size: 0.75em;
   font-weight: 700;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   line-height: 1;
   border-radius: 4px;
-  padding: 1.58333em 1.5em;
+  padding: 1.35714em 1.5em;
   text-decoration: none;
   background-color: #3747b8;
   text-transform: uppercase;

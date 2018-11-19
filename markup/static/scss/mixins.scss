@@ -34,15 +34,22 @@
     text-align: justify;
     text-justify: newspaper;
 }
-
+@mixin font-reg {
+    font-family: 'PT Sans', sans-serif;  
+    font-weight: 400; 
+}
+@mixin font-bold {
+    font-family: 'PT Sans', sans-serif;  
+    font-weight: 700; 
+}
 @mixin button($color: #00BA55, $text-color: #FFFFFF) {
     color: $text-color;
-    font-size: 12/15+0em;
+    font-size: 12/16+0em;
     font-weight: 700;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     line-height: 1;
     border-radius: 4px;
-    padding: 19/12+0em 1.5em;
+    padding: 19/14+0em 1.5em;
     text-decoration: none;
     background-color: $color;
     text-transform: uppercase;

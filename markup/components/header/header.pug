@@ -4,20 +4,22 @@ mixin header(data)
         .header__wrapper
             .header__logo
                 a(href="/")
-                    img(src="%=static=%img/content/nlt_logo.svg" alt="Logo")
+                    img(src="%=static=%img/content/logos/logo.png" alt="Logo")
             .header__menu
                 .header__menuClose 
                 .header__nav
-                    a(href="index.html") Home
-                    a(href="about.html") About Us
-                    a(href="") Locations
-                    a(href="contacts.html") Contact Us
-                .header__workTime open 24h
-                a(href="tel:8004441234").header__phone (800) 444-1234
-                a(href='#').header__button contact us
+                    a(href="index.html") Главная
+                    a(href="#") Специальные предложения
+                    a(href="#") Доставка и Оплата
+                    a(href="#") Фотогалерея
+                    a(href="#") Сертификаты
+                    a(href="#") Контакты
+                .header__workTime ПН-ВС с 9 до 18
+                a(href="tel:88442265404").header__phone 8 (8442) 265404
+                a(href='#').header__button позвоните нам
             .header__contacts-m
-                a(href="tel:8004441234").header__phone (800) 444-1234
-                a(href='#').header__button contact us
+                a(href="tel:88442265404").header__phone 8 (8442) 265404
+                a(href='#').header__button позвоните нам
             .header__trigger 
         +search()
 

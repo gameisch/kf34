@@ -30,6 +30,7 @@
     }
     &__logo {
         width: 20%;
+        max-width: 200px;
         @media (max-width: $grid-sl) {
             width: 40%;
         }

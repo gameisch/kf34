@@ -25,6 +25,7 @@
     }
     &__copy {
         @include wrapper();
+        width: 1140px;
         justify-content: space-between;
         align-items: center;
     }

@@ -16,7 +16,9 @@
     "babel-core": "^6.16.0",
     "babel-loader": "^6.2.5",
     "babel-preset-es2015": "^6.16.0",
-    "npm": "^6.3.0"
+    "jpegtran-bin": "^4.0.0",
+    "npm": "^6.3.0",
+    "optipng-bin": "^5.0.0"
   },
   "devDependencies": {
     "autoprefixer": "^6.5.0",
