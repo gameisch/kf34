@@ -148,23 +148,23 @@ function initMap() {
     //     return false;
     // });
 }
-$(document).ready(function () {
-    if ($('#map').length > 0) {
-        $.post('/markup/static/misc/pins.json_',
-            {'action': 'getState'},
-            function (resp) {
-                console.log('_AJAX INIT');
-                initMap(JSON.parse(resp));
-            });
-    }
-});
+// $(document).ready(function () {
+//     if ($('#map').length > 0) {
+//         $.post('/markup/static/misc/pins.json_',
+//             {'action': 'getState'},
+//             function (resp) {
+//                 console.log('_AJAX INIT');
+//                 initMap(JSON.parse(resp));
+//             });
+//     }
+// });
 
-$.post('/admin-ajax.json', { 'action': 'getState' }, function (resp) {
+// $.post('/admin-ajax.json', { 'action': 'getState' }, function (resp) {
     // console.log('_AJAX INIT');
     // initMap(JSON.parse(resp));
     // initMap();
-});
-initMap();
+// });
+// initMap();
 
 
 
