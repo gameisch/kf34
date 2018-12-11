@@ -47,7 +47,7 @@
     &__content {
         display: inline-block;
         width: 100%;
-        padding: 1.5em 2em;
+        padding: 1.6em 2em;
         &-header {
             font-size: em(18);
             font-weight: 700;
@@ -61,11 +61,16 @@
         }
     }
     &__view-more {
-        @include button(#f5f6fb, #1048a8);
+        @include button;
         width: 100%;
+        color:$orange;
+        background-color: lighten($orange, 45%);
         border-radius: 0;
         display: block;
         text-align: center;
+        &:hover{
+            background-color: lighten($orange, 40%)!important;
+        }
     }
     &__request {
         @include button();

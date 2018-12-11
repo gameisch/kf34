@@ -44,9 +44,11 @@
                 </div>
                 <div class="header__menu">
                     <div class="header__menuClose"></div>
+                    <div class="header__sup">
+                        <div class="header__workTime">ПН-ВС с 9 до 18</div><a class="header__phone" href="tel:88442265404">8 (8442) 265404</a><a class="header__button" href="#">позвоните нам</a>
+                    </div>
                     <div class="header__nav"><a href="index.html">Главная</a><a href="#">Специальные предложения</a><a href="#">Доставка и Оплата</a><a href="#">Фотогалерея</a><a href="#">Сертификаты</a><a href="#">Контакты</a>
                     </div>
-                    <div class="header__workTime">ПН-ВС с 9 до 18</div><a class="header__phone" href="tel:88442265404">8 (8442) 265404</a><a class="header__button" href="#">позвоните нам</a>
                 </div>
                 <div class="header__contacts-m"><a class="header__phone" href="tel:88442265404">8 (8442) 265404</a><a class="header__button" href="#">позвоните нам</a>
                 </div>
@@ -101,16 +103,18 @@
             <div class="locations__row">
                 <div class="locations__list">
                     <div class="locations__title">Торговый дом Константинополь</div>
-                    <div class="locations__listItem" id="Franklin Park, IL" data-marker="Franklin Park, IL"><strong>Первый Адрес</strong><span>3333 Mount</span><span>Prospect Road Franklin Park,</span><span>IL. 60131</span>
+                    <div class="locations__listItem" id="loc1" data-marker="loc1"><strong>Первый Адрес</strong><span>3333 Mount</span><span>Prospect Road Franklin Park,</span><span>IL. 60131</span>
                     </div>
-                    <div class="locations__listItem" id="East Hazel Crest, IL" data-marker="East Hazel Crest, IL"><strong>Второй Адрес</strong><span>921 W 171st</span><span>St East Hazel Crest,</span><span>IL 60429</span>
+                    <div class="locations__listItem" id="loc2" data-marker="loc2"><strong>Второй Адрес</strong><span>921 W 171st</span><span>St East Hazel Crest,</span><span>IL 60429</span>
                     </div>
                 </div>
             </div>
             <div class="locations__map" id="map"></div>
-            <div class="map" id="map2"></div>
         </section>
-        <script defer src="https://maps.googleapis.com/maps/api/js?libraries=places&amp;key=AIzaSyCulVJqMD06uQ9q_uwqUn8Jp2wZW4grONk&amp;callback=initMap"></script>
+        <script type="text/javascript" async defer src="https://maps.googleapis.com/maps/api/js?libraries=places&amp;key=AIzaSyCulVJqMD06uQ9q_uwqUn8Jp2wZW4grONk&amp;callback=initMap"></script>
+        <script>
+            function initMap() {}
+        </script>
         <div class="features">
             <div class="features__item">
                 <a href="#">

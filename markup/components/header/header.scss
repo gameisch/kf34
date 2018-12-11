@@ -7,16 +7,42 @@
     z-index: 20;
     padding-top: 25/15+0em;
     padding-bottom: 25/15+0em;
-    transition: .25s;
+    transition:ease-in .15s;
     &--fixed {
         padding-top: 10/15+0em;
         padding-bottom: 10/15+0em;
         box-shadow: 0 5px 10px rgba(#000, .08);
         background-color: rgba(#fff, .96);
+        transition:ease-out .25s;
         .search {
             opacity: 0;
             visibility: hidden;
             //transform: translateY(-50%) scale(1, 0);
+        }
+        .header__menu{
+            width: 85%;
+            flex-wrap: nowrap;
+        }
+        .header__logo {
+            width: 15%;
+        }
+        .header__sup {
+            flex-grow: 1;
+            order: 2;
+            width: auto;
+            padding-bottom: 0;
+        }
+        .header__nav{
+            order:0;
+            a{
+                text-align: center;
+            }
+        }
+        .header__phone{
+            display: none;
+        }
+        .header__workTime{
+            display: none;
         }
     }
     @media (max-width: $grid-sl) {
@@ -31,13 +57,30 @@
     &__logo {
         width: 20%;
         max-width: 200px;
+        transition:ease-in .25s;
         @media (max-width: $grid-sl) {
             width: 40%;
         }
     }
+    &__sup {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding-bottom: 15px;
+        transition:ease-in .25s;
+        div{
+            display: inline-block;
+            width: auto;
+        }
+    }
     &__nav {
-        width: 55%;
+        width: 100%;
         padding-left: 1em;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        transition:ease-in .25s;
         @media (max-width: $grid-lm) {
             width: auto;
             flex-grow: 1;
@@ -58,7 +101,7 @@
             letter-spacing: 1px;
             transition: .25s;
             display: inline-block;
-            margin: 0 2em 0 0;
+            margin: 0;
             @media (max-width: $grid-lm) {
                 margin-right: .6em;
             }
@@ -83,7 +126,7 @@
         text-transform: uppercase;
     }
     &__phone {
-        color: #0D47A1;
+        color: $orange;
         font-size:14/15+0em;
         font-weight: 700;
         letter-spacing: 2px;
@@ -98,6 +141,7 @@
     &__button {
         @include button();
         margin-left: 15px;
+        white-space: nowrap;
         @media (max-width: $grid-sl) {
             margin: 1em 0;
         }
@@ -123,6 +167,7 @@
     &__menu {
         width: 80%;
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
         transition: .25s;

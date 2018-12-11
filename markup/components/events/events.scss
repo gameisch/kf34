@@ -52,7 +52,7 @@
         line-height: 1.8;
     }
     &__link {
-        @include button(#3747b8);
+        @include button($orange);
         display: inline-block;
     }
 }

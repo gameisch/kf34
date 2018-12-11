@@ -6608,7 +6608,7 @@ button.swiper-pagination-bullet {
 
 ::-webkit-scrollbar-thumb {
   border-radius: 100px;
-  background: #1048a8;
+  background: #ff6c06;
 }
 
 body {
@@ -11436,7 +11436,7 @@ section.p0 {
 .slick-prev:before,
 .slick-next:before {
   line-height: 1;
-  color: #1048a8;
+  color: #ff6c06;
   opacity: 0.85;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -13552,7 +13552,7 @@ li.ui-timepicker-selected .ui-timepicker-duration, .ui-timepicker-list li:hover 
 .equip-item__content {
   display: inline-block;
   width: 100%;
-  padding: 1.5em 2em;
+  padding: 1.6em 2em;
 }
 
 .equip-item__content-header {
@@ -13570,7 +13570,7 @@ li.ui-timepicker-selected .ui-timepicker-duration, .ui-timepicker-list li:hover 
 }
 
 .equip-item__view-more {
-  color: #1048a8;
+  color: #FFFFFF;
   font-size: 0.75em;
   font-weight: 700;
   letter-spacing: 1px;
@@ -13578,20 +13578,26 @@ li.ui-timepicker-selected .ui-timepicker-duration, .ui-timepicker-list li:hover 
   border-radius: 4px;
   padding: 1.35714em 1.5em;
   text-decoration: none;
-  background-color: #f5f6fb;
+  background-color: #00BA55;
   text-transform: uppercase;
   -webkit-transition: .25s;
   transition: .25s;
   display: inline-block;
   border: none;
   width: 100%;
+  color: #ff6c06;
+  background-color: #fff3ec;
   border-radius: 0;
   display: block;
   text-align: center;
 }
 
 .equip-item__view-more:hover {
-  background-color: #e3e6f4 !important;
+  background-color: #00a149 !important;
+}
+
+.equip-item__view-more:hover {
+  background-color: #ffe4d2 !important;
 }
 
 .equip-item__request {
@@ -13872,7 +13878,7 @@ li.ui-timepicker-selected .ui-timepicker-duration, .ui-timepicker-list li:hover 
   border-radius: 4px;
   padding: 1.35714em 1.5em;
   text-decoration: none;
-  background-color: #3747b8;
+  background-color: #ff6c06;
   text-transform: uppercase;
   -webkit-transition: .25s;
   transition: .25s;
@@ -13882,7 +13888,7 @@ li.ui-timepicker-selected .ui-timepicker-duration, .ui-timepicker-list li:hover 
 }
 
 .events-article__link:hover {
-  background-color: #313fa4 !important;
+  background-color: #ec6000 !important;
 }
 
 .faq-mix {
@@ -13980,7 +13986,7 @@ li.ui-timepicker-selected .ui-timepicker-duration, .ui-timepicker-list li:hover 
 
 .faq-mix__recent-articles .faq-mix-article__header:hover {
   text-decoration: none;
-  color: #1048a8;
+  color: #ff6c06;
 }
 
 .faq-mix__articles {
@@ -14022,7 +14028,7 @@ li.ui-timepicker-selected .ui-timepicker-duration, .ui-timepicker-list li:hover 
 }
 
 .faq-mix__articles .faq-mix-article a {
-  color: #1048a8;
+  color: #ff6c06;
   font-weight: 600;
   text-decoration: none;
 }
@@ -14694,7 +14700,7 @@ li.ui-timepicker-selected .ui-timepicker-duration, .ui-timepicker-list li:hover 
 }
 
 .footer__designed a:hover {
-  color: #3277ec;
+  color: #ffa86c;
 }
 
 .founders {
@@ -14807,8 +14813,8 @@ li.ui-timepicker-selected .ui-timepicker-duration, .ui-timepicker-list li:hover 
   z-index: 20;
   padding-top: 1.66667em;
   padding-bottom: 1.66667em;
-  -webkit-transition: .25s;
-  transition: .25s;
+  -webkit-transition: ease-in .15s;
+  transition: ease-in .15s;
 }
 
 .header--fixed {
@@ -14816,11 +14822,52 @@ li.ui-timepicker-selected .ui-timepicker-duration, .ui-timepicker-list li:hover 
   padding-bottom: 0.66667em;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
   background-color: rgba(255, 255, 255, 0.96);
+  -webkit-transition: ease-out .25s;
+  transition: ease-out .25s;
 }
 
 .header--fixed .search {
   opacity: 0;
   visibility: hidden;
+}
+
+.header--fixed .header__menu {
+  width: 85%;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.header--fixed .header__logo {
+  width: 15%;
+}
+
+.header--fixed .header__sup {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  width: auto;
+  padding-bottom: 0;
+}
+
+.header--fixed .header__nav {
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+}
+
+.header--fixed .header__nav a {
+  text-align: center;
+}
+
+.header--fixed .header__phone {
+  display: none;
+}
+
+.header--fixed .header__workTime {
+  display: none;
 }
 
 @media (max-width: 768px) {
@@ -14863,6 +14910,8 @@ li.ui-timepicker-selected .ui-timepicker-duration, .ui-timepicker-list li:hover 
 .header__logo {
   width: 20%;
   max-width: 200px;
+  -webkit-transition: ease-in .25s;
+  transition: ease-in .25s;
 }
 
 @media (max-width: 768px) {
@@ -14871,9 +14920,41 @@ li.ui-timepicker-selected .ui-timepicker-duration, .ui-timepicker-list li:hover 
   }
 }
 
+.header__sup {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 15px;
+  -webkit-transition: ease-in .25s;
+  transition: ease-in .25s;
+}
+
+.header__sup div {
+  display: inline-block;
+  width: auto;
+}
+
 .header__nav {
-  width: 55%;
+  width: 100%;
   padding-left: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-transition: ease-in .25s;
+  transition: ease-in .25s;
 }
 
 @media (max-width: 1240px) {
@@ -14912,7 +14993,7 @@ li.ui-timepicker-selected .ui-timepicker-duration, .ui-timepicker-list li:hover 
   -webkit-transition: .25s;
   transition: .25s;
   display: inline-block;
-  margin: 0 2em 0 0;
+  margin: 0;
 }
 
 @media (max-width: 1240px) {
@@ -14945,7 +15026,7 @@ li.ui-timepicker-selected .ui-timepicker-duration, .ui-timepicker-list li:hover 
 }
 
 .header__phone {
-  color: #0D47A1;
+  color: #ff6c06;
   font-size: 0.93333em;
   font-weight: 700;
   letter-spacing: 2px;
@@ -14977,6 +15058,7 @@ li.ui-timepicker-selected .ui-timepicker-duration, .ui-timepicker-list li:hover 
   display: inline-block;
   border: none;
   margin-left: 15px;
+  white-space: nowrap;
 }
 
 .header__button:hover {
@@ -15026,6 +15108,8 @@ li.ui-timepicker-selected .ui-timepicker-duration, .ui-timepicker-list li:hover 
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -15212,7 +15296,7 @@ li.ui-timepicker-selected .ui-timepicker-duration, .ui-timepicker-list li:hover 
 .image-slider__slider .swiper-button-prev:after, .image-slider__slider .swiper-button-next:after {
   font-family: "Material Icons";
   font-size: 3.33333em;
-  color: #1048a8;
+  color: #ff6c06;
 }
 
 @media (max-width: 480px) {
@@ -16138,7 +16222,7 @@ li.ui-timepicker-selected .ui-timepicker-duration, .ui-timepicker-list li:hover 
 }
 
 .inquiry-step__bottom a, .inquiry-step__bottom-reset {
-  color: #1048a8;
+  color: #ff6c06;
   font-size: 1em;
   font-weight: 400;
   text-decoration: none;
@@ -16163,7 +16247,7 @@ li.ui-timepicker-selected .ui-timepicker-duration, .ui-timepicker-list li:hover 
 
 .inquiry-step__bottom a:hover, .inquiry-step__bottom-reset:hover {
   text-decoration: underline;
-  color: #145cd7;
+  color: #ff8a39;
 }
 
 .inquiry-step__bottom .inquiry-step__bottom-submit {
@@ -16693,7 +16777,7 @@ body.modal-has-opened {
 
 [type="checkbox"]:focus + label::before,
 [type="radio"]:focus + label::before {
-  box-shadow: 0 0 10px 0 rgba(16, 72, 168, 0.4) !important;
+  box-shadow: 0 0 10px 0 rgba(255, 108, 6, 0.4) !important;
 }
 
 [type="checkbox"]:hover,
@@ -16725,10 +16809,10 @@ body.modal-has-opened {
 [type="checkbox"] + label::before,
 [type="radio"] + label::before {
   background-color: #fff;
-  border: 1px solid #1048a8;
+  border: 1px solid #ff6c06;
   box-sizing: content-box;
   content: '';
-  color: #1048a8;
+  color: #ff6c06;
   margin-right: 3.5px;
   top: 50%;
   left: 0;
@@ -16742,7 +16826,7 @@ body.modal-has-opened {
 [type="radio"] + label::after {
   box-sizing: content-box;
   content: '';
-  background-color: #1048a8;
+  background-color: #ff6c06;
   position: absolute;
   top: 50%;
   left: 4px;
@@ -16789,7 +16873,7 @@ body.modal-has-opened {
   box-sizing: content-box;
   border-radius: 2px;
   content: '';
-  color: #1048a8;
+  color: #ff6c06;
   margin-right: 9.1px;
   top: 50%;
   left: 0;
@@ -16820,8 +16904,8 @@ body.modal-has-opened {
 }
 
 [type="checkbox"]:checked + label::before {
-  background-color: #1048a8;
-  border: 1px solid #1048a8;
+  background-color: #ff6c06;
+  border: 1px solid #ff6c06;
 }
 
 [type="checkbox"]:checked + label::after {
@@ -16966,7 +17050,7 @@ select option {
 select optgroup:hover,
 select option:hover {
   background: #fff;
-  color: #1048a8;
+  color: #ff6c06;
 }
 
 .form-group .selects {
@@ -16995,7 +17079,7 @@ select option:hover {
 
 .selects:after {
   content: '';
-  color: #1048a8;
+  color: #ff6c06;
   font-family: "Material Icons";
   font-size: 1.56667em;
   position: absolute;
@@ -17083,12 +17167,12 @@ select option:hover {
 .selects .wpcf7-form-control-wrap select optgroup:hover,
 .selects .wpcf7-form-control-wrap select option:hover {
   background: #fff;
-  color: #1048a8;
+  color: #ff6c06;
 }
 
 .selects .wpcf7-form-control-wrap:after {
   content: '';
-  color: #1048a8;
+  color: #ff6c06;
   font-family: "Material Icons";
   font-size: 1.56667em;
   position: absolute;
@@ -17181,12 +17265,12 @@ select option:hover {
 .wpcf7-select select optgroup:hover,
 .wpcf7-select select option:hover {
   background: #fff;
-  color: #1048a8;
+  color: #ff6c06;
 }
 
 .wpcf7-select:after {
   content: '';
-  color: #1048a8;
+  color: #ff6c06;
   font-family: "Material Icons";
   font-size: 1.56667em;
   position: absolute;
@@ -17251,7 +17335,7 @@ select option:hover {
 .search__select select:active {
   outline-style: none;
   -moz-outline-color: transparent;
-  background: #1048a8;
+  background: #ff6c06;
   color: #fff;
 }
 
@@ -17279,7 +17363,7 @@ select option:hover {
 .search__select select optgroup:hover,
 .search__select select option:hover {
   background: #fff;
-  color: #1048a8;
+  color: #ff6c06;
 }
 
 /* IE 10/11+ - This hides native dropdown button arrow so it will have the custom appearance, IE 9 and earlier get a native select - targeting media query hack via http://browserhacks.com/#hack-28f493d247a12ab654f6c3637f6978d5 - looking for better ways to achieve this targeting */
@@ -17310,7 +17394,7 @@ select option:hover {
 }
 
 .css-event-form .wrap h3 {
-  color: #1048a8;
+  color: #ff6c06;
   font-weight: 600;
   padding-bottom: 10px;
   padding-top: 10px;
@@ -17764,7 +17848,7 @@ select option:hover {
 .em-calendar tbody td ul li a, .fullcalendar tbody td ul li a {
   font-weight: 400;
   font-size: 12px;
-  color: #1048a8 !important;
+  color: #ff6c06 !important;
 }
 
 @media (max-width: 960px) {
@@ -17774,7 +17858,7 @@ select option:hover {
 }
 
 .em-calendar tbody td ul li:hover, .fullcalendar tbody td ul li:hover {
-  color: #1048a8;
+  color: #ff6c06;
 }
 
 .em-calendar tbody td ul li:hover a, .fullcalendar tbody td ul li:hover a {
@@ -17783,7 +17867,7 @@ select option:hover {
 
 .em-calendar .em-calnav, .fullcalendar .em-calnav {
   text-decoration: none;
-  color: #1048a8;
+  color: #ff6c06;
 }
 
 .em-calendar a, .fullcalendar a {
@@ -17906,7 +17990,7 @@ input[type='radio']:not(:focus):valid {
 .modal-content__close:before {
   line-height: 1;
   font-size: 1.2em;
-  color: #1048a8;
+  color: #ff6c06;
   content: '\e92a';
   font-family: Linearicons, sans-serif;
 }
@@ -17927,7 +18011,7 @@ input[type='radio']:not(:focus):valid {
 
 .modal-content__header {
   font-size: 1.5em;
-  color: #1048a8;
+  color: #ff6c06;
   text-align: center;
   padding-bottom: 1em;
 }
@@ -18254,7 +18338,7 @@ input[type='radio']:not(:focus):valid {
 .modal-form__value input[type="email"]:focus,
 .modal-form__value input[type="tel"]:focus,
 .modal-form__value .datepicker-here:focus {
-  border-color: #1048a8;
+  border-color: #ff6c06;
 }
 
 .modal-form__value textarea {
@@ -18268,7 +18352,7 @@ input[type='radio']:not(:focus):valid {
 }
 
 .modal-form__value textarea:focus {
-  border-color: #1048a8;
+  border-color: #ff6c06;
 }
 
 .modal-form__value label {
@@ -18316,7 +18400,7 @@ input[type='radio']:not(:focus):valid {
 }
 
 .modal-form__value .jq-selectbox__trigger-arrow:after {
-  color: #1048a8;
+  color: #ff6c06;
 }
 
 .modal-form__value--time {
@@ -18427,12 +18511,12 @@ input[type='radio']:not(:focus):valid {
 .modal-form__value--time .wpcf7-form-control-wrap select optgroup:hover,
 .modal-form__value--time .wpcf7-form-control-wrap select option:hover {
   background: #fff;
-  color: #1048a8;
+  color: #ff6c06;
 }
 
 .modal-form__value--time .wpcf7-form-control-wrap:after {
   content: '';
-  color: #1048a8;
+  color: #ff6c06;
   font-family: "Material Icons";
   font-size: 1.56667em;
   position: absolute;
@@ -18600,7 +18684,7 @@ input[type='radio']:not(:focus):valid {
 .objectframe object__value input[type="email"]:focus,
 .objectframe object__value input[type="tel"]:focus,
 .objectframe object__value .datepicker-here:focus {
-  border-color: #1048a8;
+  border-color: #ff6c06;
 }
 
 .objectframe object__value textarea {
@@ -18614,7 +18698,7 @@ input[type='radio']:not(:focus):valid {
 }
 
 .objectframe object__value textarea:focus {
-  border-color: #1048a8;
+  border-color: #ff6c06;
 }
 
 .objectframe object__value label {
@@ -18662,7 +18746,7 @@ input[type='radio']:not(:focus):valid {
 }
 
 .objectframe object__value .jq-selectbox__trigger-arrow:after {
-  color: #1048a8;
+  color: #ff6c06;
 }
 
 .objectframe object__value--time {
@@ -18816,7 +18900,7 @@ input[type='radio']:not(:focus):valid {
 .booking_form .controls input[type="email"]:focus,
 .booking_form .controls input[type="tel"]:focus,
 .booking_form .controls .datepicker-here:focus {
-  border-color: #1048a8;
+  border-color: #ff6c06;
 }
 
 .booking_form .controls textarea {
@@ -18830,7 +18914,7 @@ input[type='radio']:not(:focus):valid {
 }
 
 .booking_form .controls textarea:focus {
-  border-color: #1048a8;
+  border-color: #ff6c06;
 }
 
 .booking_form .controls label {
@@ -18878,7 +18962,7 @@ input[type='radio']:not(:focus):valid {
 }
 
 .booking_form .controls .jq-selectbox__trigger-arrow:after {
-  color: #1048a8;
+  color: #ff6c06;
 }
 
 .booking_form .controls--time {
@@ -19307,7 +19391,7 @@ input[type='radio']:not(:focus):valid {
 }
 
 .post-mix__recent-articles .post-mix-article__header {
-  color: #1048a8;
+  color: #ff6c06;
 }
 
 .post-mix__recent-articles .post-mix-article__header:hover {
@@ -19763,7 +19847,7 @@ input[type='radio']:not(:focus):valid {
 
 .product-info__link {
   text-decoration: none;
-  color: #1048a8;
+  color: #ff6c06;
   font-weight: 700;
 }
 
@@ -20066,7 +20150,7 @@ input[type='radio']:not(:focus):valid {
 }
 
 .product-form__field input:focus, .product-form__field .jq-selectbox__select:focus {
-  border-color: #1048a8;
+  border-color: #ff6c06;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -20146,7 +20230,7 @@ input[type='radio']:not(:focus):valid {
 }
 
 .product-form__phone a {
-  color: #1048a8;
+  color: #ff6c06;
   text-decoration: none;
 }
 
@@ -20998,10 +21082,10 @@ input[type='radio']:not(:focus):valid {
   left: 0;
   width: 100%;
   padding: .8em 0;
-  background-color: #0D47A1;
-  background: -webkit-linear-gradient(left, #0d47a1 0%, #0d47a1 50%, #115cd0 50%, #115cd0 100%);
-  background: linear-gradient(to right, #0d47a1 0%, #0d47a1 50%, #115cd0 50%, #115cd0 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0d47a1', endColorstr='#115cd0',GradientType=1 );
+  background-color: #ff6c06;
+  background: -webkit-linear-gradient(left, #ec6000 0%, #ec6000 50%, #ff6c06 50%, #ff6c06 100%);
+  background: linear-gradient(to right, #ec6000 0%, #ec6000 50%, #ff6c06 50%, #ff6c06 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff6c06', endColorstr='#ff6c06',GradientType=1 );
   -webkit-transition: .25s;
   transition: .25s;
   opacity: 1;
@@ -21010,10 +21094,10 @@ input[type='radio']:not(:focus):valid {
 @media (max-width: 480px) {
   .search {
     padding: 5px 0;
-    background: #0d47a1;
-    background: -webkit-linear-gradient(top, #0d47a1 0%, #0d47a1 50%, #115cd0 50%, #115cd0 100%);
-    background: linear-gradient(to bottom, #0d47a1 0%, #0d47a1 50%, #115cd0 50%, #115cd0 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0d47a1', endColorstr='#115cd0',GradientType=0 );
+    background: #ff6c06;
+    background: -webkit-linear-gradient(top, #ec6000 0%, #ec6000 50%, #ff6c06 50%, #ff6c06 100%);
+    background: linear-gradient(to bottom, #ec6000 0%, #ec6000 50%, #ff6c06 50%, #ff6c06 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff6c06', endColorstr='#ff6c06',GradientType=0 );
   }
 }
 
@@ -21118,7 +21202,7 @@ input[type='radio']:not(:focus):valid {
           transform: translateY(-50%);
   border: 0;
   background: transparent;
-  color: #134BA3;
+  color: #ff6c06;
   font-family: "Material Icons";
   font-size: 2em;
   text-align: center;
@@ -21127,7 +21211,7 @@ input[type='radio']:not(:focus):valid {
 }
 
 .search__field button:hover {
-  color: #1656ba;
+  color: #ff7b20;
 }
 
 .not-found {
@@ -21247,7 +21331,7 @@ input[type='radio']:not(:focus):valid {
   line-height: 30px;
   border-radius: 4px;
   background-color: #ffffff;
-  color: #1f56ff;
+  color: #ff6c06;
   font-size: 1.7em;
   margin: 15px 10px;
   display: inline-block;
@@ -21872,7 +21956,7 @@ input[type='radio']:not(:focus):valid {
 }
 
 .serp-filter__more {
-  color: #1048a8;
+  color: #ff6c06;
   font-weight: 700;
   text-decoration: none;
   -webkit-transition: .25s;
@@ -21880,7 +21964,7 @@ input[type='radio']:not(:focus):valid {
 }
 
 .serp-filter__more:hover {
-  color: #0c3479;
+  color: #d25600;
 }
 
 .serp-filter__checkbox {

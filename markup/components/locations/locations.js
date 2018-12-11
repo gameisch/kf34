@@ -9,13 +9,8 @@ function initMap() {
     });
     var centerMap = {lat: 41.8781136, lng: -87.6297982};
     var locations = [
-        ['Franklin Park, IL', 41.936016, -87.879195, 4],
-        ['East Hazel Crest, IL', 41.575799, -87.650273, 5],
-        ['National Battery of Chicago', 41.936016, -87.879195, 3],
-        ['Little Rock, AR', 34.725432, -92.358556, 2],
-        ['Springdale, AR', 36.186549, -94.15304, 1],
-        ['Memphis, TN', 35.103543, -89.978498, 6],
-        ['Jackson, TN', 35.649137, -88.830597, 7]
+        ['loc1', 41.936016, -87.879195, 4],
+        ['loc2', 41.575799, -87.650273, 5]
     ];
     var mapProp = {
         center: centerMap,
@@ -60,7 +55,7 @@ function initMap() {
                         // console.log(status, locations[i][0]);
                         $('.locations__listItem').removeClass('green_place');
                         $(link[q]).addClass('green_place');
-                        $(list).scrollTo(link[q], 500);
+                        // $(list).scrollTo(link[q], 500);
                     }
                 }
                 for (var j = 0; j < markers.length; j++) {
@@ -94,29 +89,30 @@ function initMap() {
     }
     // for (l = 0; l < locations.length; l++) {
         // console.log(locations[l][0]);
-    $('.locations__listItem').on('click', function () {
-        var id = this.id;
-        // var block = $('.hover[data-id="#' + id + '"]');
-        // block.css('display', 'block');
-        if (id === locations[l][id]) {
-            // changeMarkerPos(41.936016, -87.879195);
-            $(id).addClass('green_place');
-            $(this).nextAll('.locations__listItem').removeClass('green_place');
-            $(this).prevAll('.locations__listItem').removeClass('green_place');
-        }
-        console.log(id);
-    });
+        // $('.locations__listItem').on('click', function () {
+            // var id = this.id;
+            // var block = $('.hover[data-marker="#' + id + '"]');
+            // block.css('display', 'block');
+    //         if (id === locations[l][id]) {
+    //             // changeMarkerPos(41.936016, -87.879195);
+    //             $(id).addClass('green_place');
+    //             $(this).nextAll('.locations__listItem').removeClass('green_place');
+    //             $(this).prevAll('.locations__listItem').removeClass('green_place');
+    //         }
+    //         console.log(id);
+    //     });
     // }
+
     // $('.locations__listItem').on('click', function () {
     //     var $this = $(this).attr('id');
-    //     if ($this === 'mark1') {
+    //     if ($this === 'loc1') {
     //         changeMarkerPos(41.936016, -87.879195);
-    //         $('#mark1').addClass('green_place');
+    //         $('#loc1').addClass('green_place');
     //         $(this).nextAll('.locations__listItem').removeClass('green_place');
     //         $(this).prevAll('.locations__listItem').removeClass('green_place');
-    //     } else if ($this === 'mark2') {
+    //     } else if ($this === 'loc2') {
     //         changeMarkerPos(41.575799, -87.650273);
-    //         $('#mark2').addClass('green_place');
+    //         $('#loc2').addClass('green_place');
     //         $(this).nextAll('.locations__listItem').removeClass('green_place');
     //         $(this).prevAll('.locations__listItem').removeClass('green_place');
     //     } else if ($this === 'mark3') {
