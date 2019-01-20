@@ -11381,7 +11381,7 @@ section.p0 {
 
 /* Slider */
 .slick-loading .slick-list {
-  background: #fff url("./ajax-loader.gif") center center no-repeat;
+  background: #fff url("./../img/content/ajax-loader.gif") center center no-repeat;
 }
 
 /* Icons */
@@ -13173,7 +13173,7 @@ li.ui-timepicker-selected .ui-timepicker-duration, .ui-timepicker-list li:hover 
 }
 
 .contacts-form .agr [type="checkbox"] + label::after {
-  top: 14px;
+  top: 16px;
   left: -16px;
 }
 
@@ -14781,6 +14781,9 @@ li.ui-timepicker-selected .ui-timepicker-duration, .ui-timepicker-list li:hover 
 
 .founders__item {
   width: 48%;
+  height: 200px;
+  display: inline-block;
+  text-align: center;
 }
 
 @media (max-width: 480px) {
@@ -14790,8 +14793,14 @@ li.ui-timepicker-selected .ui-timepicker-duration, .ui-timepicker-list li:hover 
   }
 }
 
-.founders__item img {
-  display: block;
+.founders__item .img {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   border-radius: 50%;
   margin: 0 auto 25px;
 }
@@ -15231,6 +15240,18 @@ li.ui-timepicker-selected .ui-timepicker-duration, .ui-timepicker-list li:hover 
   border-radius: 50%;
 }
 
+.image-slider--persons .image-slider__image a {
+  font-weight: 700;
+  font-size: 1.33333em;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.image-slider--persons .image-slider__image a:hover {
+  text-decoration: underline;
+}
+
 .image-slider--persons .image-slider__image span {
   font-weight: 700;
   font-size: 1.33333em;
@@ -15360,7 +15381,7 @@ li.ui-timepicker-selected .ui-timepicker-duration, .ui-timepicker-list li:hover 
 .infoblock-1 {
   position: relative;
   padding: 4.33333em 0 4.33333em;
-  background-image: url("../img/content/ib1-bg.png");
+  background-image: url("../img/content/equip-bg.jpg");
   background-size: cover;
 }
 
@@ -15711,7 +15732,7 @@ li.ui-timepicker-selected .ui-timepicker-duration, .ui-timepicker-list li:hover 
       -ms-flex-align: center;
           align-items: center;
   padding: 10em 15px;
-  background-image: url("../img/content/ib4-bg.png");
+  background-image: url("../img/content/equip-bg.jpg");
   background-size: cover;
 }
 
@@ -15753,7 +15774,7 @@ li.ui-timepicker-selected .ui-timepicker-duration, .ui-timepicker-list li:hover 
 }
 
 .infoblock-4 a:hover {
-  color: #105EB7;
+  color: #ff6c06;
   background-color: #fff;
 }
 
@@ -15820,7 +15841,7 @@ li.ui-timepicker-selected .ui-timepicker-duration, .ui-timepicker-list li:hover 
 }
 
 .infoblock-5 {
-  background-color: #0d47a1;
+  background-color: #ff6c06;
   position: relative;
 }
 
@@ -16020,9 +16041,10 @@ li.ui-timepicker-selected .ui-timepicker-duration, .ui-timepicker-list li:hover 
 
 .infoblock-8__item {
   min-height: 350px;
-  background-color: #0D47A1;
+  background-color: #ff6c06;
   width: 25%;
   padding: 1em 0;
+  text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -16049,15 +16071,15 @@ li.ui-timepicker-selected .ui-timepicker-duration, .ui-timepicker-list li:hover 
 }
 
 .infoblock-8__item:nth-child(2n) {
-  background-color: #0e4daf;
+  background-color: #ff7515;
 }
 
 .infoblock-8__item span {
   display: inline-block;
   width: 50%;
-  text-align: left;
+  text-align: center;
   color: #FFFFFF;
-  font-size: 1.86667em;
+  font-size: 1.33333em;
   font-weight: bold;
   line-height: 1.4;
 }
@@ -16376,6 +16398,7 @@ li.ui-timepicker-selected .ui-timepicker-duration, .ui-timepicker-list li:hover 
   background-size: cover;
   position: relative;
   overflow-y: hidden;
+  height: 512px;
 }
 
 .locations__header {
@@ -16420,7 +16443,7 @@ li.ui-timepicker-selected .ui-timepicker-duration, .ui-timepicker-list li:hover 
 
 .locations__map {
   width: 100%;
-  height: 800px;
+  height: 512px;
   position: absolute;
   top: 0;
   z-index: 0;
@@ -16713,7 +16736,7 @@ li.ui-timepicker-selected .ui-timepicker-duration, .ui-timepicker-list li:hover 
 
 .member-description__photo img {
   display: block;
-  border-radius: 50%;
+  border-radius: 6px;
   margin: 0 auto 25px;
 }
 
@@ -16947,7 +16970,7 @@ body.modal-has-opened {
 }
 
 .serp-filter__checkbox [type="checkbox"] + label::after {
-  top: 15px;
+  top: 16px;
 }
 
 @media (max-width: 960px) {
@@ -16965,7 +16988,7 @@ body.modal-has-opened {
 }
 
 .rentals-filter__checkbox [type="checkbox"] + label::after {
-  top: 15px;
+  top: 16px;
 }
 
 @media (max-width: 960px) {
@@ -16990,8 +17013,8 @@ select {
   padding: 5px 45px 5px 10px;
   border-radius: 4px;
   height: 46px;
-  background: transparent;
-  border: 1px solid #aaa;
+  background: #fff;
+  border: 1px solid #ddd;
   color: black;
   font-weight: 700;
   font-size: 0.93333em;
@@ -19185,7 +19208,7 @@ input[type='radio']:not(:focus):valid {
 }
 
 .news-events-post__more {
-  color: #105eb7;
+  color: #ff6c06;
   font-size: 0.8em;
   text-decoration: none;
   font-weight: 700;
@@ -19255,7 +19278,7 @@ input[type='radio']:not(:focus):valid {
   border-radius: 4px;
   padding: 1.35714em 1.5em;
   text-decoration: none;
-  background-color: #3747b8;
+  background-color: #00BA55;
   text-transform: uppercase;
   -webkit-transition: .25s;
   transition: .25s;
@@ -19265,11 +19288,11 @@ input[type='radio']:not(:focus):valid {
 }
 
 .news-events-article__link:hover {
-  background-color: #313fa4 !important;
+  background-color: #00a149 !important;
 }
 
 .news-events-article__more {
-  color: #105eb7;
+  color: #ff6c06;
   font-size: 0.8em;
   text-decoration: none;
   font-weight: 700;
@@ -19326,7 +19349,7 @@ input[type='radio']:not(:focus):valid {
 }
 
 .pagination__item.active {
-  background-color: #3747b8;
+  background-color: #00BA55;
   color: #fff;
 }
 
@@ -19567,7 +19590,7 @@ input[type='radio']:not(:focus):valid {
 }
 
 .present {
-  background-image: url(../img/content/shutterstock-425439460.jpg);
+  background-image: url(../img/content/rental-shenanigans.png);
   background-position: 50% 50%;
   background-size: cover;
   position: relative;
@@ -19930,6 +19953,33 @@ input[type='radio']:not(:focus):valid {
   margin-bottom: 25px;
 }
 
+.product-description__price {
+  color: #1a1a1c;
+  font-size: 2.13333em;
+  line-height: 1;
+  margin-bottom: 25px;
+}
+
+.product-description__price strong {
+  margin-right: 5px;
+  color: #000;
+}
+
+.product-description__price span {
+  display: inline-block;
+  padding: 15px 20px;
+  background: #ff6c06;
+  color: #fff;
+}
+
+@media (max-width: 530px) {
+  .product-description__price {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+}
+
 .product-description__col {
   width: 40%;
   margin-bottom: 25px;
@@ -19961,8 +20011,8 @@ input[type='radio']:not(:focus):valid {
 .product-form {
   padding: 2.66667em;
   border-radius: 4px;
-  border: 1px solid #ebecf7;
-  background-color: #f5f6fb;
+  border: 1px solid rgba(255, 108, 6, 0.15);
+  background-color: rgba(255, 108, 6, 0.08);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -20024,7 +20074,6 @@ input[type='radio']:not(:focus):valid {
 
 .product-form__field.big span:nth-child(2) label {
   margin-right: 35px;
-  border-right: 1px solid #aaa;
 }
 
 @media (max-width: 530px) {
@@ -20036,7 +20085,6 @@ input[type='radio']:not(:focus):valid {
 @media (max-width: 530px) {
   .product-form__field.big span:nth-child(2) {
     padding-bottom: 10px;
-    border-bottom: 1px solid #aaa;
   }
 }
 
@@ -20563,7 +20611,7 @@ input[type='radio']:not(:focus):valid {
 }
 
 .rentals-item__view-more {
-  color: #1048a8;
+  color: #fff;
   font-size: 0.75em;
   font-weight: 700;
   letter-spacing: 1px;
@@ -20571,7 +20619,7 @@ input[type='radio']:not(:focus):valid {
   border-radius: 4px;
   padding: 1.35714em 1.5em;
   text-decoration: none;
-  background-color: #f5f6fb;
+  background-color: #00BA55;
   text-transform: uppercase;
   -webkit-transition: .25s;
   transition: .25s;
@@ -20583,7 +20631,7 @@ input[type='radio']:not(:focus):valid {
 }
 
 .rentals-item__view-more:hover {
-  background-color: #e3e6f4 !important;
+  background-color: #00a149 !important;
 }
 
 .rentals-item__request {
@@ -20954,7 +21002,7 @@ input[type='radio']:not(:focus):valid {
   width: 80%;
   position: absolute;
   height: auto;
-  top: -21px;
+  top: -23px;
   border-radius: 4px;
   border: solid 1px #fff;
   background-color: transparent;
@@ -20964,6 +21012,12 @@ input[type='radio']:not(:focus):valid {
   box-shadow: 0 0 15px 1px rgba(13, 71, 161, 0.2);
   -webkit-transition: all .2s;
   transition: all .2s;
+}
+
+@media (max-width: 960px) {
+  #selectBox {
+    top: -21px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -21215,7 +21269,7 @@ input[type='radio']:not(:focus):valid {
 }
 
 .not-found {
-  background-image: url(../img/content/reviews-bg.jpg);
+  background-image: url(../img/content/img5.jpg);
   background-size: cover;
   overflow: hidden;
 }
@@ -21338,7 +21392,8 @@ input[type='radio']:not(:focus):valid {
   overflow-wrap: unset;
   text-transform: lowercase;
   font-weight: 700;
-  padding: .5em 1.1em;
+  line-height: 1;
+  padding: .5em 1.1em .65em;
 }
 
 @media (max-width: 768px) {
@@ -21780,7 +21835,7 @@ input[type='radio']:not(:focus):valid {
   color: #ffffff;
   padding: 2.66667em;
   position: relative;
-  background: #222325 url("../img/content/ib5-img.png") no-repeat;
+  background: #222325 url("../img/content/stok-bg.jpg") no-repeat;
   background-size: 50%;
   background-position: center right;
   border-radius: 4px;

@@ -10,12 +10,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta content="telephone=no" name="format-detection">
         <meta name="HandheldFriendly" content="true">
-        <!--[if IE]><!-->
-        <link href="static/css/main_ie.css" rel="stylesheet" type="text/css">
-        <![endif]-->
-      
-      <!--[if (gt IE 9)|!(IE)]>
-        <!-->
+
+        <!--[if (gt IE 9)|!(IE)]><!-->
         <link href="static/css/main.css" rel="stylesheet" type="text/css">
         <!--<![endif]-->
         <meta property="og:title" content="#{data.title}">
@@ -45,12 +41,12 @@
                 <div class="header__menu">
                     <div class="header__menuClose"></div>
                     <div class="header__sup">
-                        <div class="header__workTime">ПН-ВС с 9 до 18</div><a class="header__phone" href="tel:88442265404">8 (8442) 265404</a><a class="header__button" href="#">позвоните нам</a>
+                        <div class="header__workTime">ПН-ВС с 9 до 18</div><a class="header__phone" href="tel:88442265404">8 (8442) 265404</a><a class="header__button" href="/contact.html">контакты</a>
                     </div>
-                    <div class="header__nav"><a href="index.html">Главная</a><a href="#">Специальные предложения</a><a href="#">Доставка и Оплата</a><a href="#">Фотогалерея</a><a href="#">Сертификаты</a><a href="#">Контакты</a>
+                    <div class="header__nav"><a href="index.html">Главная</a><a href="#">Специальные предложения</a><a href="#">Доставка и Оплата</a><a href="#">Фотогалерея</a><a href="#">Сертификаты</a>
                     </div>
                 </div>
-                <div class="header__contacts-m"><a class="header__phone" href="tel:88442265404">8 (8442) 265404</a><a class="header__button" href="#">позвоните нам</a>
+                <div class="header__contacts-m"><a class="header__phone" href="tel:88442265404">8 (8442) 265404</a><a class="header__button" href="/contact.html">контакты</a>
                 </div>
                 <div class="header__trigger"></div>
             </div>
@@ -96,11 +92,11 @@
                 </div>
             </div>
         </div>
-        <div class="top-info" style="background-image: url(static/img/content/rentasl-bg.jpg);">
-            <div class="top-info__header">Rentals</div>
+        <div class="top-info" style="background-image: url(static/img/content/stok-bg.jpg);">
+            <div class="top-info__header">Вызов мастера</div>
             <div class="top-info__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </div><a href='javascript:void(null);' id='re' class='top-info__button green re top-re' modal-open='r-rental'>rental request form</a>+ <a href='javascript:void(null);' class='top-info__button blue rse' modal-open='rse'>end rental form</a>
-            <div class="top-info__contacts"><span>Call About Service:</span><a href='tel:(312) 444-1234' class='phone'>(312) 444-1234</a><span>or</span><a href='mailto:ex@mail.ma' class='email'> Email us</a>
+            </div><a href='javascript:void(null);' id='re' class='top-info__button green re top-re' modal-open='r-rental'>форма</a>+ <a href='javascript:void(null);' class='top-info__button blue rse' modal-open='rse'>другая форма</a>
+            <div class="top-info__contacts"><span>Связаться с специалистом:</span><a href='tel:88442265404' class='phone'>8 (8442) 265404</a><span>или</span><a href='mailto:konstantinopol34@mail.ru' class='email'> Напишите нам</a>
             </div>
         </div>
         <section class="rentals-items">
@@ -108,102 +104,117 @@
                 <div class="rentals-filter">
                     <div class="rentals-filter__checkbox">
                         <input id="1" type="checkbox" checked>
-                        <label for="1">All</label>
+                        <label for="1">Все</label>
                     </div>
                     <div class="rentals-filter__checkbox">
                         <input id="2" type="checkbox">
-                        <label for="2">Forklifts</label>
+                        <label for="2">Крыша</label>
                     </div>
                     <div class="rentals-filter__checkbox">
                         <input id="3" type="checkbox">
-                        <label for="3">Ariel Work Platforms</label>
+                        <label for="3">Фасад</label>
                     </div>
                     <div class="rentals-filter__checkbox">
                         <input id="4" type="checkbox">
-                        <label for="4">Energy</label>
+                        <label for="4">Стройматериалы</label>
                     </div>
                     <div class="rentals-filter__checkbox">
                         <input id="5" type="checkbox">
-                        <label for="5">Plantforms</label>
+                        <label for="5">Инструмент</label>
                     </div>
                     <div class="rentals-filter__checkbox">
                         <input id="6" type="checkbox">
-                        <label for="6">Industrial Cleaning</label>
-                    </div>
-                    <div class="rentals-filter__checkbox">
-                        <label>
-                            <input type="checkbox">Attachments
-                        </label>
-                    </div>
-                    <div class="rentals-filter__checkbox">
-                        <label>
-                            <input type="checkbox">Material Lifts
-                        </label>
-                    </div>
-                    <div class="rentals-filter__checkbox">
-                        <label>
-                            <input type="checkbox">Personnel Carriers
-                        </label>
-                    </div>
-                    <div class="rentals-filter__checkbox">
-                        <label>
-                            <input type="checkbox">Loght Towers
-                        </label>
+                        <label for="6">Водосточка</label>
                     </div>
                 </div>
                 <div class="equip-side-info">
-                    <div class="equip-side-info__item schedule"><strong>Active working hours:</strong>7:00 AM – 5:00 PM CST</div>
-                    <div class="equip-side-info__item restore"><strong>24 hour service</strong>available upon request</div>
-                    <div class="equip-side-info__item cel"><strong>Cutting edge GPS fleet tracking</strong>technology ensures equipment is delivered on time</div>
-                    <div class="equip-side-info__item dollar"><strong>Heavily invested</strong>in maintaining a young rental fleet to ensure minimal downtime</div>
-                    <div class="equip-side-info__item share"><strong>NLT actively maintains a fleet of 2500+</strong>pieces of equipment spread across 6 locations nationwide</div>
+                    <div class="equip-side-info__item schedule"><strong>Время работы:</strong>9:00 – 18:00 ПН – ПТ
+                        <br>9:00 – 18:00 СБ</div>
+                    <div class="equip-side-info__item restore"><strong>Всегда на связи</strong>и позитиве</div>
+                    <div class="equip-side-info__item cel"><strong>Звоните нам</strong><a href="tel:+79275174457" rel="nofollow">8 (927) 517 44 57</a><a href="tel:+79608881900" rel="nofollow">8 (960) 888 19 00</a>
+                    </div>
                 </div>
             </div>
             <div class="rentals-items__content">
                 <div class="rentals-items__breads">
-                    <div class="rentals-items__breadsSelf"><a href="#">Home</a><a href="#">Rentals</a>
+                    <div class="rentals-items__breadsSelf"><a href="#">Домой</a><a href="#">Каталог</a>
                     </div>
-                    <div class="rentals-items__breadsPage">Rentals</div>
+                    <div class="rentals-items__breadsPage">Фасад</div>
                 </div>
                 <div class="rentals-items__cat">
-                    <div class="rentals-items__catHeader">Cushion Tire Propane Forklifts
-                        <div class="rentals-item">
-                            <div class="rentals-item__image">
-                                <img src="static/img/content/vp4698756-1.png">
-                            </div>
-                            <div class="rentals-item__content">
-                                <div class="rentals-item__content-header">Lowery L300XDS</div>
-                                <div class="rentals-item__content-item">131" to 144" Lowered Mast Height</div>
-                                <div class="rentals-item__content-item">149" to 180" Max Lift Height</div>
-                                <div class="rentals-item__content-item">96" Forks Available</div>
-                                <div class="rentals-item__content-item">Diesel Fuel</div>
-                            </div><a class="re rentals-item__request" href="javascript:void(null);" id="r-but" data-id="Forklifts" modal-open="r-rental">rental request fkls</a>
+                    <div class="rentals-items__catHeader">Фасадные материалы и прочее</div>
+                    <div class="rentals-item">
+                        <div class="rentals-item__image">
+                            <img src="static/img/content/img1.jpg">
                         </div>
+                        <div class="rentals-item__content">
+                            <div class="rentals-item__content-header">Кровельная вентиляция</div>
+                            <div class="rentals-item__content-item">Материал: Железо</div>
+                            <div class="rentals-item__content-item">Материал: Железо</div>
+                            <div class="rentals-item__content-item">Материал: Железо</div>
+                            <div class="rentals-item__content-item">Материал: Железо</div>
+                        </div><a class="re rentals-item__request" href="javascript:void(null);" id="r-but" data-id="Forklifts" modal-open="r-rental">Заказать</a>
+                    </div>
+                    <div class="rentals-item">
+                        <div class="rentals-item__image">
+                            <img src="static/img/content/img1.jpg">
+                        </div>
+                        <div class="rentals-item__content">
+                            <div class="rentals-item__content-header">Кровельная вентиляция</div>
+                            <div class="rentals-item__content-item">Материал: Железо</div>
+                            <div class="rentals-item__content-item">Материал: Железо</div>
+                            <div class="rentals-item__content-item">Материал: Железо</div>
+                            <div class="rentals-item__content-item">Материал: Железо</div>
+                        </div><a class="re rentals-item__request" href="javascript:void(null);" id="r-but" data-id="Forklifts" modal-open="r-rental">Заказать</a>
+                    </div>
+                    <div class="rentals-item">
+                        <div class="rentals-item__image">
+                            <img src="static/img/content/img1.jpg">
+                        </div>
+                        <div class="rentals-item__content">
+                            <div class="rentals-item__content-header">Кровельная вентиляция</div>
+                            <div class="rentals-item__content-item">Материал: Железо</div>
+                            <div class="rentals-item__content-item">Материал: Железо</div>
+                            <div class="rentals-item__content-item">Материал: Железо</div>
+                            <div class="rentals-item__content-item">Материал: Железо</div>
+                        </div><a class="re rentals-item__request" href="javascript:void(null);" id="r-but" data-id="Forklifts" modal-open="r-rental">Заказать</a>
+                    </div>
+                    <div class="rentals-item">
+                        <div class="rentals-item__image">
+                            <img src="static/img/content/img1.jpg">
+                        </div>
+                        <div class="rentals-item__content">
+                            <div class="rentals-item__content-header">Кровельная вентиляция</div>
+                            <div class="rentals-item__content-item">Материал: Железо</div>
+                            <div class="rentals-item__content-item">Материал: Железо</div>
+                            <div class="rentals-item__content-item">Материал: Железо</div>
+                            <div class="rentals-item__content-item">Материал: Железо</div>
+                        </div><a class="re rentals-item__request" href="javascript:void(null);" id="r-but" data-id="Forklifts" modal-open="r-rental">Заказать</a>
                     </div>
                 </div>
                 <div class="rentals-items__cat">
-                    <div class="rentals-items__catHeader">Reach Trucks / Order Pickers / Walkie Stackers / Pallet Trucks
-                        <div class="rentals-item">
-                            <div class="rentals-item__image">
-                                <img src="static/img/content/vp4698756-1.png">
-                            </div>
-                            <div class="rentals-item__content">
-                                <div class="rentals-item__content-header">Lowery L300XDS</div>
-                                <div class="rentals-item__content-item">131" to 144" Lowered Mast Height</div>
-                                <div class="rentals-item__content-item">149" to 180" Max Lift Height</div>
-                                <div class="rentals-item__content-item">96" Forks Available</div>
-                                <div class="rentals-item__content-item">Diesel Fuel</div>
-                            </div><a class="re rentals-item__request" href="javascript:void(null);" data-id="Type of Equipment 2" modal-open="r-rental">rental request</a>
+                    <div class="rentals-items__catHeader">Другие товары / Сопутствующие товары / Рекомендованные товары</div>
+                    <div class="rentals-item">
+                        <div class="rentals-item__image">
+                            <img src="static/img/content/img1.jpg">
                         </div>
+                        <div class="rentals-item__content">
+                            <div class="rentals-item__content-header">Кровельная вентиляция</div>
+                            <div class="rentals-item__content-item">Материал: Железо</div>
+                            <div class="rentals-item__content-item">Материал: Железо</div>
+                            <div class="rentals-item__content-item">Материал: Железо</div>
+                            <div class="rentals-item__content-item">Материал: Железо</div>
+                        </div><a class="re rentals-item__request" href="javascript:void(null);" id="r-but" data-id="Forklifts" modal-open="r-rental">Заказать</a>
                     </div>
                 </div>
             </div>
             <div class="equip-side-info medias">
-                <div class="equip-side-info__item schedule"><strong>Active working hours:</strong>7:00 AM – 5:00 PM CST</div>
-                <div class="equip-side-info__item restore"><strong>24 hour service</strong>available upon request</div>
-                <div class="equip-side-info__item cel"><strong>Cutting edge GPS fleet tracking</strong>technology ensures equipment is delivered on time</div>
-                <div class="equip-side-info__item dollar"><strong>Heavily invested</strong>in maintaining a young rental fleet to ensure minimal downtime</div>
-                <div class="equip-side-info__item share"><strong>NLT actively maintains a fleet of 2500+</strong>pieces of equipment spread across 6 locations nationwide</div>
+                <div class="equip-side-info__item schedule"><strong>
+              Время работы:9:00 – 18:00 ПН – ПТ<br>9:00 – 18:00 СБ</strong>
+                    <div class="equip-side-info__item restore"><strong>Всегда на связи</strong>и позитиве</div>
+                    <div class="equip-side-info__item cel"><strong>Звоните нам</strong><a href="tel:+79275174457" rel="nofollow">8 (927) 517 44 57</a><a href="tel:+79608881900" rel="nofollow">8 (960) 888 19 00</a>
+                    </div>
+                </div>
             </div>
         </section>
         <div class="modal" data-modal="rsq">

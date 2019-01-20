@@ -3,14 +3,14 @@ var data = {
         data1: {
             isReverse: false,
             image: {
-                src: '%=static=%img/content/william20perry20dubose.jpg',
-                title: 'William Perry DuBose'
+                src: '%=static=%img/content/3334e66fdfbd030c6e4706c0adbe5a7d.jpg',
+                title: 'ТД Константинополь'
             },
             content: `
-                <h1>Beginnings</h1>
-                <p>National Lift Truck, Inc. is a family owned and operated company that was established in 1956, 60 years ago. Our founder William Perry DuBose was honorably discharged from the United States Navy after serving on 4 major invasions in World War II. Shortly after serving his country he left the family farm in Arkansas and moved into a small shop in Franklin Park, Illinois to start the company.</p>
-                <blockquote>Good service doesn’t cost, it pays</blockquote>
-                <p>The name of that company is <strong>National Lift Truck.</strong> William Perry (pictured to the right) was always very passionate about his work. He invested many long hours building the company from the ground up. National Lift Truck began primarily as a service oriented company focusing on mechanical repair for forklifts and rolling stock. The business continued to grow rapidly over time providing quality reliable workmanship. As the reputation continued to develop, the core business values and slogan were established.
+                <h1>О нас</h1>
+                <p>Уже более 7 лет мы профессионально занимается продажей кровельных и фасадных материалов в Волгограде и области. Помимо продажи материалов наружней и внутренней отделки у нас успешно функционирует производство металлоизделий как для частного, так и промышленного строительства. Вы всегда можете к нам обратиться за металлоизделиями и мы выполним их в кротчайшие сроки точно в размер по самой выгодной цене. </p>
+                <blockquote>Будем рады видеть Вас в отделах наших продаж!</blockquote>
+                <p>Торговый Дом "Константинополь" успешно реализует русские и европейские бренды, которые за годы своего существования, закрепили первенство на рынке продаж. Это гарантирует надежность, долговечность, а значит тепло и уют в вашем доме на долгие годы. Isover, Ursa, Izorock Grand Line, Ю-пласт, Альта профиль, Fine Beer, Docke, Вик, Fakro, Ондулин, Изоспан, Tyvek, Shinglas, RoofShield, Katepal, Nordland, Tegola, KroVent, Cesal, Армстронг, Ceresit, Волма, Knauf - бренды, продукция которых у нас всегда в достаточном количестве, доставку  можно оформить сразу после покупки. 
                 </p>
                 `
         },
@@ -18,10 +18,10 @@ var data = {
             isReverse: true,
             image: {
                 src: '%=static=%img/content/nlt20shop20franklin20st.jpg',
-                title: 'National Lift Truck – Franklin St., Franklin Park'
+                title: 'Склад №130'
             },
-            content: `<h1>Franklin St., Franklin Park</h1>
-                <p>William began to buy and refurbish any equipment his customers no longer needed or wanted to trade in. Once refurbished, he began to offer equipment rentals to any customers needing equipment repair services. During this time William also built a flatbed on the back of a heavy duty truck that tipped on a hinge from gravity. This could winch equipment up to a balancing point where the bed would tip forward and pull the equipment up to the bulkhead. From there he could chain the truck and bed down for transport. As time progressed he had now grown from just a service and parts business model to also support rental and transportation needs.</p>
+            content: `<h1>Принцип нашей работы</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 `
         },
         data3: {

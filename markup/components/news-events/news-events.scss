@@ -77,7 +77,7 @@
         margin-bottom: 10px;
     }
     &__more {
-        color: #105eb7;
+        color: $orange;
         font-size: em(12);
         text-decoration: none;
         font-weight: 700;
@@ -130,11 +130,11 @@
         line-height: 1.8;
     }
     &__link {
-        @include button(#3747b8);
+        @include button($green);
         display: inline-block;
     }
     &__more {
-        color: #105eb7;
+        color: $orange;
         font-size: em(12);
         text-decoration: none;
         font-weight: 700;

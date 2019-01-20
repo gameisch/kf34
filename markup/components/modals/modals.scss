@@ -209,7 +209,7 @@ $fw-check-focus-border-color: $accent-blue !default;
             + label {
                 margin-left: -35px;
                 &::after {
-                    top: 15px;
+                    top: 16px;
                     @media (max-width: $grid-ls) {
                         top: 13px;
                     }
@@ -225,7 +225,7 @@ $fw-check-focus-border-color: $accent-blue !default;
             + label {
                 margin-left: -35px;
                 &::after {
-                    top: 15px;
+                    top: 16px;
                     @media (max-width: $grid-ls) {
                         top: 13px;
                     }
@@ -245,8 +245,8 @@ select {
     padding: 5px 45px 5px 10px;
     border-radius: 4px;
     height: 46px;
-    background: transparent;
-    border: 1px solid #aaa;
+    background: #fff;
+    border: 1px solid #ddd;
     color: black;
     font-weight: 700;
     font-size: 0.93333em;

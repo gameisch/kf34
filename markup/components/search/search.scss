@@ -2,7 +2,7 @@
     width: 80%;
     position: absolute;
     height: auto;
-    top:-21px;
+    top:-23px;
     border-radius: 4px;
     border: solid 1px #fff;
     background-color: transparent;
@@ -14,6 +14,9 @@
     -moz-transition:all .2s;
     -o-transition:all .2s;
     transition:all .2s;
+    @media(max-width: $grid-ls){
+        top:-21px;
+    }
     @media(max-width: $grid-sm){
         width:100%;
         top:0;
@@ -195,7 +198,7 @@
     }
 }
 .not-found{
-    background-image: url(../img/content/reviews-bg.jpg);
+    background-image: url(../img/content/img5.jpg);
     background-size: cover;
     overflow: hidden;
     &__content{
@@ -281,7 +284,8 @@
                 overflow-wrap: unset;
                 text-transform: lowercase;
                 font-weight: 700;
-                padding: .5em 1.1em;
+                line-height: 1;
+                padding: .5em 1.1em .65em;
                 @media (max-width: $grid-sl) {
                     font-size:1.111111em;
                 }

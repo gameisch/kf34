@@ -1,54 +1,50 @@
 mixin inquiry-form(data)
     section.inquiry
         .inquiry__row
-            .inquiry__header Part Inquiry Form
-            <p class="objectframe">
-                <?xml-stylesheet type="text/css" href="dev/static/css/main.css" ?>
-                <object data="https://www.slpartsnet.com/34041/index.asp?pid=38041" width="1100" height="1100">
-            </p>
+            .inquiry__header Запросить отсутствующий товар
             .inquiry__info
-                span Forklifts
-                span Booms
-                span Telehandlers
-                span Scissors
-                span Pallet Trucks
-                span Material Handling Equipment
-            .inquiry__step-name 1. Enter the MFG, Number, Description and Quantity
+                span Крыша
+                span Фасад
+                span Водосточка
+                span Инсрумент
+                span Материал
+                span Краски
+            .inquiry__step-name 1. Введите раздел, номер продукции, описание, количество
             .inquiry-step
                 .inquiry-step__parts
                     .inquiry-step__part
                         .inquiry-step__cell.inquiry-step__cell--30
-                            label MFG
+                            label Раздел
                             .inquiry-step__input
                                 select
-                                    option A&G Mercury
-                                    option A&G Mercury 2
-                                    option A&G Mercury 3
+                                    option Фасад
+                                    option Крыша
+                                    option Водосточка
                         .inquiry-step__cell.inquiry-step__cell--20
-                            label Number
+                            label Артикул
                             .inquiry-step__input
                                 input(type='text')
                         .inquiry-step__cell.inquiry-step__cell--40
-                            label Description
+                            label Описание
                             .inquiry-step__input
                                 input(type='text')
                         .inquiry-step__cell.inquiry-step__cell--10
-                            label Quantity
+                            label Количество
                             .inquiry-step__input
                                 input(type='number', min='0', value='1')
                 .inquiry-step__bottom
-                    a(href='#') No part number?
-                    button(id='addPart').inquiry-step__bottom-submit add more parts
-            .inquiry__step-name 2. Request Quote for Entered Items
+                    a(href='#') Нет артикула?
+                    button(id='addPart').inquiry-step__bottom-submit Добавить позицию
+            .inquiry__step-name 2. Введите свои даные
             form.inquiry-step.inquiry-step--blue
-                - var labels = 'Company Name,First Name,Last Name,Phone,Reply to e-mail,ZIP code'.split(',');
+                - var labels = 'Название организации,Имя,Фамилия,Телефон,Отправить по e-mail,Индекс'.split(',');
                 - for (var i = 0; i < labels.length; i++)
                     .inquiry-step__cell
                         label #{labels[i]}
                         .inquiry-step__input
                             input(type='text')
                 .inquiry-step__bottom
-                    button(type='reset').inquiry-step__bottom-reset Start Over
-                    button(type='submit').inquiry-step__bottom-submit request a quote
+                    button(type='reset').inquiry-step__bottom-reset Сбросить
+                    button(type='submit').inquiry-step__bottom-submit Отправить
 
 

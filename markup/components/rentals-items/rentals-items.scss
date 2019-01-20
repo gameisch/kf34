@@ -147,7 +147,7 @@
         }
     }
     &__view-more {
-        @include button(#f5f6fb, #1048a8);
+        @include button(#00BA55, $white);
         border-radius: 0;
         display: block;
         text-align: center;

@@ -16,6 +16,16 @@
                 margin: 0 auto 25px;
                 border-radius: 50%;
             }
+            a{
+                font-weight: 700;
+                font-size: em(20);
+                text-align: center;
+                display: inline-block;
+                text-decoration: none;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
             span {
                 font-weight: 700;
                 font-size: em(20);

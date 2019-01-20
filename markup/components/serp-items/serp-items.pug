@@ -4,194 +4,107 @@ mixin serp-items(data)
         .serp-items__side
             .serp-filter
                 .serp-filter__item
-                    .serp-filter__header Category
+                    .serp-filter__header Категории
                     .serp-filter__checks
-                        .serp-filter__checkbox
-                            label
-                                input(type="checkbox" checked)
-                                | All
-                        .serp-filter__checkbox
-                            label
-                                input(type="checkbox")
-                                | Forklifts
-                        .serp-filter__checkbox
-                            label
-                                input(type="checkbox")
-                                | Ariel Work Platforms
-                        .serp-filter__checkbox
-                            label
-                                input(type="checkbox")
-                                | Energy
-                        .serp-filter__checkbox
-                            label
-                                input(type="checkbox")
-                                | Forklifts
                         .serp-filter__checkbox
                             input( id="ariel", type="checkbox")
-                            label( for="ariel" ) Ariel Work Platforms Ariel Work Platforms Ariel Work Platforms
+                            label( for="ariel" ) Крыша
+                        .serp-filter__checkbox
+                            input( id="ariel", type="checkbox")
+                            label( for="ariel" ) Фасад
+                        .serp-filter__checkbox
+                            input( id="ariel", type="checkbox")
+                            label( for="ariel" ) Водосточка
+                        .serp-filter__checkbox
+                            input( id="ariel", type="checkbox")
+                            label( for="ariel" ) Внутренняя отделка
+                        .serp-filter__checkbox
+                            input( id="ariel", type="checkbox")
+                            label( for="ariel" ) Инструмент
                         .serp-filter__checkbox
                             input( id="cat_887", type="checkbox", data-attr="cat", disabled="", value="887")
-                            label( for="cat_887" ) Ariel Work Platforms Ariel Work Platforms Ariel Work Platforms
-                        .serp-filter__checkbox
-                            label
-                                input(type="checkbox")
-                                | Energy
+                            label( for="cat_887" ) Электрика
 
                 .serp-filter__item
-                    .serp-filter__header Manufacturer
+                    .serp-filter__header Брэнд товара
                     .serp-filter__checks
                         .serp-filter__checkbox
-                            label
-                                input(type="checkbox" checked)
-                                | All
+                            input(type="checkbox" checked)
+                            label Все
                         .serp-filter__checkbox
-                            label
-                                input(type="checkbox")
-                                | Forklifts
+                            input(type="checkbox")
+                            label Barrera
                         .serp-filter__checkbox
-                            label
-                                input(type="checkbox")
-                                | Ariel Work Platforms
-                        .serp-filter__checkbox
-                            label
-                                input(type="checkbox")
-                                | Energy
-                        .serp-filter__checkbox
-                            label
-                                input(type="checkbox")
-                                | Forklifts
-                        .serp-filter__checkbox
-                            label
-                                input(type="checkbox")
-                                | Ariel Work Platforms
-                        .serp-filter__checkbox
-                            label
-                                input(type="checkbox")
-                                | Energy
+                            input(type="checkbox")
+                            label Printech
                 .serp-filter__item
-                    .serp-filter__header Price
+                    .serp-filter__header Цена
                     input.serp-filter__range(id="price_range", data-from='50', data-to='500000')
+                //- .serp-filter__item
+                //-     .serp-filter__header Year
+                //-     input.serp-filter__range(id="year_range", data-from='2002', data-to='2016')
                 .serp-filter__item
-                    .serp-filter__header Year
-                    input.serp-filter__range(id="year_range", data-from='2002', data-to='2016')
-                .serp-filter__item
-                    a(href="jacascript:void(null);").serp-filter__reset reset filters
+                    a(href="jacascript:void(null);").serp-filter__reset сбросить фильтр
 
         .serp-items__content
             .serp-items__breads
                 .serp-items__breadsSelf
-                    a(href="#") Home
-                    a(href="#") Pre-Owned Models
+                    a(href="#") Домой
+                    a(href="#") Каталог
                 .serp-items__breadsView.select-grey
-                    span View:
+                    span Показать:
                     select
-                        option Grid
-                        option Row
+                        option Сеткой
+                        option Списком
             .serp-items__cat
                 -for(var i = 0; i < 10; i++)
                     .serp-item
                         .serp-item__image
-                            img(src="%=static=%img/content/vp4698756-1.png")
+                            img(src="%=static=%img/content/img1.jpg")
                         .serp-item__content
-                            .serp-item__content-header Lowery L300XDS
+                            .serp-item__content-header Кровельная вентиляция
                             .serp-item__content-item
-                                strong Used:
+                                strong Материал: 
                                 =" "
-                                span 122 hours
+                                span Железо
                             .serp-item__content-item
-                                strong Color:
+                                strong Материал: 
                                 =" "
-                                span Blue
+                                span Железо
                             .serp-item__content-item
-                                strong Tires:
+                                strong Материал: 
                                 =" "
-                                span Cushion
-                            .serp-item__content-item
-                                strong Capacity:
-                                =" "
-                                span 30,000 LB
-                            .serp-item__content-item
-                                strong CU:
-                                =" "
-                                span 95/120
-                            .serp-item__content-item
-                                strong Duty:
-                                =" "
-                                span Medium/Heavy
-                            .serp-item__content-item
-                                strong Model:
-                                =" "
-                                span L300XDS
-                            .serp-item__content-item
-                                strong Stock #:
-                                =" "
-                                span C300-018
-                            .serp-item__content-item
-                                strong VIN #:
-                                =" "
-                                span LT2346
-                            .serp-item__content-item.yellow
-                                strong Condition:
-                                =" "
-                                span Used
-                        a(href='#').serp-item__view-more view more
-                        a(href='#', modal-open='r-rental').serp-item__request rental request
+                                span Железо
+                        a(href='#').serp-item__view-more подробней
+                        a(href='#', modal-open='r-rental').serp-item__request заказать
             .serp-items-bann
-                .serp-items-bann__header Headline Text
+                .serp-items-bann__header Акционный блок
                 .serp-items-bann__text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
-                a(href="#").serp-items-bann__button contact us
+                a(href="#").serp-items-bann__button Написать нам
             .serp-items__cat
                 -for(var i = 0; i < 3; i++)
                     .serp-item
                         .serp-item__image
-                            img(src="%=static=%img/content/vp4698756-1.png")
+                            img(src="%=static=%img/content/img1.jpg")
                         .serp-item__content
-                            .serp-item__content-header Lowery L300XDS
+                            .serp-item__content-header Кровельная вентиляция
                             .serp-item__content-item
-                                strong Used:
+                                strong Материал: 
                                 =" "
-                                span 122 hours
+                                span Железо
                             .serp-item__content-item
-                                strong Color:
+                                strong Материал: 
                                 =" "
-                                span Blue
+                                span Железо
                             .serp-item__content-item
-                                strong Tires:
+                                strong Материал: 
                                 =" "
-                                span Cushion
-                            .serp-item__content-item
-                                strong Capacity:
-                                =" "
-                                span 30,000 LB
-                            .serp-item__content-item
-                                strong CU:
-                                =" "
-                                span 95/120
-                            .serp-item__content-item
-                                strong Duty:
-                                =" "
-                                span Medium/Heavy
-                            .serp-item__content-item
-                                strong Model:
-                                =" "
-                                span L300XDS
-                            .serp-item__content-item
-                                strong Stock #:
-                                =" "
-                                span C300-018
-                            .serp-item__content-item
-                                strong VIN #:
-                                =" "
-                                span LT2346
-                            .serp-item__content-item.yellow
-                                strong Condition:
-                                =" "
-                                span Used
-                        a(href='#').serp-item__view-more view more
-                        a(href='#').serp-item__request rental request
+                                span Железо
+                        a(href='#').serp-item__view-more подробней
+                        a(href='#', modal-open='r-rental').serp-item__request заказать
             .serp-bottom
                 .serp-bottom__select.select-grey
                     select
-                        option 6 per page
+                        option 6 на странице
                 .serp-bottom__pagination
                     +pagination(1, 13, 1)

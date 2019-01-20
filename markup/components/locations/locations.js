@@ -7,14 +7,14 @@ function initMap() {
     var styledMap = new google.maps.StyledMapType(styles, {
         name: 'Styled Map'
     });
-    var centerMap = {lat: 41.8781136, lng: -87.6297982};
+    var centerMap = {lat: 48.671672, lng: 44.466652};
     var locations = [
-        ['loc1', 41.936016, -87.879195, 4],
-        ['loc2', 41.575799, -87.650273, 5]
+        ['loc1', 48.671672, 44.466652, 1],
+        ['loc2', 48.671944, 44.464567, 2]
     ];
     var mapProp = {
         center: centerMap,
-        zoom: 5,
+        zoom: 16,
         zoomControl: true,
         zoomControlOptions: {
             position: google.maps.ControlPosition.LEFT_CENTER
@@ -39,7 +39,7 @@ function initMap() {
         marker = new google.maps.Marker({
             position: new google.maps.LatLng(locations[i][1], locations[i][2]),
             map: map,
-            icon: '/static/img/content/place.png',
+            icon: 'static/img/content/place.png',
             animation: google.maps.Animation.DROP
         });
         const locFunc = google.maps.event.addListener(marker, 'click', (function (marker, i) {
@@ -48,7 +48,7 @@ function initMap() {
                 window.setTimeout( function () {
                     map.panTo(marker.getPosition(locations[i][1], locations[i][2]));
                 }, 1300);
-                map.setZoom(7);
+                map.setZoom(16);
                 for (var q = 0; q < link.length; q++) {
                     var status = link[q].getAttribute('data-marker');
                     if ( status === locations[i][0] ) {
@@ -60,7 +60,7 @@ function initMap() {
                 }
                 for (var j = 0; j < markers.length; j++) {
                     markers[j].setIcon('/static/img/content/place.png');
-                    map.setZoom(5);
+                    map.setZoom(16);
                     if (marker.getAnimation() !== null) {
                         marker.setAnimation(null);
 
@@ -83,7 +83,7 @@ function initMap() {
             marker.setPosition(myLatLng);
             map.panTo(myLatLng);
             marker.setIcon('/static/img/content/place_green.png');
-            map.setZoom(7);
+            map.setZoom(16);
             map.setCenter(marker.getPosition());
         }
     }

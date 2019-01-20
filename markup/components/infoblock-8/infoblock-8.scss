@@ -3,9 +3,10 @@
     flex-wrap: wrap;
     &__item {
         min-height: 350px;
-        background-color: #0D47A1;
+        background-color: $orange;
         width: 25%;
         padding: 1em 0;
+        text-align: center;
         @media (max-width: $grid-ls) {
             width: 50%;
             min-height: 100px;
@@ -15,7 +16,7 @@
             padding: 2em 0;
         }
         &:nth-child(2n) {
-            background-color: lighten(#0D47A1, 3%);
+            background-color: lighten($orange, 3%);
         }
         display: flex;
         align-items: center;
@@ -23,9 +24,9 @@
         span {
             display: inline-block;
             width: 50%;
-            text-align: left;
+            text-align: center;
             color: #FFFFFF;
-            font-size: 28/15+0em;
+            font-size: 20/15+0em;
             font-weight: bold;
             line-height: 1.4;
             @media (max-width: $grid-sl) {

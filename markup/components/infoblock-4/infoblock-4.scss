@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     padding: 10em 15px;
-    background-image: url('%=static=%content/ib4-bg.png');
+    background-image: url('%=static=%content/equip-bg.jpg');
     -webkit-background-size: cover;
     background-size: cover;
     @media (max-width: $grid-sl) {
@@ -35,7 +35,7 @@
         background-color: transparent;
         border: 2px solid #fff;
         &:hover {
-            color: #105EB7;
+            color: $orange;
             background-color: #fff;
         }
     }
