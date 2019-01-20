@@ -45,7 +45,7 @@
             &:after {
                 content: '\e55f';
                 font-family: "Material Icons";
-                color: #1048a8;
+                color: $orange;
                 font-size: em(25);
             }
         }
@@ -92,7 +92,7 @@
             &:hover{
                 opacity: .8;
                 strong{
-                    color: #1048a8;
+                    color:$orange;
                 }
                 span{
                     opacity: 1;
@@ -104,7 +104,7 @@
             &:before {
                 content: '\e55f';
                 font-family: "Material Icons";
-                color: #1048a8;
+                color: $orange;
                 font-size: em(25);
                 position: absolute;
                 top: 0;

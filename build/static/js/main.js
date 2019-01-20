@@ -10574,6 +10574,7 @@ $(document).ready(function () {
         return false;
     }
 });
+"use strict";
 'use strict';
 
 $(document).ready(function () {
@@ -10628,7 +10629,6 @@ $(document).ready(function () {
         }, 200);
     });
 });
-"use strict";
 "use strict";
 "use strict";
 "use strict";
@@ -11392,19 +11392,19 @@ $(document).ready(function () {
     // minYear = year.data('from'),
     // maxYear = year.data('to');
     console.log(minPrice, maxPrice);
-    price.ionRangeSlider({
-        type: 'double',
-        min: minPrice,
-        max: maxPrice,
-        prefix: '$',
-        'hide_min_max': true,
-        'hide_from_to': false,
-        grid: false,
-        onFinish: function onFinish(data) {
-            // console.log(data.from, data.to);
-            sendRange(data.from + ';' + data.to, 'price');
-        }
-    });
+    // price.ionRangeSlider({
+    //     type: 'double',
+    //     min: minPrice,
+    //     max: maxPrice,
+    //     prefix: '$',
+    //     'hide_min_max': true,
+    //     'hide_from_to': false,
+    //     grid: false,
+    //     onFinish: function (data) {
+    //         // console.log(data.from, data.to);
+    //         sendRange(data.from + ';' + data.to, 'price');
+    //     }
+    // });
 
     // year.ionRangeSlider({
     //     type: 'double',
